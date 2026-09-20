@@ -1,0 +1,705 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>洛带招商政策指引</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;900&display=swap">
+<style>
+:root{
+  --ground:#EDEFEA; --paper:#F8F8F4; --paper-2:#E3E7E1;
+  --ink:#1C2427; --ink-2:#465055; --ink-3:#7A8386;
+  --line:#D3D8D1; --line-2:#B7BFB8;
+  --tile:#1F292C; --tile-ink:#E9ECE6; --tile-ink-2:#A3ADAB;
+  --seal:#A6342B; --seal-soft:#F3E3DF; --on-seal:#FFF7F3;
+  --patina:#3E6B5F; --patina-soft:#DCE8E2;
+  --serif:"Noto Serif SC","Songti SC","SimSun",serif;
+  --sans:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+}
+/* 招商手册为正式对外材料，固定浅色，不随系统深色模式切换（用户 2026-09-19 定） */
+:root{color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
+  font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
+a{color:var(--patina)}
+button{font:inherit;color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* 页首：黛瓦色带 + 鱼鳞瓦纹 */
+.mast{position:relative;background:var(--tile);color:var(--tile-ink);padding:52px 0 70px;overflow:hidden}
+.mast::after{content:"";position:absolute;left:0;right:0;bottom:0;height:42px;pointer-events:none;
+  background:
+    radial-gradient(circle at 50% 0,transparent 10px,color-mix(in srgb,var(--tile-ink) 10%,transparent) 10.5px 12px,transparent 12.5px) 0 0/26px 14px repeat-x,
+    radial-gradient(circle at 50% 0,transparent 10px,color-mix(in srgb,var(--tile-ink) 7%,transparent) 10.5px 12px,transparent 12.5px) 13px 14px/26px 14px repeat-x,
+    radial-gradient(circle at 50% 0,transparent 10px,color-mix(in srgb,var(--tile-ink) 4%,transparent) 10.5px 12px,transparent 12.5px) 0 28px/26px 14px repeat-x}
+.eyebrow{margin:0 0 14px;font-size:.8rem;letter-spacing:.18em;color:var(--tile-ink-2)}
+.mast h1{font-family:var(--serif);font-weight:900;font-size:clamp(2.1rem,5.2vw,3.3rem);
+  letter-spacing:.06em;line-height:1.2;margin:0 0 14px;text-wrap:balance}
+.lede{margin:0;max-width:40em;color:var(--tile-ink-2);font-size:1rem}
+.meta{display:flex;flex-wrap:wrap;gap:6px 26px;margin-top:22px;font-size:.82rem;color:var(--tile-ink-2)}
+.meta b{color:var(--tile-ink);font-weight:500}
+.ed-tag{display:inline-block;margin-left:10px;padding:1px 8px;border:1px solid var(--seal);
+  color:var(--seal);font-size:.72rem;letter-spacing:.1em;vertical-align:middle;border-radius:2px}
+.mast .ed-tag{color:#E7988E;border-color:#E7988E}
+
+/* 导航 */
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 94%,transparent);
+  backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.bar a{flex:none;padding:13px 14px;font-size:.88rem;color:var(--ink-2);text-decoration:none;
+  border-bottom:2px solid transparent}
+.bar a:hover{color:var(--ink)}
+.bar a[aria-current="true"]{color:var(--ink);border-bottom-color:var(--seal);font-weight:500}
+
+main{padding:10px 0 80px}
+section.blk{padding:48px 0 8px}
+.sec-h{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  border-bottom:1px solid var(--line-2);padding-bottom:10px;margin-bottom:22px}
+.sec-h h2{font-family:var(--serif);font-weight:900;font-size:1.5rem;letter-spacing:.04em;margin:0}
+.sec-h p{margin:0;font-size:.85rem;color:var(--ink-3)}
+
+/* 层级印章 */
+.seal{display:inline-grid;place-items:center;width:30px;height:30px;flex:none;border-radius:3px;
+  font-family:var(--serif);font-weight:900;font-size:.92rem;line-height:1;
+  color:var(--seal);border:1.5px solid var(--seal)}
+.seal.lv-区{background:var(--seal);color:var(--on-seal);box-shadow:inset 0 0 0 2px var(--seal),inset 0 0 0 3px var(--on-seal)}
+.seal.lv-省{color:var(--ink-2);border-color:var(--ink-3)}
+
+/* 重点政策 */
+.feat{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.fc{display:flex;flex-direction:column;gap:8px;background:var(--paper);border:1px solid var(--line);
+  border-radius:4px;padding:18px 20px 16px;text-decoration:none;color:inherit;transition:border-color .15s}
+.fc:hover,.fc:focus-visible{border-color:var(--patina)}
+.fc-top{display:flex;align-items:center;gap:10px;font-size:.78rem;color:var(--ink-3)}
+.fc-amt{font-family:var(--serif);font-weight:900;font-size:2rem;line-height:1.15;color:var(--ink)}
+.fc-amt small{font-family:var(--sans);font-weight:400;font-size:.8rem;color:var(--ink-3);margin-right:8px;vertical-align:.35em}
+.fc-t{font-weight:700;font-size:1rem;line-height:1.5}
+.fc-p{margin:0;font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;
+  -webkit-box-orient:vertical;overflow:hidden}
+.fc-end{margin-top:auto;padding-top:8px;border-top:1px dashed var(--line);font-size:.78rem;color:var(--ink-3)}
+
+/* 匹配 */
+.ctl{background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:16px 18px;
+  display:grid;gap:10px}
+.ctl-row{display:grid;grid-template-columns:4.5em minmax(0,1fr);gap:12px;align-items:start}
+.ctl-row>span{font-size:.82rem;color:var(--ink-3);padding-top:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{appearance:none;border:1px solid var(--line-2);background:transparent;border-radius:999px;
+  padding:4px 13px;font-size:.84rem;color:var(--ink-2);cursor:pointer}
+.chip:hover{border-color:var(--patina);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--patina);border-color:var(--patina);color:var(--paper)}
+.hits{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;
+  margin:18px 0 8px;font-size:.84rem;color:var(--ink-3)}
+.hits b{font-family:var(--serif);font-size:1.25rem;color:var(--ink);margin:0 3px}
+
+/* 政策行 */
+.pols{list-style:none;margin:0;padding:0;background:var(--paper);border:1px solid var(--line);border-radius:4px}
+.pols li+li{border-top:1px solid var(--line)}
+.pol{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:14px;align-items:center;
+  padding:13px 18px;text-decoration:none;color:inherit}
+.pol:hover,.pol:focus-visible{background:var(--patina-soft)}
+.pol-t{display:block;font-weight:700;font-size:.95rem;line-height:1.45}
+.pol-s{display:block;font-size:.8rem;color:var(--ink-3);margin-top:2px}
+.lim{color:var(--seal)}
+.pol-a{text-align:right;min-width:7em}
+.pol-a b{display:block;font-family:var(--serif);font-weight:900;font-size:1.12rem;line-height:1.3;white-space:nowrap}
+.pol-a small{display:block;font-size:.72rem;color:var(--ink-3);max-width:14em;margin-left:auto;line-height:1.4}
+.more{display:block;margin:12px auto 0;appearance:none;background:transparent;border:1px solid var(--line-2);
+  border-radius:3px;padding:7px 18px;font-size:.86rem;color:var(--ink-2);cursor:pointer}
+.more:hover{border-color:var(--patina);color:var(--ink)}
+.empty{padding:28px;text-align:center;color:var(--ink-3);font-size:.9rem}
+
+/* 时间节点 */
+.tl{position:relative;height:330px;margin:10px 8px 0}
+.tl-axis{position:absolute;left:0;right:0;top:50%;height:2px;background:var(--line-2)}
+.tl-year{position:absolute;top:calc(50% + 8px);transform:translateX(-50%);font-size:.74rem;color:var(--ink-3)}
+.tl-year::before{content:"";position:absolute;left:50%;top:-12px;width:1px;height:8px;background:var(--line-2)}
+.tl-today{position:absolute;top:18%;bottom:18%;width:0;border-left:1.5px dashed var(--patina)}
+.tl-today span{position:absolute;bottom:-22px;left:0;transform:translateX(-50%);white-space:nowrap;
+  font-size:.74rem;color:var(--patina);font-weight:500}
+.tl-node{position:absolute;top:50%;width:0}
+.tl-dot{position:absolute;left:-7px;top:-6px;width:14px;height:14px;border-radius:50%;
+  background:var(--paper);border:3px solid var(--seal)}
+.tl-node.approx .tl-dot{border-style:dotted}
+.tl-card{position:absolute;left:0;width:206px;transform:translateX(-50%);background:var(--paper);
+  border:1px solid var(--line);border-radius:4px;padding:9px 12px;font-size:.78rem;line-height:1.5}
+.tl-node.up .tl-card{bottom:22px}
+.tl-node.edge-l .tl-card{transform:translateX(-18px)}
+.tl-node.edge-r .tl-card{transform:translateX(calc(-100% + 18px))}
+.tl-node.down .tl-card{top:26px}
+.tl-card b{display:block;font-family:var(--serif);font-size:.98rem;color:var(--ink)}
+.tl-card em{font-style:normal;color:var(--seal);font-weight:700}
+.tl-card ul{margin:3px 0 0;padding-left:1.1em;color:var(--ink-2)}
+.tl-note{margin:14px 0 0;font-size:.8rem;color:var(--ink-3)}
+.tl-list{display:none}
+
+/* 方向 */
+.dgrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.dt{display:flex;flex-direction:column;gap:6px;background:var(--paper);border:1px solid var(--line);
+  border-top:3px solid var(--tile);border-radius:4px;padding:16px;text-decoration:none;color:inherit}
+.dt:hover,.dt:focus-visible{border-color:var(--patina);border-top-color:var(--patina)}
+.dt-n{font-family:var(--serif);font-weight:900;font-size:2.2rem;line-height:1}
+.dt-n small{font-family:var(--sans);font-weight:400;font-size:.8rem;color:var(--ink-3);margin-left:4px}
+.dt-name{font-weight:700;font-size:.92rem;line-height:1.4}
+.dt-max{font-size:.78rem;color:var(--ink-3)}
+.dt ul{margin:4px 0 0;padding:0;list-style:none;font-size:.78rem;color:var(--ink-2);line-height:1.5}
+.dt li{padding-left:.9em;text-indent:-.9em}
+.dt li::before{content:"· "}
+.d-note{margin:14px 0 0;font-size:.82rem;color:var(--ink-3)}
+
+/* 列表页 */
+.lh{display:flex;flex-wrap:wrap;gap:12px;align-items:end;justify-content:space-between;margin:34px 0 16px}
+.lh h2{font-family:var(--serif);font-weight:900;font-size:1.6rem;margin:0}
+.lh p{margin:4px 0 0;font-size:.84rem;color:var(--ink-3)}
+.search{min-width:260px;flex:0 1 340px;padding:8px 12px;border:1px solid var(--line-2);border-radius:3px;
+  background:var(--paper);color:var(--ink);font:inherit;font-size:.9rem}
+.back{display:inline-block;margin-top:30px;font-size:.86rem;text-decoration:none;color:var(--ink-2)}
+.back:hover{color:var(--patina)}
+
+/* 详情页 */
+.dh{display:flex;gap:16px;align-items:flex-start;margin:18px 0 22px;padding-bottom:18px;border-bottom:1px solid var(--line-2)}
+.dh .seal{width:44px;height:44px;font-size:1.2rem}
+.dh h2{font-family:var(--serif);font-weight:900;font-size:clamp(1.4rem,3vw,1.9rem);line-height:1.35;margin:0 0 8px;text-wrap:balance}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:.74rem;padding:1px 8px;border-radius:2px;background:var(--paper-2);color:var(--ink-2)}
+.tag.warn{background:var(--seal-soft);color:var(--seal)}
+.dgrid2{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:28px;align-items:start}
+.facts{display:grid;gap:18px}
+.fact h3{margin:0 0 5px;font-size:.8rem;font-weight:500;letter-spacing:.08em;color:var(--ink-3)}
+.fact p{margin:0;font-size:.94rem;color:var(--ink);max-width:44em}
+.key{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--patina);border-radius:3px;padding:14px 18px}
+.key p{font-size:1rem;font-weight:500}
+.key small{display:block;margin-top:6px;font-size:.76rem;color:var(--ink-3)}
+blockquote{margin:0;padding:14px 18px;background:var(--paper);border:1px solid var(--line);border-radius:3px;
+  font-family:var(--serif);font-size:.92rem;line-height:1.95;color:var(--ink-2)}
+.src{margin:8px 0 0;font-size:.8rem;color:var(--ink-3)}
+.btn{display:inline-block;margin-top:10px;padding:7px 16px;border-radius:3px;background:var(--tile);
+  color:var(--tile-ink);text-decoration:none;font-size:.86rem}
+.btn:hover{filter:brightness(1.15)}
+.aside{position:sticky;top:64px;background:var(--paper);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.aside-amt{background:var(--tile);color:var(--tile-ink);padding:16px 18px}
+.aside-amt span{font-size:.76rem;color:var(--tile-ink-2)}
+.aside-amt b{display:block;font-family:var(--serif);font-weight:900;font-size:2rem;line-height:1.2}
+.aside-amt small{display:block;font-size:.78rem;color:var(--tile-ink-2);margin-top:2px}
+.aside dl{margin:0;padding:6px 18px 14px}
+.aside dt{margin-top:12px;font-size:.74rem;letter-spacing:.06em;color:var(--ink-3)}
+.aside dd{margin:2px 0 0;font-size:.86rem;line-height:1.6}
+.internal{margin-top:16px;padding:12px 14px;border:1px dashed var(--seal);border-radius:3px;font-size:.8rem;color:var(--ink-2)}
+.internal b{color:var(--seal);font-weight:500}
+
+/* 内部版 */
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:26px}
+.stat{background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:10px 14px}
+.stat b{display:block;font-family:var(--serif);font-size:1.5rem;line-height:1.2}
+.stat span{font-size:.76rem;color:var(--ink-3)}
+.lead{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--seal);border-radius:3px;
+  padding:13px 16px;margin-bottom:10px;font-size:.86rem}
+.lead h4{margin:0 0 6px;font-size:.95rem}
+.lead p{margin:3px 0;color:var(--ink-2)}
+.lead p b{color:var(--ink-3);font-weight:400;margin-right:6px}
+
+footer{border-top:1px solid var(--line-2);padding:22px 0 40px;font-size:.78rem;color:var(--ink-3)}
+footer p{margin:0 0 6px;max-width:60em}
+
+/* ===== v2：分步匹配 ===== */
+.demo-note{margin:0 0 18px;padding:9px 14px;border:1px dashed var(--seal);border-radius:3px;font-size:.82rem;color:var(--ink-2);background:var(--paper)}
+.demo-note b{color:var(--seal);font-weight:500}
+.wz{display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:22px;align-items:start}
+.wz-card{position:sticky;top:64px;background:var(--paper);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.wz-prog{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;padding:14px 18px 0}
+.wz-prog span{height:4px;border-radius:2px;background:var(--line)}
+.wz-prog span.on{background:var(--patina)}
+.wz-prog span.cur{background:var(--seal)}
+.wz-body{padding:14px 18px 18px}
+.wz-k{margin:0;font-size:.76rem;letter-spacing:.1em;color:var(--ink-3)}
+.wz-q{margin:4px 0 4px;font-family:var(--serif);font-weight:900;font-size:1.25rem;line-height:1.4}
+.wz-h{margin:0 0 14px;font-size:.8rem;color:var(--ink-3)}
+.opts{display:grid;gap:8px}
+.opt{appearance:none;display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;text-align:left;
+  padding:10px 14px;border:1px solid var(--line-2);border-radius:3px;background:transparent;cursor:pointer;font-size:.92rem;color:var(--ink)}
+.opt small{font-size:.76rem;color:var(--ink-3)}
+.opt:hover{border-color:var(--patina)}
+.opt[aria-pressed="true"]{border-color:var(--patina);background:var(--patina-soft)}
+.opt[aria-pressed="true"]::after{content:"已选";font-size:.72rem;color:var(--patina);flex:none}
+.wz-nav{display:flex;justify-content:space-between;gap:10px;padding:12px 18px;border-top:1px solid var(--line);background:var(--paper-2)}
+.wz-nav button{appearance:none;border:1px solid var(--line-2);background:var(--paper);color:var(--ink);border-radius:3px;padding:6px 14px;font-size:.84rem;cursor:pointer}
+.wz-nav button.go{background:var(--tile);color:var(--tile-ink);border-color:var(--tile)}
+.wz-nav button:disabled{opacity:.4;cursor:default}
+.wz-nav .clr{margin-right:auto;border:none;background:transparent;color:var(--seal);text-decoration:underline;padding:6px 4px}
+.wz-nav .clr[hidden]{display:none}
+.ans{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.ans button{appearance:none;border:1px solid var(--line-2);background:var(--paper);border-radius:999px;padding:3px 12px;font-size:.8rem;color:var(--ink-2);cursor:pointer}
+.ans button b{font-weight:500;color:var(--ink)}
+.ans button:hover{border-color:var(--patina)}
+.ans .ans-clr{border-color:transparent;background:transparent;color:var(--seal);text-decoration:underline}
+.sum{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:6px}
+.sum div{background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:12px 16px}
+.sum div:first-child{background:var(--tile);color:var(--tile-ink);border-color:var(--tile)}
+.sum b{display:block;font-family:var(--serif);font-weight:900;font-size:1.7rem;line-height:1.2}
+.sum span{font-size:.76rem;opacity:.8}
+.grp-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin:22px 0 8px}
+.grp-h h3{margin:0;font-size:1rem;font-family:var(--serif);font-weight:900}
+.grp-h p{margin:0;font-size:.78rem;color:var(--ink-3)}
+.stg{display:inline-block;margin-left:6px;padding:0 6px;border-radius:2px;font-size:.7rem;font-weight:400;background:var(--patina-soft);color:var(--patina);vertical-align:1px}
+.stg.warn{background:var(--seal-soft);color:var(--seal)}
+details.blocked summary{cursor:pointer;font-size:.84rem;color:var(--ink-3);margin:18px 0 8px}
+
+.wz-empty{background:var(--paper);border:1px dashed var(--line-2);border-radius:4px;padding:26px 24px;color:var(--ink-3);font-size:.9rem}
+.wz-empty b{font-family:var(--serif);font-weight:900;font-size:2rem;color:var(--ink);margin-right:4px}
+.wz-empty p{margin:8px 0 0;max-width:34em}
+/* ===== v2：资格自查 ===== */
+.ck{background:var(--paper);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.ck-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;padding:12px 16px;border-bottom:1px solid var(--line)}
+.ck-h h4{margin:0;font-size:.8rem;font-weight:500;color:var(--ink-3)}
+.ck-v{font-size:.86rem;font-weight:700}
+.ck-v.ok{color:var(--patina)} .ck-v.no{color:var(--seal)} .ck-v.q{color:var(--ink-2)}
+.ck ul{list-style:none;margin:0;padding:0}
+.ck li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 16px;font-size:.9rem}
+.ck li+li{border-top:1px dashed var(--line)}
+.ck li small{display:block;font-size:.74rem;color:var(--ink-3)}
+.st{appearance:none;min-width:5.2em;padding:3px 10px;border-radius:999px;border:1px solid var(--line-2);background:transparent;
+  font-size:.78rem;color:var(--ink-3);cursor:pointer}
+.st.ok{border-color:var(--patina);background:var(--patina-soft);color:var(--patina)}
+.st.no{border-color:var(--seal);background:var(--seal-soft);color:var(--seal)}
+.st[disabled]{cursor:default}
+.ck-f{margin:0;padding:9px 16px;font-size:.74rem;color:var(--ink-3);background:var(--paper-2)}
+
+/* ===== v2：时间节点（内部版） ===== */
+.tlx{position:relative;height:66px;margin:6px 12px 18px}
+.tlx-axis{position:absolute;left:0;right:0;top:20px;height:2px;background:var(--line-2)}
+.tlx-y{position:absolute;top:30px;transform:translateX(-50%);font-size:.72rem;color:var(--ink-3)}
+.tlx-y::before{content:"";position:absolute;left:50%;top:-12px;width:1px;height:7px;background:var(--line-2)}
+.tlx-dot{position:absolute;top:14px;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:var(--paper);
+  border:3px solid var(--patina);display:grid;place-items:center;font-size:0}
+.tlx-dot.soon{border-color:var(--seal)} .tlx-dot.approx{border-style:dotted}
+.tlx-dot b{position:absolute;bottom:17px;left:50%;transform:translateX(-50%);font-size:.7rem;font-weight:700;color:var(--ink-2)}
+.tlx-now{position:absolute;top:8px;height:40px;border-left:1.5px dashed var(--seal)}
+.tlx-now span{position:absolute;top:32px;left:5px;white-space:nowrap;font-size:.7rem;color:var(--seal);font-weight:500}
+.tlr{list-style:none;margin:0;padding:0;background:var(--paper);border:1px solid var(--line);border-radius:4px}
+.tlr>li{display:grid;grid-template-columns:10.5em 7.5em 4.5em minmax(0,1fr);gap:14px;align-items:baseline;padding:12px 18px}
+.tlr>li+li{border-top:1px solid var(--line)}
+.tlr-d{font-family:var(--serif);font-weight:900;font-size:1rem}
+.tlr-s{justify-self:start;padding:1px 8px;border-radius:2px;font-size:.74rem;background:var(--patina-soft);color:var(--patina)}
+.tlr-s.soon{background:var(--seal-soft);color:var(--seal)}
+.tlr-s.past{background:var(--paper-2);color:var(--ink-3)}
+.tlr-n{font-size:.84rem;color:var(--ink-3)}
+.tlr-n b{font-family:var(--serif);font-size:1.1rem;color:var(--ink);margin-right:2px}
+.tlr-src{margin:0;padding:0;list-style:none;font-size:.84rem;color:var(--ink-2);line-height:1.6}
+.tlr-src em{font-style:normal;color:var(--ink-3);margin-left:4px}
+@media (max-width:760px){
+  .tlr>li{grid-template-columns:minmax(0,1fr) auto;gap:4px 10px}
+  .tlr-s{grid-row:1;grid-column:2}
+  .tlr-n,.tlr-src{grid-column:1 / -1}
+}
+
+:focus-visible{outline:2px solid var(--patina);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+@media (max-width:900px){
+  .dgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dgrid2{grid-template-columns:minmax(0,1fr)}
+  .aside{position:static}
+  .tl-list{display:block;list-style:none;margin:0;padding:0 0 0 18px;border-left:2px solid var(--line-2)}
+  .tl-list li{position:relative;margin:0 0 16px;font-size:.84rem}
+  .tl-list li::before{content:"";position:absolute;left:-26px;top:5px;width:12px;height:12px;border-radius:50%;
+    background:var(--paper);border:3px solid var(--seal)}
+  .tl-list li.today::before{border-color:var(--patina)}
+  .tl-list b{font-family:var(--serif)}
+}
+@media (max-width:900px){
+  .wz{grid-template-columns:minmax(0,1fr)}
+  .wz-card{position:static}
+}
+@media (max-width:620px){
+  body{padding-bottom:calc(58px + env(safe-area-inset-bottom, 0px))}
+  .bar{position:fixed;top:auto;bottom:0;left:0;right:0;border-top:1px solid var(--line);border-bottom:none;
+    padding-bottom:env(safe-area-inset-bottom, 0px)}
+  .bar .wrap{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);padding:0}
+  .bar a{padding:12px 2px;text-align:center;font-size:.78rem;border-bottom:none;border-top:2px solid transparent}
+  .bar a[aria-current="true"]{border-top-color:var(--seal)}
+  .sum{gap:6px}
+  .sum div{padding:10px}
+  .sum b{font-size:1.3rem}
+  .wrap{padding:0 16px}
+  .mast{padding:38px 0 60px}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pol{grid-template-columns:30px minmax(0,1fr);gap:10px}
+  .pol-a{grid-column:2;text-align:left}
+  .pol-a small{margin-left:0}
+  .ctl-row{grid-template-columns:minmax(0,1fr);gap:4px}
+  .ctl-row>span{padding-top:0}
+  .search{min-width:0;flex:1 1 100%}
+}
+@media print{.bar,.more,.search,.back{display:none!important}body{background:#fff}}
+</style>
+
+<header class="mast">
+  <div class="wrap">
+    <p class="eyebrow">成都市龙泉驿区洛带镇 · 招商引资</p>
+    <h1 id="title">洛带招商政策指引</h1>
+    <div class="meta"><span>收录政策 <b>89</b> 条</span><span>均附有效期</span><span>更新 <b>2026-09-19</b></span></div>
+  </div>
+</header>
+
+<nav class="bar" aria-label="页面导航"><div class="wrap" id="nav"></div></nav>
+
+<main class="wrap">
+  <div id="v-home">
+    <div id="stats"></div>
+    <section class="blk" id="match">
+      <div class="sec-h"><h2>项目匹配</h2><p>回答四个问题，得到现阶段可申报与项目推进后可申报的政策</p></div>
+      <div class="wz">
+        <div class="wz-card"><div class="wz-prog" id="wprog"></div><div class="wz-body" id="wbody"></div>
+          <div class="wz-nav"><button type="button" class="clr" id="wclr" hidden>清除已选</button><button type="button" id="wprev">上一题</button><button type="button" class="go" id="wnext">下一题</button></div></div>
+        <div id="wres"></div>
+      </div>
+    </section>
+    <section class="blk" id="dirs">
+      <div class="sec-h"><h2>按招商方向浏览</h2><p>不需答题，直接查看某一方向的全部政策</p></div>
+      <div class="dgrid" id="dgrid"></div>
+      <p class="d-note" id="dnote"></p>
+    </section>
+    <section class="blk" id="featured">
+      <div class="sec-h"><h2>洛带重点招引方向</h2><p>洛带最欢迎的项目类型，以及对应支持力度最大的政策</p></div>
+      <div class="feat" id="feat"></div>
+    </section>
+    <section class="blk" id="timeline" hidden>
+      <div class="sec-h"><h2>时间节点</h2><p>按有效期截止时间排列；虚线圆点为依「印发之日起 N 年」推算；红色为一年内到期</p></div>
+      <div class="tlx" id="tlx"></div>
+      <ul class="tlr" id="tlr"></ul>
+      <p class="tl-note" id="tln"></p>
+    </section>
+  </div>
+
+  <div id="v-list" hidden>
+    <a class="back" href="#/">← 返回首页</a>
+    <div class="lh"><div><h2 id="lt"></h2><p id="ls"></p></div>
+      <input class="search" id="lq" type="search" placeholder="检索政策名称、申报主体或条件" aria-label="检索政策"></div>
+    <ul class="pols" id="lres"></ul>
+  </div>
+
+  <div id="v-detail" hidden>
+    <a class="back" id="dback" href="#/">← 返回</a>
+    <article id="dart"></article>
+  </div>
+
+  <div id="v-pending" hidden></div>
+</main>
+
+<footer><div class="wrap" id="foot"></div></footer>
+
+<script>
+(function(){
+var D={"edition": "external", "policies": [{"id": "LQY-YY-27-1", "t": "音乐演艺类文化产业园区认定奖励", "lv": "区", "dirs": ["d1"], "uni": false, "mer": false, "st": ["已达标"], "amt": 500, "amtT": "500万元", "cap": "500万元", "app": "园区运营机构", "sub": "", "rule": "国家级、省级、市级分别奖励500万元、200万元、100万元", "elig": "新认定为国家、四川省、成都市文化产业园区（音乐演艺类）或同等荣誉；政策有效期内评价等级上台阶的，按差额奖励", "win": "详见年度申报通知", "exc": "", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区文化广电体育和旅游局产业科 028-84845114", "pitch": "以会馆片区整体申报音乐演艺类文化产业园区，获评市级、省级、国家级分别可获100万元、200万元、500万元奖励。", "fit": "洛带古镇具备连片会馆与院落载体，以客家文化演艺为主题整体申报市级文化产业园区可对应本条；须先明确园区空间边界与运营主体资格。", "doc": "龙泉驿区支持演艺产业发展的若干政策汇编", "no": "", "loc": "P1 一、（二）", "q": "对新认定为国家、四川省、成都市文化产业园区（音乐演艺类）或同等荣誉的，分别给予园区运营机构500万元、200万元、100万元一次性奖励。", "url": "", "urlK": "", "inv": null, "subj": ["op"], "cad": ""}, {"id": "LQY-YY-27-2", "t": "园区入驻演艺企业达30家奖励", "lv": "区", "dirs": ["d1"], "uni": false, "mer": false, "st": ["已运营"], "amt": 50, "amtT": "50万元", "cap": "50万元", "app": "园区运营管理方", "sub": "", "rule": "50万元一次性奖励", "elig": "园区内入驻且正常经营满两年的音乐演艺企业数量达到30家及以上，经审定", "win": "详见年度申报通知", "exc": "", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区文化广电体育和旅游局产业科 028-84845114", "pitch": "园区内入驻且经营满两年的演艺企业达30家，园区运营方可获50万元一次性奖励。", "fit": "古镇商铺密度较高，引导演艺类企业集中注册落户后，企业数量要求可以实现。", "doc": "龙泉驿区支持演艺产业发展的若干政策汇编", "no": "", "loc": "P1 一、（二）", "q": "对园区内入驻且正常经营满两年的音乐演艺企业数量达到30家及以上的，经审定，给予园区运营管理方50万元一次性奖励。", "url": "", "urlK": "", "inv": null, "subj": ["op"], "cad": ""}, {"id": "LQY-YY-27-3", "t": "园区内企业营收台阶奖励（奖园区运营方）", "lv": "区", "dirs": ["d1"], "uni": false, "mer": false, "st": ["已运营", "已达标"], "amt": 150, "amtT": "150万元", "cap": "150万元", "app": "园区运营管理单位", "sub": "", "rule": "园区内企业累计营收首次达5000万元、1亿元、2亿元、5亿元、10亿元、15亿元，分别奖5万元、10万元、20万元、50万元、100万元、150万元", "elig": "园区内文化创意、音乐演艺等企业年度累计营业收入首次达到相应台阶；营业收入规模上台阶的，按差额奖励", "win": "详见年度申报通知", "exc": "", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区文化广电体育和旅游局产业科 028-84845114", "pitch": "园区内文创企业累计营收首次超5000万元，运营方可获5万元奖励；逐级递增，最高150万元。", "fit": "须成立统一的园区运营主体，将镇内文创商户营收合并计算；5000万元一档在现有客流条件下最先可以达到。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第二十七条（二）", "q": "对政策有效期内，园区内文化创意、音乐演艺等企业年度累计营业收入首次达到5000万元、1亿元、2亿元、5亿元、10亿元、15亿元的，分别给予园区运营管理单位5万元、10万元、20万元、50万元、100万元、150万元奖励。政策有效期内，营业收入规模上台阶的，按差额奖励。", "url": "", "urlK": "", "inv": null, "subj": ["op", "biz"], "cad": ""}, {"id": "LQY-YY-1-4", "t": "沉浸式文体旅商融合项目", "lv": "区", "dirs": ["d1"], "uni": false, "mer": false, "st": ["拟落地", "在建", "已运营"], "amt": 500, "amtT": "500万元", "cap": "500万元", "app": "市场主体", "sub": "", "rule": "单个项目最高500万元，分两年拨付，首年60%、次年40%", "elig": "深度整合文化IP、商业消费与旅游体验的沉浸式文商旅融合项目；依据融合模式创新性、IP能级、科技应用水平、业态丰富度以及总投资额、年度营业收入、年度游客接待量综合评定", "win": "详见年度申报通知", "exc": "", "val": "《成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施》自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区文广体旅局", "pitch": "投资建设客家主题沉浸式文商旅融合项目，经综合评定可获最高500万元奖励，首年拨付60%。", "fit": "古镇具备文商旅一体的场景条件；评审考量总投资额与游客接待量，单体项目竞争力有限，宜由古镇整体运营主体牵头申报。", "doc": "龙泉驿区支持演艺产业发展的若干政策汇编", "no": "", "loc": "P2 一、（四）", "q": "支持建设沉浸式文体旅商融合项目。支持市场主体投资建设深度整合文化IP、商业消费与旅游体验的沉浸式文商旅融合项目。依据项目的融合模式创新性、IP能级、科技应用水平、业态丰富度以及总投资额、年度营业收入、年度游客接待量等因素进行综合评定，给予单个项目最高500万元的奖励。奖励资金分两年拨付，首年拨付60%,次年将结合项目对周边商业的带动效应、消费转化能力及品牌影响力等运营绩效评估结果，拨付剩余40%。", "url": "", "urlK": "", "inv": null, "subj": ["op", "biz", "event"], "cad": ""}, {"id": "LQY-YY-1-3-1", "t": "原创音乐演艺品牌IP培育", "lv": "区", "dirs": ["d1"], "uni": false, "mer": false, "st": ["已运营", "已达标"], "amt": 200, "amtT": "200万元", "cap": "200万元", "app": "IP运营企业", "sub": "", "rule": "单个品牌IP最高200万元，单个企业累计不超过3个项目", "elig": "成功打造原创音乐演艺活动品牌IP，并连续举办3年及以上；综合考虑IP市场价值、品牌影响力、活动规模", "win": "详见年度申报通知", "exc": "", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区文化广电体育和旅游局产业科 028-84845114", "pitch": "原创音乐演艺活动品牌连续举办3年及以上，单个品牌IP可获最高200万元奖励。", "fit": "门槛为连续举办满三年，属长期培育类政策；客家火龙节等活动形成常态化音乐演艺品牌后，第三年起可以申报。", "doc": "龙泉驿区支持演艺产业发展的若干政策汇编", "no": "", "loc": "P1 一、（三）1.", "q": "对成功打造原创音乐演艺活动品牌IP，并连续举办3年及以上的企业，综合考虑IP市场价值、品牌影响力、活动规模等，给予单个品牌IP最高不超过200万元奖励。单个企业累计享受品牌IP培育奖励的项目不超过3个。", "url": "", "urlK": "", "inv": null, "subj": ["op", "biz"], "cad": ""}, {"id": "LQY-YY-1-3-2", "t": "区内举办大型演艺节会", "lv": "区", "dirs": ["d1"], "uni": false, "mer": false, "st": ["已运营"], "amt": 400, "amtT": "400万元", "cap": "每年400万元", "app": "演艺节会举办企业", "sub": "", "rule": "最高30万元/活动、场次，单个企业每年最高400万元", "elig": "在我区举办大型演艺节会，同一活动或单场票房收入300万元以上且规模1万人以上", "win": "详见年度申报通知", "exc": "与年售票10万张奖励按就高不重复原则享受", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区文化广电体育和旅游局产业科 028-84845114", "pitch": "在区内举办单场票房300万元以上、规模1万人以上的演艺节会，每场最高30万元，企业年度最高400万元。", "fit": "古镇现有场地难以承载万人规模，适用于镇域外围场地或与专业主办方合作举办的项目。", "doc": "龙泉驿区支持演艺产业发展的若干政策汇编", "no": "", "loc": "P2 一、（三）2.", "q": "对在我区举办大型演艺节会的企业，同一活动或单场票房收入300万元以上且规模1万人以上的，按照最高30万元/活动、场次的标准，给予单个企业每年最高400万元奖励。", "url": "", "urlK": "", "inv": null, "subj": ["biz", "event"], "cad": ""}, {"id": "LQY-YY-1-3-2b", "t": "年累计售票10万张演出企业奖励", "lv": "区", "dirs": ["d1"], "uni": false, "mer": false, "st": ["已运营", "已达标"], "amt": 50, "amtT": "50万元", "cap": "50万元", "app": "演出企业", "sub": "", "rule": "当年最高50万元", "elig": "在我区年累计售票10万张及以上的演出企业", "win": "详见年度申报通知", "exc": "与大型演艺节会奖励按就高不重复原则享受", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区文化广电体育和旅游局产业科 028-84845114", "pitch": "演出企业在区内年累计售票10万张及以上，当年可获最高50万元奖励。", "fit": "按全年累计计算，古镇形成常态化驻场演出后可以达到，较单场万人门槛更符合洛带实际。", "doc": "龙泉驿区支持演艺产业发展的若干政策汇编", "no": "", "loc": "P2 一、（三）2.", "q": "对在我区年累计售票10万张及以上的演出企业，给予当年最高50万元奖励。", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "LQY-YY-1-3-4", "t": "演出场所年度场次奖励", "lv": "区", "dirs": ["d1"], "uni": false, "mer": false, "st": ["已运营"], "amt": 50, "amtT": "50万元", "cap": "50万元", "app": "演出场所运营企业", "sub": "", "rule": "年度累计100—200场、200—300场、300场及以上，分别奖20万元、35万元、50万元", "elig": "举办单场规模300人及以上的演出，年度演出累计达到100场（含）以上", "win": "详见年度申报通知", "exc": "", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区文化广电体育和旅游局产业科 028-84845114", "pitch": "演出场所举办单场300人以上演出，年度累计100场可获20万元奖励，300场以上可获50万元奖励。", "fit": "年度100场约为每周两场，古镇小剧场可以达到，是本方向实施条件最成熟的政策之一。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第三十五条（二）1.", "q": "对政策有效期内，举办单场规模300人及以上的演出，年度演出累计达到100场（含）—200场、200场（含）—300场、300场及以上，分别给予20万元、35万元、50万元奖励；", "url": "", "urlK": "", "inv": null, "subj": ["op", "biz"], "cad": ""}, {"id": "LQY-YY-2-1", "t": "赛演产业链企业引育奖励", "lv": "区", "dirs": ["d1", "d5"], "uni": false, "mer": false, "st": ["拟落地", "已运营"], "amt": 100, "amtT": "100万元", "cap": "100万元", "app": "新设文体娱企业", "sub": "", "rule": "年度主营业务收入首次达2000万元、5000万元、8000万元、1亿元，分别最高奖20万元、50万元、80万元、100万元", "elig": "政策有效期内新开办，且在我区实际开展经营，从事演艺、赛事活动产业链上下游经营范围的文体娱企业；奖励金额通过竞争性评审综合确定；年度营收上台阶的按差额奖励", "win": "详见年度申报通知", "exc": "", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区文广体旅局、区商务局", "pitch": "演艺、赛事产业链企业新设于洛带，年主营业务收入首次达2000万元可获最高20万元，达1亿元可获最高100万元；奖励金额通过竞争性评审综合确定。", "fit": "演出经纪、舞美搭建、票务、赛事执行等企业注册落户即可适用，营收门槛对该类企业不高。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第二十七条（一）", "q": "对政策有效期内新开办，且在我区实际开展经营，从事演艺、赛事活动产业链上下游经营范围的文体娱企业，按以下标准给予奖励：年度主营业务收入（首次达到）2000万元最高20万元、5000万元最高50万元、8000万元最高80万元、1亿元最高100万元。奖励金额根据企业主营业务相关度、对区域经济发展促进作用等因素，通过竞争性评审综合确定。", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "LQY-27-1-1", "t": "文体娱乐业企业营收台阶奖励", "lv": "区", "dirs": ["d1", "d5"], "uni": false, "mer": false, "st": ["已运营", "已达标"], "amt": 100, "amtT": "100万元", "cap": "单档最高100万元，可叠加增速奖", "app": "文体娱乐业企业", "sub": "", "rule": "年营收首次达3000万元、8000万元、1.5亿元，分别奖30万元、50万元、100万元；增速达30%及以上再分别奖35万元、50万元、100万元", "elig": "文体娱乐业企业年营业收入首次达到相应台阶；较上年度增速达到30%及以上可叠加享受增速奖励", "win": "详见年度申报通知", "exc": "", "val": "《成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施》自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区文广体旅局", "pitch": "文体娱乐业企业年营收首次达3000万元可获30万元奖励，同期增速达30%以上另获35万元奖励。", "fit": "适用于古镇内规模较大的演艺、娱乐、健身经营主体，首档营收门槛在古镇头部商户中可以实现。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第二十七条1.", "q": "对文体娱乐业企业年营业收入首次达到3000万元、8000万元、1.5亿元及以上的，分别给予30万元、50万元、100万元奖励，较上年度增速达到30%及以上的，分别再给予35万元、50万元、100万元奖励。（责任单位：区文广体旅局）", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "LQY-YY-1-3-5", "t": "演出场所引进演艺公司奖励", "lv": "区", "dirs": ["d1"], "uni": false, "mer": false, "st": ["已运营"], "amt": 40, "amtT": "40万元", "cap": "每年最高40万元", "app": "演出场所运营企业", "sub": "", "rule": "按被引进演艺公司首个顺延年获得区级政策性奖励资金总额的10%", "elig": "演出场所引进演艺公司；按该演艺公司设立之日起首个顺延年（12个月）内获得我区政策性奖励资金总额（不含针对人才个人的奖励）计算；单个演出场所引进多家可累计", "win": "详见年度申报通知", "exc": "", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区文化广电体育和旅游局产业科 028-84845114", "pitch": "演出场所每引进一家演艺公司，按该公司首年获区级奖励总额的10%奖励场所运营方，年度最高40万元。", "fit": "属面向载体运营方的引进奖励；洛带如设立演出场所运营主体，可据此设计镇级招商激励机制。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第三十五条（二）", "q": "演出场所引进演艺公司，按照该演艺公司设立之日起首个顺延年（12个月）内获得我区政策性奖励资金总额（不含针对人才个人的奖励）的10%，给予引进该企业的演出场所运营企业每年最高不超过40万元的一次性奖励。政策有效期内，单个演出场所引进多家演艺公司的，奖励可累计计算。", "url": "", "urlK": "", "inv": null, "subj": ["op", "biz"], "cad": ""}, {"id": "LQY-36", "t": "市场化促消费活动（市集/快闪/展销）", "lv": "区", "dirs": ["d1"], "uni": false, "mer": false, "st": ["已运营"], "amt": 20, "amtT": "20万元", "cap": "20万元/次", "app": "活动举办企业", "sub": "", "rule": "单次活动最高不超过20万元，按年度兑付", "elig": "辖区内商业综合体、特色街区、文创园区举办主题市集、快闪活动、大型展销会等专场促消费活动及首发、首展活动，且活动纳入市级及以上促消费活动计划", "win": "详见年度申报通知", "exc": "", "val": "《成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施》自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局", "pitch": "古镇举办主题市集、快闪等促消费活动并纳入市级计划，单次活动最高奖励20万元。", "fit": "洛带作为特色街区符合主体资格；活动须纳入市级及以上促消费活动计划，应提前与区商务局对接报送。", "doc": "成都市进一步促进旅游业发展的若干措施（2025年1月）", "no": "", "loc": "第三十六条", "q": "对辖区内商业综合体、特色街区、文创园区举办的主题市集、快闪活动、大型展销会等专场促消费活动及首发、首展活动，且活动纳入市级及以上促消费活动计划的，综合考量活动规模及实施效果等，给予单次活动最高不超过20万元奖励。该奖励按年度兑付", "url": "https://cdwglj.chengdu.gov.cn/cdwglj/c133196/2025-01/15/content_c4006e1e79e94793b9ce34fed05fbb31.shtml", "urlK": "市文广旅局官网（政策及实施细则）", "inv": null, "subj": ["biz", "event"], "cad": ""}, {"id": "CD-YS-7", "t": "闲置资源改建演艺场馆（市级）", "lv": "市", "dirs": ["d1"], "uni": false, "mer": false, "st": ["在建", "已运营"], "amt": 200, "amtT": "200万元", "cap": "200万元", "app": "改建主体", "sub": "", "rule": "按投资额的10%且不高于200万元；首次认定符合演艺新空间标准另奖5万元", "elig": "利用闲置工业厂房、空闲楼宇、商业综合体、体育馆、街区和景区等资源改建演艺场馆，累计投资额达500万元", "win": "详见年度申报通知", "exc": "", "val": "《成都市关于推动演艺市场高质量发展的若干措施》（2024年12月印发），原文载明「自印发之日起实施，有效期三年」，据此推算约至2027年12月", "end": "约2027年12月", "con": "", "pitch": "利用古镇院落等资源改建演艺场馆，累计投资达500万元的，按投资额10%补贴，最高200万元。", "fit": "与区级文体旅场馆建设条款内容相近而上限更高，且明确包含街区、景区；洛带项目宜比对两条，按就高原则申报。", "doc": "成都市关于推动演艺市场高质量发展的若干措施（2024年12月）", "no": "", "loc": "第七条", "q": "鼓励利用闲置工业厂房、空闲楼宇、商业综合体、体育馆、街区和景区等资源改建演艺场馆，对累计投资额达500万元，按照投资额的10%且不高于200万元给予一次性补贴；对首次认定符合演艺新空间标准，给予5万元奖励。", "url": "https://cdwglj.chengdu.gov.cn/cdwglj/c133195/2024-12/30/content_ed2751c0a7ef440db99677687e01b207.shtml", "urlK": "市文广旅局官网·政策文件", "inv": [500.0, false], "subj": ["op"], "cad": ""}, {"id": "CD-LY-13", "t": "原创旅游演艺项目打造", "lv": "市", "dirs": ["d1"], "uni": false, "mer": false, "st": ["拟落地", "在建", "已运营"], "amt": 500, "amtT": "500万元", "cap": "500万元", "app": "旅游演艺项目投资主体", "sub": "", "rule": "按不超过实际投入总资金比例10%", "elig": "新投资打造、项目总投入资金在1000万元（含）以上且在蓉固定场所已实现驻场演出达60场的旅游演艺项目；通过竞争性评审", "win": "详见年度申报通知", "exc": "", "val": "《成都市进一步促进旅游业发展的若干措施》（2025年1月印发），原文载明「自印发之日起施行，有效期5年」，据此推算约至2030年1月", "end": "约2030年1月", "con": "", "pitch": "新投资1000万元以上打造旅游演艺项目并驻场演出满60场，按实际投入10%补助，最高500万元；须通过竞争性评审择优。", "fit": "投资与驻场场次要求与古镇打造一台客家实景演出的规模相当，门槛较省级项目更为现实。", "doc": "成都市进一步促进旅游业发展的若干措施（2025年1月）", "no": "", "loc": "三、（十三）", "q": "支持打造原创旅游演艺项目。通过竞争性评审，对新投资打造、项目总投入资金在1000万元（含）以上且在蓉固定场所已实现驻场演出达60场的旅游演艺项目，按照不超过实际投入总资金比例10%的标准择优给予一次性项目补助，补助金额不超过500万元。", "url": "https://cdwglj.chengdu.gov.cn/cdwglj/c133196/2025-01/15/content_c4006e1e79e94793b9ce34fed05fbb31.shtml", "urlK": "市文广旅局官网（政策及实施细则）", "inv": [1000.0, false], "subj": ["op"], "cad": "市文广旅局每年 6 月底前发布下一年度项目申报通知，8 月底前评审，11 月底前下达资金（《成都市市级旅游业发展专项资金管理办法》成财制〔2026〕15号 第十三至十五条）"}, {"id": "CD-SW-2", "t": "数字文创创业空间房租补贴", "lv": "市", "dirs": ["d1"], "uni": false, "mer": false, "st": ["拟落地", "已运营"], "amt": 10, "amtT": "10万元", "cap": "同一企业每年不超过10万元，补贴期限累计不超过三年", "app": "数字文创初创企业", "sub": "", "rule": "给予50%的办公房租金补贴，补贴建筑面积不超过200平方米", "elig": "入驻成都市数字文创产业空间的入选企业（每年动态遴选成立6个月以上、3年以内、具有技术创新与文化创意特色优势的数字文创初创企业）", "win": "每年动态遴选", "exc": "资金来源为市级文化产业发展专项资金。《成都市市级文化产业发展专项资金管理办法》（2026年7月8日修订）第十一条规定，该资金不得用于主题公园、仿古镇街等限制开发类或规范管理类项目，不得用于纳入清理范围的节庆、论坛、展会活动。以洛带名义申报时，应以企业具体文创项目为申报主体，不宜以古镇街区建设或风貌改造申报。", "val": "《成都市关于培育发展数字文创初创企业的若干政策》，原文载明「自2025年7月1日起施行，有效期3年」，即至2028年6月30日", "end": "2028年6月30日", "con": "", "pitch": "入驻市级数字文创产业空间的初创企业，可获50%办公房租补贴，每年最高10万元。", "fit": "限入驻市级指定的数字文创产业空间；洛带未纳入该空间名录前不适用，须先核实名录。", "doc": "成都市关于培育发展数字文创初创企业的若干政策", "no": "", "loc": "二、", "q": "对入驻创业空间的入选企业给予50%的办公房租金补贴，补贴建筑面积不超过200平方米，同一企业每年补贴金额不超过10万元，补贴期限累计不超过三年。", "url": "https://www.sc.gov.cn/10462/10464/10465/10595/2025/6/4/2cd1698c14e545e58ea3ea470d7c241e.shtml", "urlK": "四川省政府网报道（原文未找到）", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "LQY-37", "t": "举办重大会展活动（办展）", "lv": "区", "dirs": ["d2"], "uni": false, "mer": false, "st": ["拟落地", "已运营"], "amt": 600, "amtT": "600万元", "cap": "单个企业年度累计不超过600万元", "app": "活动主办企业", "sub": "", "rule": "单个项目最高100万元；商业展览按投入与规模分档40/60/80/100万元，专业会议论坛按投入与人数分档10/20/40/60万元", "elig": "在我区举办具有重大影响力的会展、论坛、创投路演等活动。商业展览须项目总体运营投入200万元及以上、展出面积超5000平方米、展期2天及以上；专业会议、行业论坛、创投路演须运营投入50万元及以上、参会人数超100人", "win": "详见年度申报通知", "exc": "", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局", "pitch": "在区内举办投入50万元以上、参会100人以上的专业会议，可获10万元奖励；参会800人以上可获60万元奖励。", "fit": "专业会议一档与古镇会馆承办行业论坛的规模相符；商业展览须具备较大展出面积，古镇内难以满足，须借助镇外场地。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第三十七条（二）（三）", "q": "对在我区举办具有重大影响力的会展、论坛、创投路演等活动或项目，按照活动规模、能级、成效等，给予单个项目最高100万元奖励，单个企业年度累计享受不超过600万元。商业展览：项目总体运营投入200万元（含）以上、展出总面积5000平方米及以上、展商数量30家及以上奖励40万元；300万元以上、10000平方米以上、50家以上60万元；400万元以上、20000平方米以上、80家以上80万元；500万元以上、40000平方米以上、100家以上100万元。专业会议、行业论坛、创投路演：项目总体运营投入50万元（含）以上、参会人数100人及以上10万元；100万元以上、200人以上20万元；200万元以上、500人以上40万元；300万元以上、800人以上60万元。商业展览：项目总体运营投入200万元（含）及以上；展出面积超过5000平方米；展期2天（含）以上；专业会议、行业论坛、创投路演：项目总体运营投入50万元及以上；参会人数超过100人", "url": "", "urlK": "", "inv": null, "subj": ["biz", "event"], "cad": ""}, {"id": "LQY-7", "t": "参加行业展会与经贸活动（参展）", "lv": "区", "dirs": ["d2"], "uni": true, "mer": false, "st": ["已运营"], "amt": 10, "amtT": "10万元", "cap": "单次展会最高5万元，单次经贸活动每人不超过3000元、每企业不超过9000元，年度累计不超过10万元", "app": "服务业企业", "sub": "", "rule": "展位费按实际发生费用的50%；经贸活动按人员交通住宿实际发生费用的50%", "elig": "参加国内知名行业展会（含在国内举办的国际展会）并租赁标准展位（每个不低于9㎡）进行展销；或参加经贸促进活动（含论坛、推介会等）", "win": "详见年度申报通知", "exc": "", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局", "pitch": "企业参加国内知名行业展会，展位及相关费用按50%奖励，单次最高5万元，年度最高10万元。", "fit": "古镇文创、食品、非遗商户外出参展可直接申报，金额不大但门槛较低，适合作为存量商户的常规支持项目。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第七条（二）", "q": "对符合条件的企业，按照以下标准给予支持，同一企业年度累计奖励总额不超过10万元：展位费奖励对参加国内知名行业展会（含在国内举办的国际展会），并租赁标准展位进行展销（每个标准展位应不低于9㎡）产生的相关费用进行奖励。按展位租赁、装修，以及人员交通、住宿实际发生费用的50%给予兼顾。每家企业单次展会奖励金额最高奖不超过5万元。经贸活动奖励对参加经贸促进活动（含论坛、推介会等）产生的相关费用进行奖励。按参加活动人员交通、住宿实际发生费用的50%给予奖励。每人单次活动奖励金额不超过3000元，每家企业单次活动奖励金额最高不超过9000元。", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "CD-ZS-7", "t": "住宿主体承接会议会奖活动", "lv": "市", "dirs": ["d2"], "uni": false, "mer": false, "st": ["已运营"], "amt": 20, "amtT": "20万元", "cap": "单个酒店每年最高不超过20万元", "app": "住宿经营主体", "sub": "", "rule": "按2万元/场的标准给予项目补助", "elig": "住宿经营主体引进并承接国内外重要会议、企业集团会奖等市场化活动，单次活动综合费用（含会议费、租赁费、住宿和餐饮费）超过20万元且规模达200人（含）以上", "win": "详见年度申报通知", "exc": "", "val": "本条属住宿业措施中「已出台的政策」，实施细则注明「按照成都市文化广电旅游局2025年1月印发《进一步促进旅游业发展的若干措施》有关规定实施项目申报」；该措施原文载明「自印发之日起施行，有效期5年」，据此推算约至2030年1月", "end": "约2030年1月", "con": "成都市文化广电旅游局", "pitch": "住宿经营主体承接200人以上、综合费用超20万元的会议会奖活动，每场补助2万元，单店年度最高20万元。", "fit": "洛带具备相应接待能力的酒店或民宿集群即可申报，是古镇发展会奖旅游的直接政策依据。", "doc": "成都市文化广电旅游局关于推动住宿业高质量发展的措施（2025年12月4日）", "no": "", "loc": "三、（七）", "q": "支持住宿经营主体引进并承接国内外重要会议、企业集团会奖等各类市场化活动。凡单次活动综合费用（包括会议费、租赁费、住宿和餐饮费）超过20万元且规模达200人（含）以上的，按照2万元/场的标准给予项目补助，单个酒店每年最高不超过20万元。", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": "市文广旅局每年 6 月底前发布下一年度项目申报通知，8 月底前评审，11 月底前下达资金（《成都市市级旅游业发展专项资金管理办法》成财制〔2026〕15号 第十三至十五条）"}, {"id": "CD-LY-9", "t": "旅游商品参展展位补助", "lv": "市", "dirs": ["d1", "d2"], "uni": false, "mer": false, "st": ["已运营"], "amt": 4, "amtT": "4万元", "cap": "不超过4万元/次，每家单位全年不超过2次", "app": "企事业单位", "sub": "", "rule": "购买独立展位按投入经费不超过50%", "elig": "参加国内重要旅游商品交易专业展会并展销成都特色旅游商品，购买独立展位", "win": "详见年度申报通知", "exc": "", "val": "《成都市进一步促进旅游业发展的若干措施》（2025年1月印发），原文载明「自印发之日起施行，有效期5年」，据此推算约至2030年1月", "end": "约2030年1月", "con": "", "pitch": "参加国内重要旅游商品交易展会的，独立展位费按不超过50%补助，单次最高4万元，每年限2次。", "fit": "客家文创产品、特色食品参展可直接适用；与区级参展奖励属不同层级，须核实能否叠加。", "doc": "成都市进一步促进旅游业发展的若干措施（2025年1月）", "no": "", "loc": "三、（九）", "q": "对参加国内重要旅游商品交易专业展会并展销成都特色旅游商品的，购买独立展位按照投入经费不超过50%的标准给予项目补助，补助金额不超过4万元/次（每家企事业单位全年不超过2次）", "url": "https://cdwglj.chengdu.gov.cn/cdwglj/c133196/2025-01/15/content_c4006e1e79e94793b9ce34fed05fbb31.shtml", "urlK": "市文广旅局官网（政策及实施细则）", "inv": null, "subj": ["biz"], "cad": "市文广旅局每年 6 月底前发布下一年度项目申报通知，8 月底前评审，11 月底前下达资金（《成都市市级旅游业发展专项资金管理办法》成财制〔2026〕15号 第十三至十五条）"}, {"id": "CD-LY-9b", "t": "成都礼物产品与主题店认定", "lv": "市", "dirs": ["d1"], "uni": false, "mer": true, "st": ["已运营", "已达标"], "amt": 20, "amtT": "20万元", "cap": "20万元/个", "app": "产品或门店经营主体", "sub": "", "rule": "产品3万元/个；主题店20万元/个", "elig": "由市文广旅局新认定为成都礼物（产品）或成都礼物主题店", "win": "详见年度申报通知", "exc": "", "val": "《成都市进一步促进旅游业发展的若干措施》（2025年1月印发），原文载明「自印发之日起施行，有效期5年」，据此推算约至2030年1月", "end": "约2030年1月", "con": "", "pitch": "产品获认定为「成都礼物」每个奖励3万元；门店获认定为「成都礼物」主题店奖励20万元。", "fit": "门槛较低，可批量申报；客家文创产品可逐项申报，古镇内设立主题店即可申请主题店奖励。", "doc": "成都市进一步促进旅游业发展的若干措施（2025年1月）", "no": "", "loc": "三、（九）", "q": "对由市文广旅局新认定为“成都礼物”（产品）的，给予一次性3万元/个奖励；对由市文广旅局新认定为“成都礼物”主题店的，给予一次性20万元/个奖励", "url": "https://cdwglj.chengdu.gov.cn/cdwglj/c133196/2025-01/15/content_c4006e1e79e94793b9ce34fed05fbb31.shtml", "urlK": "市文广旅局官网（政策及实施细则）", "inv": null, "subj": ["biz"], "cad": "市文广旅局每年 6 月底前发布下一年度项目申报通知，8 月底前评审，11 月底前下达资金（《成都市市级旅游业发展专项资金管理办法》成财制〔2026〕15号 第十三至十五条）"}, {"id": "LQY-41-linpan", "t": "成都市3A级林盘景区评定奖励", "lv": "区", "dirs": ["d3"], "uni": false, "mer": false, "st": ["已达标"], "amt": 10, "amtT": "10万元", "cap": "10万元", "app": "投资运营机构", "sub": "", "rule": "首次评定给予10万元奖励", "elig": "首次评定为成都市3A级林盘景区；评价等级上台阶的按差额奖励", "win": "免申即享", "exc": "", "val": "《成都经开区发展和改革局等16部门关于支持产业高质量发展的若干政策措施》（成经开发改发〔2025〕4号）自2025年5月1日起施行，有效期2年，即至2027年4月30日（据成都经开区住建局2026年7月15日官方解读）", "end": "2027年4月30日", "con": "龙泉驿区文广体旅局资源开发科 028-64511263", "pitch": "获评成都市3A级林盘景区，一次性奖励10万元，免申即享。", "fit": "本方向在本地文件中唯一的地方特色条款；洛带周边林盘可对标申报，但金额较小，宜与乡村旅游基础设施补助配合使用。", "doc": "成都经开区发展和改革局等16部门关于支持产业高质量发展的若干政策措施", "no": "成经开发改发〔2025〕4号", "loc": "四、（十一）41.", "q": "首次评定为成都市3A级林盘景区，给予10万元奖励。评价等级上台阶的，按差额奖励。责任单位：区文广体旅局责任科室：产业科咨询电话：028-84845114资源开发科咨询电话：028-64511263社体科咨询电话：028-84852240申报类型：免申即享", "url": "https://www.longquanyi.gov.cn/lqyqzfmhwz_gb/c160718/2026-07/15/content_417d18abb241499488dfec303dda5672.shtml", "urlK": "区政府官网·区住建局官方解读（原文发布页已下线）", "inv": null, "subj": ["op"], "cad": ""}, {"id": "LQY-41-ecotour", "t": "生态旅游示范区评定奖励", "lv": "区", "dirs": ["d3"], "uni": false, "mer": false, "st": ["已达标"], "amt": 50, "amtT": "50万元", "cap": "50万元", "app": "投资运营机构", "sub": "", "rule": "国家级、省级分别给予50万元、30万元奖励", "elig": "首次评定为国家级、省级生态旅游示范区", "win": "免申即享", "exc": "", "val": "《成都经开区发展和改革局等16部门关于支持产业高质量发展的若干政策措施》（成经开发改发〔2025〕4号）自2025年5月1日起施行，有效期2年，即至2027年4月30日（据成都经开区住建局2026年7月15日官方解读）", "end": "2027年4月30日", "con": "龙泉驿区文广体旅局资源开发科 028-64511263", "pitch": "首次获评省级、国家级生态旅游示范区，分别奖励30万元、50万元。", "fit": "须具备成规模的生态资源载体；古镇核心区不符合条件，适用于镇域外围的林盘、山地片区。", "doc": "成都经开区发展和改革局等16部门关于支持产业高质量发展的若干政策措施", "no": "成经开发改发〔2025〕4号", "loc": "四、（十一）41.", "q": "首次评定为国家级、省级生态旅游示范区，分别给予50万元、30万元奖励。", "url": "https://www.longquanyi.gov.cn/lqyqzfmhwz_gb/c160718/2026-07/15/content_417d18abb241499488dfec303dda5672.shtml", "urlK": "区政府官网·区住建局官方解读（原文发布页已下线）", "inv": null, "subj": ["op"], "cad": ""}, {"id": "CD-LY-14", "t": "乡村旅游基础设施新（改、扩）建补助", "lv": "市", "dirs": ["d3", "d4"], "uni": false, "mer": false, "st": ["在建", "已运营"], "amt": 300, "amtT": "300万元", "cap": "300万元", "app": "设施建设主体", "sub": "", "rule": "按不超过实际投入资金比例10%", "elig": "在全市重点旅游产业园区、宜居宜业和美乡村建设培育重点村先行村、国家A级旅游景区、省级以上旅游度假区、省级以上生态旅游区、国家乡村旅游重点乡镇（村）、成都市民宿集聚发展片区内，新（改、扩）建停车场、游客中心、游步道、标识系统、休憩设施、旅游厕所等；完工验收合格后通过竞争性评审", "win": "详见年度申报通知", "exc": "", "val": "《成都市进一步促进旅游业发展的若干措施》（2025年1月印发），原文载明「自印发之日起施行，有效期5年」，据此推算约至2030年1月", "end": "约2030年1月", "con": "", "pitch": "在国家A级旅游景区内新（改、扩）建停车场、游客中心、游步道等设施，按实际投入10%补助，最高300万元；须通过竞争性评审择优。", "fit": "洛带古镇为国家4A级旅游景区，符合原文所列申报范围，无需另行论证是否属于旅游产业园区或民宿集聚发展片区。", "doc": "成都市进一步促进旅游业发展的若干措施（2025年1月）", "no": "", "loc": "四、（十四）", "q": "支持新（改、扩）建旅游基础设施。通过竞争性评审，对在全市重点旅游产业园区，宜居宜业和美乡村建设培育重点村、先行村，国家A级旅游景区、省级（含）以上旅游度假区、省级（含）以上生态旅游区、国家乡村旅游重点乡镇（村）、成都市民宿集聚发展片区内新（改、扩）建停车场、游客中心、游步道、标识系统、休憩设施、旅游厕所（I类和生态环保示范厕所）等，完工（竣工验收合格）后按照不超过实际投入资金比例10%的标准择优给予一次性项目补助，补助金额不超过300万元。", "url": "https://cdwglj.chengdu.gov.cn/cdwglj/c133196/2025-01/15/content_c4006e1e79e94793b9ce34fed05fbb31.shtml", "urlK": "市文广旅局官网（政策及实施细则）", "inv": null, "subj": ["op"], "cad": "市文广旅局每年 6 月底前发布下一年度项目申报通知，8 月底前评审，11 月底前下达资金（《成都市市级旅游业发展专项资金管理办法》成财制〔2026〕15号 第十三至十五条）"}, {"id": "CD-ZS-6", "t": "研学游客群组合产品住宿补助", "lv": "市", "dirs": ["d4"], "uni": false, "mer": false, "st": ["已运营"], "amt": 5, "amtT": "5万元", "cap": "单个酒店每月最高不超过5万元", "app": "星级旅游饭店、绿色饭店，或房间数120间（含）以上的其他住宿企业（须联合旅行社或社会组织）", "sub": "", "rule": "按住宿人天数每人每晚20元、连续三天60元、五天100元", "elig": "实施细则限定支持对象为本市正常运营的星级旅游饭店、绿色饭店和房间数在120间（含）以上的其他住宿企业；联合旅行社和社会组织，聚焦入境游、研学游客群推出组合产品，招徕接待产品客群入住人数2000人次/月以上；通过竞争性评审", "win": "快申快享，经「蓉易享」平台申报（以申报指南为准）", "exc": "", "val": "《成都市文化广电旅游局关于推动住宿业高质量发展的措施》（成文广旅规〔2025〕1号），官网载明生效时间2025年12月4日、有效性「有效」；原文规定「新出台政策自印发之日起施行，有效期5年」，实施细则逐项载明「政策有效期：5年」，即至2030年12月3日", "end": "2030年12月3日", "con": "成都市文化广电旅游局市场管理处 028-61887260", "pitch": "星级旅游饭店、绿色饭店或客房120间以上的住宿企业，联合旅行社推出研学或入境游组合产品，月接待入住2000人次以上，按每人每晚20元补助，单店每月最高5万元；须通过竞争性评审。", "fit": "实施细则将支持对象限定为星级旅游饭店、绿色饭店或客房120间以上的住宿企业，古镇普通民宿不符合条件。洛带发展研学营，须引进或培育达标的住宿主体承接。", "doc": "成都市文化广电旅游局关于推动住宿业高质量发展的措施（2025年12月4日）", "no": "", "loc": "三、（六）", "q": "通过竞争性评审，对住宿经营主体联合旅行社和社会组织，聚焦入境游、研学游客群推出组合产品，招徕接待产品客群入住人数2000人次/月以上的，按照住宿人天数每人每晚20元、连续三天60元、五天100元给予补助，单个酒店每月最高不超过5万元。［实施细则·支持对象］本市行政区域内正常运营的星级旅游饭店、绿色饭店和房间数在120间（含）以上的其他住宿企业，酒店企业需积极参与入境游、研学游的市场拓展，并推出包含以上各类型的组合产品。", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": "市文广旅局每年 6 月底前发布下一年度项目申报通知，8 月底前评审，11 月底前下达资金（《成都市市级旅游业发展专项资金管理办法》成财制〔2026〕15号 第十三至十五条）"}, {"id": "LQY-23-1", "t": "住宿业企业营收台阶奖励", "lv": "区", "dirs": ["d4"], "uni": false, "mer": false, "st": ["已运营", "已达标"], "amt": 50, "amtT": "50万元", "cap": "单档最高50万元，可叠加增速奖", "app": "住宿业企业", "sub": "", "rule": "年销售额首次达1500万元、4000万元、8000万元，分别奖15万元、30万元、50万元；增速达20%及以上再分别奖15万元、30万元、50万元，两项可同时享受", "elig": "住宿业企业年销售额首次达到相应台阶；当年度销售额较上年度增速达到20%及以上可叠加", "win": "详见年度申报通知", "exc": "", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区文广体旅局", "pitch": "住宿业企业年销售额首次达1500万元奖励15万元，同期增速达20%以上另奖15万元。", "fit": "首档销售额约为一家中型精品酒店的规模，古镇较大的民宿集群合并经营后可以达到；两项奖励可同时享受。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第二十三条（二）", "q": "对政策有效期内，住宿业企业年销售额首次达到1500万元、4000万元、8000万元及以上的，分别给予15万元、30万元、50万元奖励；当年度销售额较上年度增速达到20%及以上的，分别再给予15万元、30万元、50万元奖励。以上两项奖励可同时享受。", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "LQY-23-2", "t": "高端品牌酒店新建与引进", "lv": "区", "dirs": ["d4"], "uni": false, "mer": false, "st": ["拟落地", "在建"], "amt": 400, "amtT": "400万元", "cap": "400万元", "app": "酒店业主方 / 运营管理单位", "sub": "", "rule": "新建按不超过实际完成总投资的1%奖励业主方；引进品牌酒店奖励业主最高100万元；运营管理单位最高400万元", "elig": "新建高端品牌酒店总投资达1亿元及以上（固定资产投资不低于总投资30%）并正常运营一年；或酒店业主方引进高端品牌酒店并正常运营一年；通过竞争性评审。以上奖励单个企业按就高不重复", "win": "详见年度申报通知", "exc": "以上奖励单个企业按就高不重复予以支持", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区文广体旅局", "pitch": "引进高端品牌酒店并运营满一年，运营管理单位可获最高400万元，业主方可获最高100万元。", "fit": "新建一档须总投资1亿元，古镇核心区较难满足；引进一档不设投资门槛，适用于引进度假酒店品牌。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第二十三条（二）1.2.", "q": "政策有效期内，在我区新建高端品牌酒店总投资达1亿元及以上（固定资产投资不低于总投资30%），并正常运营一年，通过竞争性评审，按照不超过实际完成总投资的1%，对业主方给予最高400万元一次性奖励；政策有效期内，酒店业主方引进高端品牌酒店，并正常运营一年，综合考虑酒店的品牌能级、科技应用水平、总投资额、年度营业收入、管理服务水平等因素，通过竞争性评审，给予对业主最高100万元一次性奖励；以上奖励单个企业按照就高不重复予以支持。对于政策有效期内新引进高端品牌酒店的运营企业，且酒店连续正常运营一年以上，给予酒店运营管理单位最高400万元一次性奖励。", "url": "", "urlK": "", "inv": [10000.0, true], "subj": ["op", "biz"], "cad": ""}, {"id": "CD-ZS-1", "t": "住宿业品牌评定奖励（星级饭店/甲级民宿）", "lv": "市", "dirs": ["d4"], "uni": false, "mer": false, "st": ["已达标"], "amt": 50, "amtT": "50万元", "cap": "50万元", "app": "住宿经营主体", "sub": "", "rule": "国家五星级饭店50万元；国家甲级旅游民宿10万元；国家级金树叶级绿色旅游饭店、金鼎级文化主题旅游饭店15万元", "elig": "新评为国家五星级饭店、国家甲级旅游民宿、国家级金树叶级绿色旅游饭店、国家级金鼎级文化主题旅游饭店", "win": "详见年度申报通知", "exc": "", "val": "本条属住宿业措施中「已出台的政策」，实施细则注明「按照成都市文化广电旅游局2025年1月印发《进一步促进旅游业发展的若干措施》有关规定实施项目申报」；该措施原文载明「自印发之日起施行，有效期5年」，据此推算约至2030年1月", "end": "约2030年1月", "con": "成都市文化广电旅游局", "pitch": "新评为国家甲级旅游民宿奖励10万元；新评为国家级金鼎级文化主题旅游饭店奖励15万元。", "fit": "古镇院落改造的精品民宿为国家甲级旅游民宿的评定对象，可批量申报，评级本身亦有助于获客。", "doc": "成都市文化广电旅游局关于推动住宿业高质量发展的措施（2025年12月4日）", "no": "", "loc": "一、（一） / 二、（六）", "q": "对新评为“国家五星级饭店”的，给予一次性50万元奖励；新评为“国家甲级旅游民宿”的，给予一次性10万元奖励；新评为“国家级金树叶级绿色旅游饭店”“国家级金鼎级文化主题旅游饭店”的，给予一次性15万元奖励", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": "市文广旅局每年 6 月底前发布下一年度项目申报通知，8 月底前评审，11 月底前下达资金（《成都市市级旅游业发展专项资金管理办法》成财制〔2026〕15号 第十三至十五条）"}, {"id": "CD-ZS-2", "t": "住宿业评定性复核奖励", "lv": "市", "dirs": ["d4"], "uni": false, "mer": false, "st": ["已达标"], "amt": 10, "amtT": "10万元", "cap": "10万元", "app": "住宿经营主体", "sub": "", "rule": "五星级、四星级旅游饭店分别10万元、5万元；金树叶级绿色旅游饭店、全国甲级旅游民宿5万元", "elig": "通过全国旅游饭店评定性复核", "win": "免申即享，经「蓉易享」平台办理（以申报指南为准）", "exc": "", "val": "《成都市文化广电旅游局关于推动住宿业高质量发展的措施》（成文广旅规〔2025〕1号），官网载明生效时间2025年12月4日、有效性「有效」；原文规定「新出台政策自印发之日起施行，有效期5年」，实施细则逐项载明「政策有效期：5年」，即至2030年12月3日", "end": "2030年12月3日", "con": "成都市文化广电旅游局市场管理处 028-61887260", "pitch": "通过评定性复核的全国甲级旅游民宿奖励5万元，四星级、五星级旅游饭店分别奖励5万元、10万元。", "fit": "属存量商户支持项目，洛带已评级民宿通过复核即可申报。", "doc": "成都市文化广电旅游局关于推动住宿业高质量发展的措施（2025年12月4日）", "no": "", "loc": "二、（二）", "q": "对通过评定性复核的五星级和四星级旅游饭店，分别给予一次性10万元、5万元奖励；通过评定性复核的金树叶级绿色旅游饭店、全国甲级旅游民宿给予一次性5万元奖励。", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": "市文广旅局每年 6 月底前发布下一年度项目申报通知，8 月底前评审，11 月底前下达资金（《成都市市级旅游业发展专项资金管理办法》成财制〔2026〕15号 第十三至十五条）"}, {"id": "LQY-41-scenic", "t": "景区与旅游度假区评定奖励（区级）", "lv": "区", "dirs": ["d4"], "uni": false, "mer": false, "st": ["已达标"], "amt": 500, "amtT": "500万元", "cap": "500万元", "app": "投资运营机构", "sub": "", "rule": "AAAAA、AAAA、AAA景区分别500万元、200万元、50万元；国家级、省级旅游度假区分别500万元、200万元", "elig": "首次评定为相应等级景区或旅游度假区；评价等级上台阶的按差额奖励", "win": "免申即享", "exc": "", "val": "《成都经开区发展和改革局等16部门关于支持产业高质量发展的若干政策措施》（成经开发改发〔2025〕4号）自2025年5月1日起施行，有效期2年，即至2027年4月30日（据成都经开区住建局2026年7月15日官方解读）", "end": "2027年4月30日", "con": "龙泉驿区文广体旅局产业科 028-84845114", "pitch": "洛带已为AAAA级景区，晋升AAAAA级后按差额奖励，该档最高500万元，免申即享。", "fit": "洛带古镇已为国家4A级景区，首次评定AAAA级一档已不适用；本条适用于晋升5A级后按差额获得奖励。", "doc": "成都经开区发展和改革局等16部门关于支持产业高质量发展的若干政策措施", "no": "成经开发改发〔2025〕4号", "loc": "四、（十一）41.", "q": "首次评定为AAAAA、AAAA、AAA景区，分别给予500万元、200万元、50万元奖励；首次评定为国家级、省级旅游度假区，分别给予500万元、200万元奖励。评价等级上台阶的，按差额奖励。责任单位：区文广体旅局责任科室：产业科咨询电话：028-84845114", "url": "https://www.longquanyi.gov.cn/lqyqzfmhwz_gb/c160718/2026-07/15/content_417d18abb241499488dfec303dda5672.shtml", "urlK": "区政府官网·区住建局官方解读（原文发布页已下线）", "inv": null, "subj": ["op"], "cad": ""}, {"id": "LQY-41-street", "t": "旅游休闲街区、文化产业园区、夜间消费聚集区、体育产业示范基地评定", "lv": "区", "dirs": ["d1", "d5"], "uni": false, "mer": false, "st": ["已达标"], "amt": 300, "amtT": "300万元", "cap": "300万元", "app": "投资运营机构", "sub": "", "rule": "国家级、省级分别给予投资运营机构300万元、200万元奖励", "elig": "首次评定为国家级、省级旅游休闲街区、文化产业园区、夜间文化和旅游消费聚集区、体育产业示范基地", "win": "免申即享", "exc": "", "val": "《成都经开区发展和改革局等16部门关于支持产业高质量发展的若干政策措施》（成经开发改发〔2025〕4号）自2025年5月1日起施行，有效期2年，即至2027年4月30日（据成都经开区住建局2026年7月15日官方解读）", "end": "2027年4月30日", "con": "龙泉驿区文广体旅局产业科 028-84845114", "pitch": "首次获评省级、国家级旅游休闲街区或夜间文化和旅游消费聚集区，投资运营机构分别可获200万元、300万元奖励。", "fit": "洛带古镇为街区形态，申报省级旅游休闲街区或夜间文旅消费聚集区的匹配度最高，且免申即享。", "doc": "成都经开区发展和改革局等16部门关于支持产业高质量发展的若干政策措施", "no": "成经开发改发〔2025〕4号", "loc": "四、（十一）41.", "q": "首次评定为国家级、省级旅游休闲街区、文化产业园区、夜间文化和旅游消费聚集区、体育产业示范基地，分别给予投资运营机构300万元、200万元奖励。", "url": "https://www.longquanyi.gov.cn/lqyqzfmhwz_gb/c160718/2026-07/15/content_417d18abb241499488dfec303dda5672.shtml", "urlK": "区政府官网·区住建局官方解读（原文发布页已下线）", "inv": null, "subj": ["op"], "cad": ""}, {"id": "LQY-41-sport", "t": "体育产业示范单位与体育旅游精品项目评定", "lv": "区", "dirs": ["d5"], "uni": false, "mer": false, "st": ["已达标"], "amt": 30, "amtT": "30万元", "cap": "30万元", "app": "投资运营机构", "sub": "", "rule": "国家级、省级、市级体育产业示范单位（项目）分别30万元、15万元、8万元；国家级体育旅游精品项目30万元", "elig": "首次评定为国家级、省级、市级体育产业示范单位（项目）；或首次评定为国家级体育旅游精品项目（景区、线路、赛事、目的地）", "win": "免申即享", "exc": "", "val": "《成都经开区发展和改革局等16部门关于支持产业高质量发展的若干政策措施》（成经开发改发〔2025〕4号）自2025年5月1日起施行，有效期2年，即至2027年4月30日（据成都经开区住建局2026年7月15日官方解读）", "end": "2027年4月30日", "con": "龙泉驿区文广体旅局社体科 028-84852240", "pitch": "首次获评国家级体育旅游精品项目（含线路），奖励30万元，免申即享。", "fit": "可结合龙泉山绿道整合骑行或徒步线路申报，无需新建体育设施，是本方向门槛较低的政策。", "doc": "成都经开区发展和改革局等16部门关于支持产业高质量发展的若干政策措施", "no": "成经开发改发〔2025〕4号", "loc": "四、（十一）41.", "q": "首次评定为国家级、省级、市级体育产业示范单位（项目）,分别给予30万元、15万元、8万元奖励；首次评定为国家级体育旅游精品项目（景区、线路、赛事、目的地）,给予30万元奖励；首次评定为成都市文旅消费新业态示范区（示范项目）,给予10万元奖励", "url": "https://www.longquanyi.gov.cn/lqyqzfmhwz_gb/c160718/2026-07/15/content_417d18abb241499488dfec303dda5672.shtml", "urlK": "区政府官网·区住建局官方解读（原文发布页已下线）", "inv": null, "subj": ["op"], "cad": ""}, {"id": "LQY-38", "t": "承办高能级体育赛事", "lv": "区", "dirs": ["d5"], "uni": false, "mer": false, "st": ["拟落地", "已运营"], "amt": 400, "amtT": "400万元", "cap": "每年400万元", "app": "赛事承办企业或机构", "sub": "", "rule": "连续落户3年及以上的国际级、国家级赛事每年最高400万元、120万元；一次性举办分别最高300万元、100万元；奖励资金最高不超过活动费用的50%", "elig": "在我区连续落户3年及以上或一次性举办国际级、国家级重大体育赛事；较重大与特别重大赛事分档核定；商业化赛事观众累计超1万人、3万人可另加5万元、10万元", "win": "详见年度申报通知", "exc": "满足举办3年及以上且前两年已获一次性举办奖励的，按差额补齐", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区文广体旅局", "pitch": "国家级、国际级重大体育赛事连续3年落户，承办方每年分别最高可获120万元、400万元奖励。", "fit": "国际级、国家级赛事门槛较高，古镇难以独立承办；可与区级共同引进赛事，洛带作为赛段或配套接待地。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第三十八条", "q": "对连续落户我区3年及以上的国际级、国家级重大体育赛事，分别给予赛事承办企业或机构最高不超过每年400万元、120万元奖励；一次性举办国际级、国家级重大体育赛事，分别给予赛事承办企业或机构最高不超过300万元、100万元奖励。奖励资金最高不超过活动费用的50%。（责任单位：区文广体旅局）", "url": "", "urlK": "", "inv": null, "subj": ["biz", "event"], "cad": ""}, {"id": "LQY-39", "t": "自主品牌赛事孵化", "lv": "区", "dirs": ["d5"], "uni": false, "mer": false, "st": ["已运营"], "amt": 50, "amtT": "50万元", "cap": "单个企业年度最高50万元", "app": "赛事举办企业", "sub": "", "rule": "按不高于单场赛事活动运营费用的50%，单场最高10万元", "elig": "在我区范围内自主创办品牌赛事活动并连续举办2届以上（含2届）；综合考虑品牌知名度、活动规模、活动运营收入、活动效果，通过竞争性评审；同一赛事由多家企业主承办的，由单个企业作为申报主体", "win": "详见年度申报通知", "exc": "", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区文广体旅局", "pitch": "自主创办品牌赛事并连续举办2届以上，按单场运营费用50%奖励，单场最高10万元，年度最高50万元。", "fit": "不限赛事级别，自办满两届即可申报；古镇举办客家主题徒步赛、绿道骑行赛、龙舟赛均可适用。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第三十九条（一）", "q": "企业自主创办品牌赛事活动并连续举办2届以上（含2届），综合考虑品牌知名度、活动规模、活动运营收入、活动效果等因素，通过竞争性评审，按照不高于单场赛事活动运营费用的50%择优给予奖励，单场赛事活动奖励最高不超过10万元。单个企业年度奖励最高不超过50万元", "url": "", "urlK": "", "inv": null, "subj": ["biz", "event"], "cad": ""}, {"id": "LQY-41-lowalt", "t": "低空赛事活动举办奖励", "lv": "区", "dirs": ["d5"], "uni": false, "mer": false, "st": ["拟落地", "已运营"], "amt": 100, "amtT": "100万元", "cap": "100万元", "app": "企事业单位、行业协会、高校", "sub": "", "rule": "按活动投入的30%，国际级、国家级、省市级单项赛事分别最高100万元、50万元、20万元", "elig": "企事业单位、行业协会、高校等在龙泉驿区举办国际级、国家级、省市级低空赛事", "win": "易申快享", "exc": "", "val": "《成都经开区发展和改革局等16部门关于支持产业高质量发展的若干政策措施》（成经开发改发〔2025〕4号）自2025年5月1日起施行，有效期2年，即至2027年4月30日（据成都经开区住建局2026年7月15日官方解读）", "end": "2027年4月30日", "con": "龙泉驿区交通运输局物流管理科 028-84857757", "pitch": "在区内举办省市级、国家级低空赛事，按活动投入30%奖励，分别最高20万元、50万元。", "fit": "洛带周边地形开阔，具备无人机竞速、航模等赛事的落地条件；省市级一档投入规模较小即可申报。", "doc": "成都经开区发展和改革局等16部门关于支持产业高质量发展的若干政策措施", "no": "成经开发改发〔2025〕4号", "loc": "四、（十一）37.", "q": "支持企事业单位、行业协会、高校等举办低空赛事活动。对在龙泉驿区举办国际级、国家级、省市级低空赛事的，按活动投入的30%,分别给予单项赛事最高100万元、50万元、20万元奖励。责任单位：区交通运输局责任科室：物流管理科咨询电话：028-84857757申报类型：易申快享", "url": "https://www.longquanyi.gov.cn/lqyqzfmhwz_gb/c160718/2026-07/15/content_417d18abb241499488dfec303dda5672.shtml", "urlK": "区政府官网·区住建局官方解读（原文发布页已下线）", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "LQY-35-hotel", "t": "跟着赛事演唱会去旅行——酒店奖励", "lv": "区", "dirs": ["d5"], "uni": false, "mer": false, "st": ["已运营"], "amt": 50, "amtT": "50万元", "cap": "单个企业年度最高不超过50万元", "app": "酒店运营企业", "sub": "", "rule": "按50元/间给予奖励", "elig": "参与跟着赛事、演唱会去旅行品牌活动，年销售额增速达10%以上的酒店；须提供运动员或观演人员入住的佐证材料", "win": "详见年度申报通知", "exc": "", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区文广体旅局、区商务局", "pitch": "酒店参与「跟着赛事、演唱会去旅行」活动且年销售额增速达10%以上，按接待间数每间50元奖励，年度最高50万元。", "fit": "按间计奖，不设投资门槛，古镇民宿接待赛事或演唱会客群即可累计；须满足年销售额增速要求。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第三十五条（二）2.", "q": "对酒店运营企业：对政策有效期内，参与“跟着赛事、演唱会去旅行”品牌活动，且年销售额增速达10%以上的酒店，根据酒店提供的运动员或观演人员入住酒店的佐证材料，按50元/间给予奖励，单个企业年度奖励最高不超过50万元", "url": "", "urlK": "", "inv": null, "subj": ["op", "biz"], "cad": ""}, {"id": "LQY-35-catering", "t": "跟着赛事演唱会去旅行——餐饮与商业综合体奖励", "lv": "区", "dirs": ["d5"], "uni": false, "mer": false, "st": ["已运营"], "amt": 50, "amtT": "50万元", "cap": "50万元", "app": "餐饮企业、商业综合体运营企业", "sub": "", "rule": "按年营业收入增速10%—20%、20%—30%、30%以上，分别奖10万元、30万元、50万元", "elig": "参与跟着赛事、演唱会去旅行相关活动，年营业收入（销售额）达200万元及以上的餐饮企业，或1000万元及以上的商业综合体运营企业", "win": "详见年度申报通知", "exc": "", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局", "pitch": "年营收200万元以上的餐饮企业参与赛演活动，营收增速达10%至20%奖励10万元，达30%以上奖励50万元。", "fit": "餐饮门槛为年营收200万元，古镇中型餐馆可以达到；须参与区级赛演活动并实现增长。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第三十五条（二）1.", "q": "对餐饮、商业综合体运营企业：对政策有效期内，参与“跟着赛事、演唱会去旅行”相关活动，且年营业收入（销售额）达200万元及以上的餐饮企业，1000万元及以上的商业综合体运营企业，按照年营业收入（销售额）增速10%—20%（含）、20%—30%（含）、30%以上，分别给予10万、30万、50万元奖励", "url": "", "urlK": "", "inv": null, "subj": ["op", "biz"], "cad": ""}, {"id": "JKQ-25-hotel", "t": "星级酒店与等级民宿评定奖励（区级）", "lv": "区", "dirs": ["d4"], "uni": false, "mer": false, "st": ["已达标"], "amt": 300, "amtT": "300万元", "cap": "300万元", "app": "住宿经营主体", "sub": "", "rule": "五星级、四星级、三星级旅游酒店（饭店）分别300万元、100万元、50万元；银桃花级、金桃花级酒店民宿分别5万元、10万元；金树叶、银树叶级绿色饭店分别10万元、5万元", "elig": "首次评定为相应星级旅游酒店（饭店）、等级酒店民宿或绿色饭店；荣誉评级上台阶的，按差额奖励", "win": "免申即享", "exc": "", "val": "《成都经开区发展和改革局等16部门关于支持产业高质量发展的若干政策措施》（成经开发改发〔2025〕4号）自2025年5月1日起施行，有效期2年，即至2027年4月30日（据成都经开区住建局2026年7月15日官方解读）", "end": "2027年4月30日", "con": "龙泉驿区文广体旅局产业科 028-84845114、市场科 028-84850730", "pitch": "首次评定为三星级、四星级、五星级旅游酒店分别奖励50万元、100万元、300万元；金桃花级酒店民宿奖励10万元，免申即享。", "fit": "本方向金额最高的区级条款；区级三星级酒店奖励与市级国家五星级饭店奖励相同，金桃花级民宿评定路径较短，古镇院落民宿宜优先申报。", "doc": "成都经开区发展和改革局等16部门关于支持产业高质量发展的若干政策措施", "no": "成经开发改发〔2025〕4号", "loc": "经开区产业政策措施 25.", "q": "对首次评定为五星级、四星级、三星级旅游酒店（饭店）的，分别给予300万元、100万元、50万元奖励；对首次评定为银桃花级、金桃花级酒店民宿的，分别给予5万元、10万元奖励；对首次评定为金树叶、银树叶级绿色饭店的，分别给予10万元、5万元奖励。荣誉评级上台阶的，按差额奖励。责任单位：区文广体旅局责任科室：产业科咨询电话028-84845114市场科咨询电话：028-84850730申报类型：免申即享", "url": "https://www.longquanyi.gov.cn/lqyqzfmhwz_gb/c160718/2026-07/15/content_417d18abb241499488dfec303dda5672.shtml", "urlK": "区政府官网·区住建局官方解读（原文发布页已下线）", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "JKQ-36-lowalt", "t": "低空飞行表演活动奖励", "lv": "区", "dirs": ["d5"], "uni": false, "mer": false, "st": ["已运营"], "amt": 8, "amtT": "8万元", "cap": "单个企业年度累计不超过8万元", "app": "表演活动举办企业", "sub": "", "rule": "载人飞行表演2万元/场；无人机飞行表演4万元/场", "elig": "经相关部门备案后，单场载人不少于20人次的低空飞行表演活动；或单场不少于200架的无人机低空飞行表演活动", "win": "易申快享", "exc": "", "val": "《成都经开区发展和改革局等16部门关于支持产业高质量发展的若干政策措施》（成经开发改发〔2025〕4号）自2025年5月1日起施行，有效期2年，即至2027年4月30日（据成都经开区住建局2026年7月15日官方解读）", "end": "2027年4月30日", "con": "龙泉驿区交通运输局物流管理科 028-84857757", "pitch": "单场不少于200架的无人机飞行表演奖励4万元，单个企业年度最高8万元，易申快享。", "fit": "门槛较低，古镇夜间旅游可结合无人机表演开展；年度上限较小，宜与低空赛事奖励配合使用。", "doc": "成都经开区发展和改革局等16部门关于支持产业高质量发展的若干政策措施", "no": "成经开发改发〔2025〕4号", "loc": "经开区产业政策措施 36.", "q": "支持企业开展低空飞行表演活动。经相关部门备案后，对单场载人不少于20人次的低空飞行表演活动给予2万元/场的奖励，对单场不少于200架的无人机低空飞行表演活动给予4万元/场的奖励。单个企业年度累计享受不超过8万元。责任单位：区交通运输局责任科室：物流管理科咨询电话：028-84857757申报类型：易申快享", "url": "https://www.longquanyi.gov.cn/lqyqzfmhwz_gb/c160718/2026-07/15/content_417d18abb241499488dfec303dda5672.shtml", "urlK": "区政府官网·区住建局官方解读（原文发布页已下线）", "inv": null, "subj": ["biz", "event"], "cad": ""}, {"id": "LQY-1-major", "t": "服务业重大项目投资奖励", "lv": "区", "dirs": [], "uni": true, "mer": false, "st": ["拟落地", "在建"], "amt": 500, "amtT": "500万元", "cap": "单个项目最高500万元", "app": "新设项目公司", "sub": "", "rule": "按项目公司实缴注册资本的5‰", "elig": "总投资3亿元人民币或3000万美元及以上的新设服务业重大项目，自项目公司成立之日起一年内实缴注册资本占比超过30%", "win": "详见年度申报通知", "exc": "同一项目注册多家公司的按就高不重复；与新企业开办奖励就高不重复", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局项目促建和企业服务科 028-84876126", "pitch": "总投资3亿元以上的新设服务业重大项目，按实缴注册资本5‰奖励，最高500万元。", "fit": "总投资门槛较高，适用于古镇片区整体开发或大型文旅综合体，不适用于单体项目。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "P3 二、（一）", "q": "对总投资3亿元人民币或3000万美元及以上的新设服务业重大项目，自项目公司成立之日起一年内实缴注册资本占比超过30%的，按实缴注册资本的5‰给予奖励，单个项目奖励金额最高不超过500万元。同一项目注册多家公司的，按就高不重复原则给予奖励。", "url": "", "urlK": "", "inv": [30000.0, false], "subj": ["op"], "cad": ""}, {"id": "LQY-1-newco", "t": "新企业开办奖励", "lv": "区", "dirs": [], "uni": true, "mer": false, "st": ["拟落地", "在建"], "amt": 30, "amtT": "30万元", "cap": "30万元", "app": "新开办服务业企业", "sub": "", "rule": "实缴注册资本达1亿元及以上奖励30万元；达5000万元及以上且符合我区服务业重点产业发展方向的奖励10万元", "elig": "新开办的服务业企业，自成立之日起两年内实缴注册资本达到相应标准", "win": "详见年度申报通知", "exc": "同一企业与重大项目投资支持就高不重复", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局项目促建和企业服务科 028-84876126", "pitch": "新开办服务业企业两年内实缴注册资本达5000万元奖励10万元，达1亿元奖励30万元。", "fit": "考核实缴注册资本而非实际投资；5000万元一档须符合区级服务业重点产业方向，文旅类一般在列。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "P3 二、（二）", "q": "对新开办的服务业企业，按以下标准给予一次性开办奖励：自企业成立之日起两年内实缴注册资本达到1亿元及以上的，奖励30万元；自企业成立之日起两年内实缴注册资本达到5000万元及以上，且符合我区服务业重点产业发展方向的，奖励10万元。（同一企业与“重大项目投资支持”就高不重复", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "LQY-1-build", "t": "服务业重大产业化项目建设奖励（用地项目分梯度）", "lv": "区", "dirs": [], "uni": true, "mer": false, "st": ["在建", "已运营"], "amt": 10000, "amtT": "1亿元", "cap": "最高1亿元", "app": "项目建设主体", "sub": "", "rule": "按宗地商业部分固定资产投入与商业建筑面积自持比例分梯度，从1亿元且自持50%奖励500万元，至10亿元且自持100%奖励10000万元", "elig": "经市级认定、实际完成固定资产投资额达1亿元及以上的服务业重大产业化项目；用地项目须宗地建筑面积商业占比达50%及以上、商业建筑面积自持比例达50%及以上、宗地商业部分固定资产投入（不含土地购置款）达1亿元及以上", "win": "详见年度申报通知", "exc": "", "val": "在宗地出让年限内", "end": "", "con": "龙泉驿区商务局", "pitch": "服务业用地项目商业部分固定资产投入1亿元且商业建筑全部自持，奖励1000万元；投入10亿元且全部自持，最高奖励1亿元。", "fit": "须取得土地且商业占比、自持比例均达标，仅适用于洛带周边成片开发的文旅综合体，不适用于古镇核心区存量改造。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "P4 二、（三） / P15 附件", "q": "对经市级认定、实际完成固定资产投资额达1亿元及以上的服务业重大产业化项目,综合考虑项目建设规模、自持比例等，分梯度给予最高1亿元奖励。在宗地出让年限内，对宗地建筑面积商业占比达50%及以上,商业建筑面积自持比例达50%及以上，且宗地商业部分固定资产投入（不含土地购置款）达到1亿元及以上的服务业用地项目按照以下标准给予奖励：1亿元且自持50%奖励500万元、自持100%奖励1000万元；10亿元且自持50%奖励5000万元、自持100%奖励10000万元。", "url": "", "urlK": "", "inv": [10000.0, false], "subj": ["op"], "cad": ""}, {"id": "LQY-3-shanggui", "t": "上规上限奖励（免申即享）", "lv": "区", "dirs": [], "uni": true, "mer": false, "st": ["已运营", "已达标"], "amt": 20, "amtT": "20万元", "cap": "20万元", "app": "首次上规上限企业", "sub": "", "rule": "根据企业类型和经营情况给予最高20万元奖励", "elig": "首次上规服务业企业和首次上限商贸企业；由区商务局对接区统计局确定首次上规上限入统企业名单，以免申即享方式拨付", "win": "免申即享，无需申报", "exc": "同一年度享受中央、省、市同类政策支持的，按就高、补差、不重复原则", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局", "pitch": "企业首次纳入规上服务业或限上商贸统计，可获最高20万元奖励，免申即享。", "fit": "各方向通用，无需申报即可兑付；古镇商户首次达到规上标准即可享受。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第三条（二）1.", "q": "对首次“上规”服务业企业和首次“上限”商贸企业，根据企业类型和经营情况，给予最高20万元奖励（由区商务局对接区统计局，确定首次上规/上限入统企业名单，以“免申即享”方式将奖励拨付至企业", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "LQY-3-ruku", "t": "达规纳统入库奖励（分行业）", "lv": "区", "dirs": [], "uni": true, "mer": false, "st": ["已达标"], "amt": 20, "amtT": "20万元", "cap": "20万元", "app": "达规纳统企业", "sub": "", "rule": "按行业与入库规模分档：文化体育娱乐业、居民服务业、零售业500万元及以上奖8万元（月度入库）/5万元（年度入库）；住宿餐饮业200万元及以上奖6万元/3万元", "elig": "企业首次达规纳统入库；按所属行业与入库规模分档，月度入库高于年度入库", "win": "详见年度申报通知", "exc": "同一年度享受中央、省、市同类政策支持的，按就高、补差、不重复原则予以支持", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局", "pitch": "住宿餐饮企业年营收200万元以上纳统入库，月度入库奖励6万元，年度入库奖励3万元。", "fit": "住宿餐饮、文体娱与零售的入库门槛是古镇商户较易达到的一档；月度入库奖励高于年度入库，宜提示企业尽早纳统。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第三条（二）2.", "q": "对同一年度享受中央、省、市同类政策支持的，按照就高、补差、不重复的原则予以支持。行业入库规模奖励标准（万元）月度入库年度入库：信息传输、软件和信息技术服务业2000万元及以上20、15；交通运输仓储邮政业等2000万元及以上15、10；租赁和商务服务业等1000万元及以上12、8；居民服务修理和其他服务业、文化体育和娱乐业、社会工作、零售业500万元及以上8、5；住宿业餐饮业200万元及以上6、3", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "LQY-2-upgrade", "t": "消费载体升级改造支持", "lv": "区", "dirs": [], "uni": true, "mer": false, "st": ["已运营"], "amt": 200, "amtT": "200万元", "cap": "200万元", "app": "业主单位或委托运营企业", "sub": "", "rule": "综合考虑改造投入与升级规模，单个项目最高不超过200万元", "elig": "建成五年以上的商业综合体、商品市场、文创及体育产业园区等整体进行数字化改造、硬件更新，改造面积达5000平方米以上且改造升级费用超500万元以上", "win": "详见年度申报通知", "exc": "", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局、区文广体旅局", "pitch": "建成五年以上的街区等载体整体数字化改造，面积超5000平方米、费用超500万元，最高奖励200万元。", "fit": "洛带古镇建成已超过五年，以街区或片区为单元实施智慧导览、无感支付、客流监测等改造，面积要求可以满足。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第二条1.2.", "q": "鼓励企业自主对建成五年以上的商业综合体、商品市场、文创及体育产业园区等整体进行数字化改造、硬件更新，对改造面积达5000平方米以上，且改造升级的费用超500万元以上的，综合考虑项目改造投入、升级规模等，给予单个改造升级项目最高不超过200万元奖励。（责任单位：区商务局、区文广体旅局）", "url": "", "urlK": "", "inv": null, "subj": ["op", "biz"], "cad": ""}, {"id": "LQY-4-shenggui", "t": "载体升规培育奖励（奖运营管理方）", "lv": "区", "dirs": [], "uni": true, "mer": false, "st": ["已运营"], "amt": 50, "amtT": "50万元", "cap": "单个载体每年累计最高不超过50万元", "app": "载体运营管理单位", "sub": "", "rule": "每新增1家达规（限）纳统企业，按行业类别给予运营管理方最高5万元奖励", "elig": "租赁型商业综合体、商品交易市场、文创及体育产业园区招引培育租赁场所内企业升规纳统；按企业纳统行业类别分档", "win": "详见年度申报通知", "exc": "", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局、区文广体旅局", "pitch": "载体运营方每培育一家入驻企业达规纳统，最高奖励5万元，年度最高50万元。", "fit": "原文列举的载体类型为租赁型商业综合体、商品交易市场、文创及体育产业园区，未含街区，古镇街区能否适用须向区商务局确认口径；若适用，可作为洛带自身招商激励机制的政策依据。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第四条", "q": "鼓励租赁型商业综合体、商品交易市场、文创及体育产业园区招引培育租赁场所内企业升规纳统，根据企业行业类别，每新增1家达规（限）纳统企业，给予运营管理方最高5万元奖励。单个商业综合体、商品交易市场、文创及体育产业园区每年累计奖励最高不超过50万元。（责任单位：区商务局、区文广体旅局）", "url": "", "urlK": "", "inv": null, "subj": ["op", "biz"], "cad": ""}, {"id": "LQY-10-tiexi", "t": "政策性金融产品融资贴息", "lv": "区", "dirs": [], "uni": true, "mer": false, "st": ["已运营"], "amt": 3, "amtT": "3万元", "cap": "单个企业年度累计不超过3万元", "app": "服务业企业", "sub": "", "rule": "按贷款发放日一年期LPR的30%给予贴息", "elig": "通过融资担保公司获得惠蓉贷、驿享贷、驿农贷等政策性金融产品贷款的服务业企业", "win": "详见年度申报通知", "exc": "", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区财政局金融协调服务科 028-84896911", "pitch": "通过融资担保公司获得惠蓉贷、驿享贷、驿农贷等贷款的，按一年期LPR的30%贴息，年度最高3万元。", "fit": "金额较小但覆盖面广，古镇有贷款的商户均可申报；驿农贷面向涉农经营主体，适用于方向③的乡村业态。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第十条（二）", "q": "对通过融资担保公司获得的“惠蓉贷”“驿享贷”“驿农贷”等政策性金融产品贷款的服务业企业，按贷款发放日一年期LPR的30%给予贴息，单个企业年度累计享受不超过3万元。", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "CD-LY-3-tiexi", "t": "旅游产业园区小微旅游企业贷款贴息", "lv": "市", "dirs": [], "uni": true, "mer": false, "st": ["已运营"], "amt": 100, "amtT": "100万元", "cap": "单次申报贴息期1年，最高不超过100万元", "app": "小型微型旅游企业", "sub": "小微型旅游企业", "rule": "按发生贷款时同期档次LPR计算上一年度发生利息额的50%", "elig": "小型微型旅游企业用于在旅游产业园区内旅游项目实际发生的银行贷款利息；通过竞争性评审择优", "win": "详见年度申报通知", "exc": "", "val": "《成都市进一步促进旅游业发展的若干措施》（2025年1月印发），原文载明「自印发之日起施行，有效期5年」，据此推算约至2030年1月", "end": "约2030年1月", "con": "", "pitch": "小微旅游企业旅游项目银行贷款，按上一年度利息额的50%贴息，单次最高100万元。", "fit": "同文件一、（四）明确未在旅游产业园区内的参照执行，洛带商户可直接申报；上限远高于区级贴息。", "doc": "成都市进一步促进旅游业发展的若干措施（2025年1月）", "no": "", "loc": "一、（三）", "q": "支持旅游产业园区小微型旅游企业贷款贴息。通过竞争性评审，择优对单个小型微型旅游企业用于在旅游产业园区内旅游项目实际发生的银行贷款利息给予补贴，贴息金额按照发生贷款时同期档次市场报价利率（LPR）计算上一年度发生利息额的50%,单次申报贴息期为1年，最高不超过100万元。", "url": "https://cdwglj.chengdu.gov.cn/cdwglj/c133196/2025-01/15/content_c4006e1e79e94793b9ce34fed05fbb31.shtml", "urlK": "市文广旅局官网（政策及实施细则）", "inv": null, "subj": ["biz"], "cad": "市文广旅局每年 6 月底前发布下一年度项目申报通知，8 月底前评审，11 月底前下达资金（《成都市市级旅游业发展专项资金管理办法》成财制〔2026〕15号 第十三至十五条）"}, {"id": "CD-LY-2-shangbang", "t": "旅游产业园区企业上规上榜奖励", "lv": "市", "dirs": [], "uni": true, "mer": false, "st": ["已达标"], "amt": 100, "amtT": "100万元", "cap": "100万元", "app": "旅游企业", "sub": "旅游企业", "rule": "主营业务收入首次超5亿元的规（限）上旅游企业奖50万元；获评中国旅游集团20强奖100万元；获评中国酒店集团规模50强或中国饭店集团60强奖60万元", "elig": "旅游产业园区内规（限）上旅游企业；或由中国旅游研究院、中国饭店协会、中国旅游饭店业协会首次评定上榜", "win": "详见年度申报通知", "exc": "", "val": "《成都市进一步促进旅游业发展的若干措施》（2025年1月印发），原文载明「自印发之日起施行，有效期5年」，据此推算约至2030年1月", "end": "约2030年1月", "con": "", "pitch": "旅游企业主营业务收入首次超5亿元奖励50万元；首次入选中国旅游集团20强奖励100万元。", "fit": "同文件一、（四）明确园区外企业参照执行；营收门槛高于古镇现有商户规模，适用于引进大型文旅集团。", "doc": "成都市进一步促进旅游业发展的若干措施（2025年1月）", "no": "", "loc": "一、（二）", "q": "支持旅游产业园区内规（限）上旅游企业做大做强，对主营业务收入首次超过5亿元的规（限）上旅游企业，给予一次性50万元奖励。支持旅游产业园区内旅游企业“上榜”,对由中国旅游研究院首次评定为“中国旅游集团20强”的，给予一次性100万元奖励；对由中国饭店协会或中国旅游饭店业协会首次评定为“中国酒店集团规模50强”或“中国饭店集团60强”的，给予一次性60万元奖励", "url": "https://cdwglj.chengdu.gov.cn/cdwglj/c133196/2025-01/15/content_c4006e1e79e94793b9ce34fed05fbb31.shtml", "urlK": "市文广旅局官网（政策及实施细则）", "inv": null, "subj": ["biz"], "cad": "市文广旅局每年 6 月底前发布下一年度项目申报通知，8 月底前评审，11 月底前下达资金（《成都市市级旅游业发展专项资金管理办法》成财制〔2026〕15号 第十三至十五条）"}, {"id": "LQY-9-yincai", "t": "服务业企业引才补贴", "lv": "区", "dirs": [], "uni": true, "mer": false, "st": ["已运营"], "amt": 10, "amtT": "10万元", "cap": "每家企业每个年度补贴总额不超过10万元", "app": "服务业企业", "sub": "", "rule": "引进A、B、C类人才每人分别10万元、5万元、3万元；紧缺度3星岗位或全日制博士每人0.3万元", "elig": "服务业企业新引进符合《成都市引进急需紧缺人才实施办法》规定的急需紧缺人才；人才类别按《成都市人才分类目录》认定", "win": "详见年度申报通知", "exc": "", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区委组织部、区人社局", "pitch": "服务业企业引进A类人才每人补贴10万元，每家企业年度最高10万元。", "fit": "补贴对象为企业；人才须列入成都市人才分类目录，可作为引进文创设计、演艺策划团队时的配套政策。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第九条1.", "q": "对服务业企业新引进符合《成都市引进急需紧缺人才实施办法》规定急需紧缺人才的，给予企业最高10万元引才补贴。其中，引进符合《成都市人才分类目录》A、B、C类人才的，可享受每人10万元、5万元、3万元补贴；引进符合《成都市人才开发指引》紧缺度3星岗位要求或全日制博士的，可享受每人0.3万元补贴。每家企业每个年度补贴总额不超过10万元。", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "LQY-9-anjia", "t": "新引进服务业人才安家补贴", "lv": "区", "dirs": [], "uni": true, "mer": false, "st": ["已运营"], "amt": null, "amtT": "", "cap": "3000元/人·月，持续3年", "app": "人才本人（经所在企业申报）", "sub": "", "rule": "A、B、C类人才3000元/人·月；紧缺度3星岗位或全日制博士2000元/人·月，均为引进次月起3年内", "elig": "新引进符合《成都市引进急需紧缺人才实施办法》政策要求的服务业急需紧缺人才；满足《成都市人才分类目录》A、B、C类条件之一，或符合紧缺度3星岗位要求、取得全日制博士学历学位证书后一年内引进", "win": "详见年度申报通知", "exc": "", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区人社局专业技术人员管理科 028-84851306", "pitch": "新引进急需紧缺人才，自引进次月起3年内按每人每月3000元发放安家补贴。", "fit": "补贴直接发放至个人，适用于引进主创、策展、运营等骨干人才；须符合成都市人才分类目录要求。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第九条（二）", "q": "新引进符合《成都市引进急需紧缺人才实施办法》政策要求的服务业急需紧缺人才，从引进次月起3年内，给予最高3000元/人·月的新引进人才安家补贴。其中，满足《成都市人才分类目录》A、B、C类条件之一的，从引进次月起3年内，给予3000元/人·月的新引进人才安家补贴；符合《成都市人才开发指引》中紧缺度3星岗位要求，或取得全日制博士学历学位证书后一年内引进的，从引进次月起3年内，给予2000元/人·月的新引进人才安家补贴。", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "LQY-6-fenli", "t": "主辅分离新设服务业企业奖励", "lv": "区", "dirs": [], "uni": true, "mer": false, "st": ["拟落地", "已运营"], "amt": 1000, "amtT": "1000万元", "cap": "1000万元", "app": "主辅分离新设服务业企业", "sub": "", "rule": "主辅分离新设企业按行业与首年经营规模分档，最高100万元；成立三年内营收首超3亿元的，给予最高1000万元经营奖励", "elig": "制造业、建筑业、房地产业、农业企业主辅分离新设服务业企业；或通过主辅分离方式新设且成立三年内年营业收入首次超过3亿元的文化体育娱乐等行业企业", "win": "详见年度申报通知", "exc": "", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局", "pitch": "农业企业主辅分离新设乡村旅游等服务业企业，按首年营收分档奖励，最高100万元。", "fit": "原文明确农业企业可作为主辅分离主体，洛带周边农业经营主体分立设立乡村旅游、研学运营公司可以适用。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第六条", "q": "对制造业、建筑业、房地产业、农业企业主辅分离新设服务业企业的，根据新设企业所属行业和首年营业收入（销售额）等，给予最高100万元一次性奖励。对成立三年内年营业收入（销售额）首次超过3亿元的软件信息，交通运输，批发，租赁商务，科技服务，物业管理、房地产中介服务，文化、体育和娱乐，零售等企业，综合考虑企业所属行业及营业收入（销售额），给予单个企业最高不超过1000万元经营奖励。", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "LQY-11-xiehui", "t": "服务业行业协会支持", "lv": "区", "dirs": [], "uni": true, "mer": false, "st": ["已运营"], "amt": 20, "amtT": "20万元", "cap": "20万元", "app": "服务业行业协会", "sub": "", "rule": "综合服务奖励年度最高20万元；培育会员企业新上规（上限）纳统按2万元/家，实现月度纳统额外加1万元/家", "elig": "全年服务20家（含）以上限上企业，且年度开展促消费、行业发展类活动不少于10场的服务业行业协会", "win": "详见年度申报通知", "exc": "", "val": "自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局", "pitch": "行业协会服务20家以上限上企业且年办活动10场以上，年度最高奖励20万元；每培育一家会员企业纳统另奖2万元；须经综合评审。", "fit": "洛带如成立古镇商户协会或客家文旅商会，满足服务企业数量与活动场次要求即可申报，可作为组织化招商的配套措施。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第十一条（二）1.2.", "q": "综合服务奖励：对政策有效期内全年服务20家（含）以上限上企业，且年度开展促消费、行业发展类活动不少于10场的服务业行业协会，经综合评审后，给予年度最高20万元资金奖励。企业培育奖励：政策有效期内培育会员企业新上规（上限）纳统的，按2万元/家给予一次性奖励；推动会员企业实现月度纳统的，在上述标准基础上，额外按照1万元/家给予一次性奖励。", "url": "", "urlK": "", "inv": null, "subj": ["op", "biz", "event"], "cad": ""}, {"id": "CD-LY-1-major", "t": "重大文旅产业化项目补助", "lv": "市", "dirs": [], "uni": true, "mer": false, "st": ["在建"], "amt": 500, "amtT": "500万元", "cap": "500万元", "app": "项目建设主体", "sub": "文旅产业化项目主体", "rule": "按不超过实际投入资金（累计）比例10%", "elig": "项目总投资在2亿元以上，纳入成都市文化和旅游项目管理系统的重大在建文旅产业化项目，且已投资资金不低于总投资金额的30%；通过竞争性评审。未在旅游产业园区内的项目参照本政策执行", "win": "详见年度申报通知", "exc": "", "val": "《成都市进一步促进旅游业发展的若干措施》（2025年1月印发），原文载明「自印发之日起施行，有效期5年」，据此推算约至2030年1月", "end": "约2030年1月", "con": "", "pitch": "总投资2亿元以上的文旅项目，已投资达30%后按实际投入10%补助，最高500万元。", "fit": "适用于片区级文旅开发项目；须先纳入成都市文化和旅游项目管理系统，宜在签约阶段同步推进入库。", "doc": "成都市进一步促进旅游业发展的若干措施（2025年1月）", "no": "", "loc": "一、（一）（四）", "q": "对旅游产业园区内项目总投资在2亿元以上，纳入成都市文化和旅游项目管理系统的重大在建文旅产业化项目，在项目已投资资金不低于总投资金额的30%后，通过竞争性评审，按照不超过实际投入资金（累计）比例10%的标准择优给予一次性项目补助，补助金额不超过500万元。对未在旅游产业园区内的重大产业化项目，旅游企业上规、上榜及做大做强，小微型旅游企业贷款贴息等方向奖补政策，参照旅游产业园区奖补政策执行。", "url": "https://cdwglj.chengdu.gov.cn/cdwglj/c133196/2025-01/15/content_c4006e1e79e94793b9ce34fed05fbb31.shtml", "urlK": "市文广旅局官网（政策及实施细则）", "inv": [20000.0, false], "subj": ["op"], "cad": "市文广旅局每年 6 月底前发布下一年度项目申报通知，8 月底前评审，11 月底前下达资金（《成都市市级旅游业发展专项资金管理办法》成财制〔2026〕15号 第十三至十五条）"}, {"id": "LQY-20-unified", "t": "产权分散商业载体统一运营奖励", "lv": "区", "dirs": ["d1"], "uni": false, "mer": false, "st": ["已运营"], "amt": 300, "amtT": "300万元", "cap": "累计最高300万元", "app": "统一运营管理单位", "sub": "", "rule": "按入驻率与入驻企业累计营收及销售额分档：入驻率70%以上且营收3亿元及以上奖励100万元；80%以上且4亿元及以上奖励200万元；90%以上且5亿元及以上奖励300万元", "elig": "通过租赁、委托运营等方式，对我区产权分散的大型商业综合体、街区等商业载体实施统一运营；整体运营面积达3万平方米（含）以上，且正常运营一年及以上；以申报时上一完整自然年度的运营数据为考核依据", "win": "详见年度申报通知", "exc": "", "val": "《成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施》自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局经济运行科 028-84874933", "pitch": "对产权分散的商业街区实施统一运营，运营面积达3万平方米以上并正常运营一年，按入驻率与入驻企业营收分档奖励，累计最高300万元。", "fit": "古镇铺面产权分散，与本条支持对象相符；成立统一运营主体整合经营后可申报，入驻率70%且入驻企业营收3亿元为第一档门槛。本条亦是推动古镇统一运营的政策依据。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第二十条4.（措施）／第二十条 支持商业载体统一运营（实施细则）", "q": "支持商业载体统一运营。鼓励市场主体通过租赁、委托运营等方式，对产权分散的大型商业综合体、街区等商业载体实施统一运营。对整体运营面积达3万平方米（含）以上，且正常运营一年及以上的，综合考虑入驻率、入驻企业营收及销售额等，给予运营管理单位累计最高300万元奖励。［实施细则分档标准］入驻率70%以上且入驻企业累计营收及销售额3亿元及以上，奖励100万元；入驻率80%以上且4亿元及以上，奖励200万元；入驻率90%以上且5亿元及以上，奖励300万元。政策有效期内同一项目入驻率及营收（销售额）上台阶的按差额奖励。奖励以申报时上一完整自然年度（1月1日—12月31日）的运营数据为考核依据。", "url": "", "urlK": "", "inv": null, "subj": ["op", "biz"], "cad": ""}, {"id": "LQY-30-carrier", "t": "商业载体统一核算营收奖励", "lv": "区", "dirs": ["d1"], "uni": false, "mer": false, "st": ["已运营", "已达标"], "amt": 500, "amtT": "500万元", "cap": "500万元", "app": "载体运营企业", "sub": "", "rule": "年度销售额（营业收入）首次达3亿元—5亿元、5亿元—10亿元、10亿元及以上，分别给予200万元、300万元、500万元奖励", "elig": "采取统一核算方式，运营商业综合体、商业街区、商品交易市场、连锁企业、商圈等的企业；年度销售额上台阶的，按差额奖励", "win": "详见年度申报通知", "exc": "", "val": "《成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施》自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局", "pitch": "商业街区统一核算后年销售额首次达3亿元、5亿元、10亿元，分别奖励200万元、300万元、500万元。", "fit": "与统一运营奖励配套；商户分散核算难以达到首档门槛，统一核算后合并计算有可能达标。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第三十条（二）", "q": "对采取统一核算方式，运营商业综合体、商业街区、商品交易市场、连锁企业、商圈等的企业，政策有效期内年度销售额（营业收入）首次达3亿元—5亿元、5亿元（含）—10亿元、10亿元及以上的，分别给予200万元、300万元、500万元奖励。年度销售额（营业收入）上台阶的，按差额奖励。", "url": "", "urlK": "", "inv": null, "subj": ["op", "biz"], "cad": ""}, {"id": "LQY-32-scene", "t": "特色消费场景评定（含特色旅游街区）", "lv": "区", "dirs": ["d1"], "uni": false, "mer": false, "st": ["已达标"], "amt": 100, "amtT": "100万元", "cap": "100万元", "app": "投资运营机构", "sub": "", "rule": "国家级、省级、市级、区级分别给予投资运营机构100万元、50万元、20万元、10万元奖励", "elig": "首次被评为国家级、省级、市级、区级特色消费场景（含特色商业街区、特色旅游街区等）；评价等级上台阶的，按差额奖励", "win": "详见年度申报通知", "exc": "", "val": "《成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施》自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局", "pitch": "首次获评区级、市级、省级、国家级特色旅游街区，分别奖励10万元、20万元、50万元、100万元，逐级按差额补足。", "fit": "洛带古镇为特色旅游街区，评定口径直接对应；可自区级起逐级申报，是古镇运营主体门槛较低的认定类政策。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第三十二条（二）", "q": "对政策有效期内首次被评为国家级、省级、市级、区级特色消费场景（含特色商业街区、特色旅游街区等）的，分别给予投资运营机构100万元、50万元、20万元、10万元奖励。政策有效期内项目评价等级上台阶的，按差额奖励。", "url": "", "urlK": "", "inv": null, "subj": ["op"], "cad": ""}, {"id": "LQY-WC-2026", "t": "区级文化产业发展专项资金项目补助", "lv": "区", "dirs": ["d1"], "uni": false, "mer": false, "st": ["拟落地", "在建"], "amt": 60, "amtT": "60万元", "cap": "60万元", "app": "文创产业项目主体", "sub": "", "rule": "不超过实际到位投资额的50%", "elig": "通过公开申报评审并具有良好产业带动效应、具备国际国内影响力的文创产业项目；在项目启动后给予补贴", "win": "按年度发布申报通知，2026年度通知已印发", "exc": "", "val": "按年度申报，本条依据2026年度申报通知；下一年度须以新通知为准", "end": "2026年度申报", "con": "龙泉驿区文广体旅局", "pitch": "文创产业项目通过评审后，按实际到位投资额50%补贴，最高60万元。", "fit": "区级专项资金以评审为门槛，不设投资规模下限，古镇中小文创项目可以申报。", "doc": "关于开展2026年成都市龙泉驿区区级文化产业发展专项资金申报工作的通知", "no": "", "loc": "六、（二）", "q": "项目补助。对通过公开申报评审并具有良好产业带动效应、具备国际国内影响力的文创产业项目，在项目启动后给予项目补贴，补贴金额不超过实际到位投资额的50%，最高不超过60万元。", "url": "", "urlK": "", "inv": null, "subj": ["op", "biz", "event"], "cad": ""}, {"id": "CD-LY-8-newbiz", "t": "文旅消费新业态特色区与特色项目（含低空旅游）", "lv": "市", "dirs": ["d1", "d5"], "uni": false, "mer": false, "st": ["已达标", "已运营"], "amt": 200, "amtT": "200万元", "cap": "200万元", "app": "运营主体 / 航线运营企业", "sub": "", "rule": "新业态特色区200万元；特色项目最高不超过50万元；新开通低空载人观光航线每条2万元", "elig": "由市文广旅局新评为成都市文旅消费新业态特色区或特色项目（含数字光影、数字文娱、低空旅游等新业态）；低空载人观光航线须起点及终点在成都、飞行时长超过5分钟，且通过公开渠道售票超过100人次", "win": "详见年度申报通知", "exc": "", "val": "《成都市进一步促进旅游业发展的若干措施》（2025年1月印发），原文载明「自印发之日起施行，有效期5年」，据此推算约至2030年1月", "end": "约2030年1月", "con": "", "pitch": "新开通低空载人观光航线售票超100人次，每条补助2万元；获评市级文旅消费新业态特色项目最高50万元，特色区200万元。", "fit": "已有洛带实例：2026年度市级旅游业发展专项资金第一批拟支持名单中，「洛带“电影里”文旅新消费场景」（成都新闻国际旅行社有限公司龙泉分公司）列入新评特色项目方向。洛带其他夜游光影、低空观光等业态可参照申报；特色区一档须具备全域规模。", "doc": "成都市进一步促进旅游业发展的若干措施（2025年1月）", "no": "", "loc": "三、（八）", "q": "支持发展文旅消费新业态。对由市文广旅局新评为“成都市文旅消费新业态特色区”的，给予一次性200万元奖励；对由市文广旅局新评为“成都市文旅消费新业态特色项目”（含数字光影、数字文娱、低空旅游等新业态）的，给予一次性不超过50万元奖励。对新开通并实际飞行的低空载人观光航线（起点及终点在成都且飞行时长超过5分钟）,通过公开渠道售票超过100人次的，给予每条新增航线一次性2万元补助", "url": "https://cdwglj.chengdu.gov.cn/cdwglj/c133196/2025-01/15/content_c4006e1e79e94793b9ce34fed05fbb31.shtml", "urlK": "市文广旅局官网（政策及实施细则）", "inv": null, "subj": ["op", "biz"], "cad": "市文广旅局每年 6 月底前发布下一年度项目申报通知，8 月底前评审，11 月底前下达资金（《成都市市级旅游业发展专项资金管理办法》成财制〔2026〕15号 第十三至十五条）"}, {"id": "CD-ZS-4-smart", "t": "住宿业智慧化提升改造", "lv": "市", "dirs": ["d4"], "uni": false, "mer": false, "st": ["已运营"], "amt": 10, "amtT": "10万元", "cap": "每家企业最高不超过10万元", "app": "住宿经营主体", "sub": "", "rule": "按不超过实际投入资金总额10%", "elig": "连续经营超过5年的住宿企业实施智慧化提升，项目完工（竣工验收合格）后；通过竞争性评审", "win": "快申快享，经「蓉易享」平台申报（以申报指南为准）", "exc": "", "val": "《成都市文化广电旅游局关于推动住宿业高质量发展的措施》（成文广旅规〔2025〕1号），官网载明生效时间2025年12月4日、有效性「有效」；原文规定「新出台政策自印发之日起施行，有效期5年」，实施细则逐项载明「政策有效期：5年」，即至2030年12月3日", "end": "2030年12月3日", "con": "成都市文化广电旅游局市场管理处 028-61887260", "pitch": "连续经营5年以上的住宿企业实施智慧化提升，按实际投入10%补助，每家最高10万元；须通过竞争性评审。", "fit": "古镇经营满五年的民宿符合条件，改造内容同时有助于提升服务品质。", "doc": "成都市文化广电旅游局关于推动住宿业高质量发展的措施（2025年12月4日）", "no": "", "loc": "二、（四）", "q": "支持智慧化转型。通过竞争性评审，对连续经营超过5年的住宿企业实施智慧化提升的，在项目完工（竣工验收合格）后，按照不超过实际投入资金总额10%的标准给予一次性补助，每家企业最高不超过10万元。", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": "市文广旅局每年 6 月底前发布下一年度项目申报通知，8 月底前评审，11 月底前下达资金（《成都市市级旅游业发展专项资金管理办法》成财制〔2026〕15号 第十三至十五条）"}, {"id": "CD-LY-16-carbon", "t": "近零碳排放景区创建奖励", "lv": "市", "dirs": ["d3", "d4"], "uni": false, "mer": false, "st": ["已达标"], "amt": 10, "amtT": "10万元", "cap": "10万元", "app": "景区运营主体", "sub": "", "rule": "给予一次性10万元奖励", "elig": "成功创建为成都市近零碳排放景区（试点）", "win": "详见年度申报通知", "exc": "本政策措施与市级其他政策重复的，同一企业（单位）同一项目不重复享受", "val": "《成都市进一步促进旅游业发展的若干措施》（2025年1月印发），原文载明「自印发之日起施行，有效期5年」，据此推算约至2030年1月", "end": "约2030年1月", "con": "", "pitch": "景区成功创建成都市近零碳排放景区（试点），一次性奖励10万元。", "fit": "洛带为国家4A级景区，具备申报主体资格；可与林盘景区、生态旅游示范区奖励配合申报。", "doc": "成都市进一步促进旅游业发展的若干措施（2025年1月）", "no": "", "loc": "四、（十六）", "q": "支持旅游景区绿色低碳建设。对成功创建为成都市近零碳排放景区（试点）的，给予一次性10万元奖励。本政策措施与市级其他政策重复的，同一企业（单位）同一项目不重复享受。", "url": "https://cdwglj.chengdu.gov.cn/cdwglj/c133196/2025-01/15/content_c4006e1e79e94793b9ce34fed05fbb31.shtml", "urlK": "市文广旅局官网（政策及实施细则）", "inv": null, "subj": ["op"], "cad": "市文广旅局每年 6 月底前发布下一年度项目申报通知，8 月底前评审，11 月底前下达资金（《成都市市级旅游业发展专项资金管理办法》成财制〔2026〕15号 第十三至十五条）"}, {"id": "CD-LY-7-demo", "t": "文化产业和旅游产业融合发展示范区认定", "lv": "市", "dirs": ["d1"], "uni": false, "mer": false, "st": ["已达标"], "amt": 300, "amtT": "300万元", "cap": "300万元", "app": "园区或景区运营主体", "sub": "", "rule": "进入国家文化产业和旅游产业融合发展示范区建设单位名单给予300万元；新评为国家级文明旅游示范单位给予20万元", "elig": "由文化和旅游部确定进入国家文化产业和旅游产业融合发展示范区建设单位名单；或新评为国家级文明旅游示范单位", "win": "详见年度申报通知", "exc": "", "val": "《成都市进一步促进旅游业发展的若干措施》（2025年1月印发），原文载明「自印发之日起施行，有效期5年」，据此推算约至2030年1月", "end": "约2030年1月", "con": "", "pitch": "新评为国家级文明旅游示范单位奖励20万元；进入国家文化产业和旅游产业融合发展示范区建设名单补助300万元。", "fit": "示范区一档为国家级名单，属中长期目标；文明旅游示范单位一档门槛较低，洛带作为4A景区可以申报。", "doc": "成都市进一步促进旅游业发展的若干措施（2025年1月）", "no": "", "loc": "二、（七）", "q": "支持高能级其他旅游品牌发展。对由文化和旅游部确定进入“国家文化产业和旅游产业融合发展示范区”建设单位名单的，给予一次性300万元补助。对新评为“国家级文明旅游示范单位”的，给予一次性20万元奖励", "url": "https://cdwglj.chengdu.gov.cn/cdwglj/c133196/2025-01/15/content_c4006e1e79e94793b9ce34fed05fbb31.shtml", "urlK": "市文广旅局官网（政策及实施细则）", "inv": null, "subj": ["op"], "cad": "市文广旅局每年 6 月底前发布下一年度项目申报通知，8 月底前评审，11 月底前下达资金（《成都市市级旅游业发展专项资金管理办法》成财制〔2026〕15号 第十三至十五条）"}, {"id": "CD-SW-3-loan", "t": "文创通贷款贴息与担保费补贴", "lv": "市", "dirs": ["d1"], "uni": false, "mer": false, "st": ["已运营"], "amt": 200, "amtT": "200万元", "cap": "200万元", "app": "数字文创企业", "sub": "", "rule": "按同期限档次LPR计算的贷款利息额的40%给予不超过200万元补贴；担保费用按实际发生总额的60%给予不超过200万元补贴", "elig": "享受文创通等文创金融产品支持的数字文创企业", "win": "详见年度申报通知", "exc": "资金来源为市级文化产业发展专项资金。《成都市市级文化产业发展专项资金管理办法》（2026年7月8日修订）第十一条规定，该资金不得用于主题公园、仿古镇街等限制开发类或规范管理类项目，不得用于纳入清理范围的节庆、论坛、展会活动。以洛带名义申报时，应以企业具体文创项目为申报主体，不宜以古镇街区建设或风貌改造申报。", "val": "《成都市关于培育发展数字文创初创企业的若干政策》，原文载明「自2025年7月1日起施行，有效期3年」，即至2028年6月30日", "end": "2028年6月30日", "con": "", "pitch": "数字文创企业使用文创通等产品融资，贷款利息按40%、担保费按60%补贴，各最高200万元。", "fit": "本库融资类上限最高的政策；限数字文创企业，适用于引进非遗数字化、数字文创团队。", "doc": "成都市关于培育发展数字文创初创企业的若干政策", "no": "", "loc": "三、", "q": "支持“文创通”等文创金融产品加大对初创企业的扶持力度，对享受相关金融支持的企业，按照发生贷款时同期限档次市场报价利率（LPR）计算的贷款利息额的40%,给予不超过200万元补贴；对其发生的担保费用，按照实际发生担保费用总额的60%,给予不超过200万元补贴", "url": "https://www.sc.gov.cn/10462/10464/10465/10595/2025/6/4/2cd1698c14e545e58ea3ea470d7c241e.shtml", "urlK": "四川省政府网报道（原文未找到）", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "CD-YS-1-agency", "t": "演出经纪机构落地奖励（市级）", "lv": "市", "dirs": ["d1"], "uni": false, "mer": false, "st": ["拟落地", "已运营"], "amt": 30, "amtT": "30万元", "cap": "30万元", "app": "演出经纪机构", "sub": "", "rule": "首（次）年度营业收入达500万元，一次性给予30万元奖励", "elig": "演出经纪机构，至少签约3名音乐人且年度举办5场5000人以上大型营业性演出活动，首（次）年度营业收入达500万元", "win": "详见年度申报通知", "exc": "", "val": "《成都市关于推动演艺市场高质量发展的若干措施》（2024年12月印发），原文载明「自印发之日起实施，有效期三年」，据此推算约至2027年12月", "end": "约2027年12月", "con": "", "pitch": "演出经纪机构须至少签约3名音乐人、年度举办5场5000人以上大型演出，首年度营业收入达500万元，可获30万元一次性奖励。", "fit": "须年度举办多场五千人以上演出，可在区外办演出、在洛带注册；可与区级赛演产业链企业奖励配合。", "doc": "成都市关于推动演艺市场高质量发展的若干措施（2024年12月）", "no": "", "loc": "第一条", "q": "对演出经纪机构（至少签约3名音乐人且年度举办5场5000人以上大型营业性演出活动），首（次）年度营业收入达500万元，一次性给予30万元奖励。", "url": "https://cdwglj.chengdu.gov.cn/cdwglj/c133195/2024-12/30/content_ed2751c0a7ef440db99677687e01b207.shtml", "urlK": "市文广旅局官网·政策文件", "inv": null, "subj": ["op", "biz", "event"], "cad": ""}, {"id": "CD-YS-5-venue", "t": "演出场所年度场次奖励（市级）", "lv": "市", "dirs": ["d1"], "uni": false, "mer": false, "st": ["已运营"], "amt": 100, "amtT": "100万元", "cap": "100万元", "app": "演出场所经营单位", "sub": "", "rule": "1000人以上演出累计达100场奖最高30万元、达200场奖最高60万元；5000人以上大型演出累计达30场奖最高60万元、达50场奖最高100万元", "elig": "演出场所（单厅或单馆）年度开展1000人以上营业性演出活动累计达100场及以上；或年度开展5000人以上大型营业性演出活动累计达30场及以上", "win": "详见年度申报通知", "exc": "", "val": "《成都市关于推动演艺市场高质量发展的若干措施》（2024年12月印发），原文载明「自印发之日起实施，有效期三年」，据此推算约至2027年12月", "end": "约2027年12月", "con": "", "pitch": "演出场所年度开展1000人以上演出累计100场奖励最高30万元，200场奖励最高60万元。", "fit": "单场千人以上的要求高于古镇现有场地规模，须依托广场或新建中型剧场；古镇宜优先申报区级同类政策。", "doc": "成都市关于推动演艺市场高质量发展的若干措施（2024年12月）", "no": "", "loc": "第五条", "q": "对年度开展1000人以上营业性演出活动累计达100场的演出场所（单厅或单馆），给予演出场所经营单位最高30万元奖励；达200场，给予最高60万元奖励。对年度开展5000人以上的大型营业性演出活动累计达30场的演出场所，给予演出场所经营单位最高60万元奖励；达50场，给予最高100万元奖励。", "url": "https://cdwglj.chengdu.gov.cn/cdwglj/c133195/2024-12/30/content_ed2751c0a7ef440db99677687e01b207.shtml", "urlK": "市文广旅局官网·政策文件", "inv": null, "subj": ["op", "biz"], "cad": ""}, {"id": "CD-YS-2-boxoffice", "t": "营业性演出票房累计奖励（市级）", "lv": "市", "dirs": ["d1"], "uni": false, "mer": false, "st": ["已运营", "已达标"], "amt": 200, "amtT": "200万元", "cap": "200万元", "app": "演出举办企业", "sub": "", "rule": "年度票房累计达2000万元、5000万元、1亿元、2亿元，分别奖最高20万元、50万元、100万元、200万元；全年境外观众比例超过5%再奖100万元", "elig": "年度举办营业性演出活动票房累计达到相应台阶；境外观众比例超过5%可叠加", "win": "详见年度申报通知", "exc": "", "val": "《成都市关于推动演艺市场高质量发展的若干措施》（2024年12月印发），原文载明「自印发之日起实施，有效期三年」，据此推算约至2027年12月", "end": "约2027年12月", "con": "", "pitch": "企业年度营业性演出票房累计达2000万元奖励最高20万元，达1亿元奖励最高100万元。", "fit": "适用于以洛带为运营总部、在全市范围举办演出的企业；区级有同类条款，须按就高原则比对。", "doc": "成都市关于推动演艺市场高质量发展的若干措施（2024年12月）", "no": "", "loc": "第二条", "q": "对年度举办营业性演出活动票房累计达2000万元，给予最高20万元奖励；累计达5000万元，给予最高50万元奖励；累计达1亿元，给予最高100万元奖励；累计达2亿元，给予最高200万元奖励，全年境外观众比例超过5%，再给予100万元一次性奖励。", "url": "https://cdwglj.chengdu.gov.cn/cdwglj/c133195/2024-12/30/content_ed2751c0a7ef440db99677687e01b207.shtml", "urlK": "市文广旅局官网·政策文件", "inv": null, "subj": ["biz", "event"], "cad": ""}, {"id": "CD-YS-4-artist", "t": "音乐人工作室与引进国际院团（市级）", "lv": "市", "dirs": ["d1"], "uni": false, "mer": false, "st": ["拟落地", "已运营"], "amt": 200, "amtT": "200万元", "cap": "200万元", "app": "音乐人工作室 / 引进方市场主体", "sub": "", "rule": "音乐人工作室年度开展10场300人以上演出给予最高20万元；引进国际顶级院团演出规模1000人以上每场最高20万元、累计不高于100万元，规模5000人以上每场最高40万元、累计不高于200万元", "elig": "领军音乐人（团队）设立个人工作室（音乐企业），年度开展10场300人以上营业性演出活动；或市场主体引进国际顶级院团和艺人来蓉演出", "win": "详见年度申报通知", "exc": "", "val": "《成都市关于推动演艺市场高质量发展的若干措施》（2024年12月印发），原文载明「自印发之日起实施，有效期三年」，据此推算约至2027年12月", "end": "约2027年12月", "con": "", "pitch": "音乐人工作室年度开展10场300人以上营业性演出，可获最高20万元支持。", "fit": "场次与规模要求与古镇小剧场相符，工作室亦适合设在古镇院落，可用于引进音乐人入驻。", "doc": "成都市关于推动演艺市场高质量发展的若干措施（2024年12月）", "no": "", "loc": "第四条", "q": "支持领军音乐人（团队）设立个人工作室（音乐企业），对年度开展10场300人以上营业性演出活动，给予最高20万元支持；支持市场主体引进国际顶级院团和艺人来蓉演出，演出规模为1000人以上，给予每场最高20万元，累计不高于100万元支持；演出规模为5000人以上，给予每场最高40万元，累计不高于200万元支持。", "url": "https://cdwglj.chengdu.gov.cn/cdwglj/c133195/2024-12/30/content_ed2751c0a7ef440db99677687e01b207.shtml", "urlK": "市文广旅局官网·政策文件", "inv": null, "subj": ["op", "biz", "event"], "cad": ""}, {"id": "CD-YS-10-troupe", "t": "文艺院团参加演出赛事补贴（市级）", "lv": "市", "dirs": ["d1"], "uni": false, "mer": false, "st": ["已运营"], "amt": 100, "amtT": "100万元", "cap": "累计不高于100万元", "app": "文艺院团（含民营院团）", "sub": "", "rule": "国内每场5万元、国外每场10万元补贴", "elig": "文艺院团参与国内外知名度高、专业性强的演出和赛事", "win": "详见年度申报通知", "exc": "", "val": "《成都市关于推动演艺市场高质量发展的若干措施》（2024年12月印发），原文载明「自印发之日起实施，有效期三年」，据此推算约至2027年12月", "end": "约2027年12月", "con": "", "pitch": "文艺院团参加知名演出和赛事，国内每场补贴5万元、国外每场10万元，累计最高100万元。", "fit": "适用于在洛带培育的客家主题民营院团外出巡演，亦可作为引进院团入驻的配套政策。", "doc": "成都市关于推动演艺市场高质量发展的若干措施（2024年12月）", "no": "", "loc": "第十条", "q": "提升文艺院团影响力，鼓励文艺院团积极参与国内外知名度高、专业性强的演出和赛事，给予国内每场5万元、国外每场10万元补贴，累计不高于100万元。", "url": "https://cdwglj.chengdu.gov.cn/cdwglj/c133195/2024-12/30/content_ed2751c0a7ef440db99677687e01b207.shtml", "urlK": "市文广旅局官网·政策文件", "inv": null, "subj": ["op", "biz", "event"], "cad": ""}, {"id": "LQY-12-innovation", "t": "服务业创新突破发展支持（消费新场景新业态）", "lv": "区", "dirs": [], "uni": true, "mer": false, "st": ["在建", "已运营"], "amt": 10000, "amtT": "1亿元", "cap": "1亿元", "app": "服务业企业", "sub": "", "rule": "经产业主管部门认定，给予最高不超过1亿元资金支持", "elig": "企业通过品牌营销、产品创新、供应链整合等方式发展服务业新产业、新业态、新商业模式（含消费新场景、新业态、新模式）并形成规模效应，经产业主管部门认定", "win": "详见年度申报通知", "exc": "", "val": "《成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施》自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局", "pitch": "发展消费新场景、新业态并形成规模效应，经主管部门认定可获最高1亿元资金支持，金额一事一议。", "fit": "条款适用范围较宽，与古镇更新方向相符；无量化门槛，由主管部门认定，不宜对外承诺具体金额。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第十二条", "q": "服务业创新突破发展支持支持企业通过品牌营销、产品创新、供应链整合等方式发展服务业新产业、新业态、新商业模式（含消费新场景、新业态、新模式）并形成规模效应，经产业主管部门认定，给予最高不超过1亿元资金支持。（责任单位：区商务局，区级相关部门）", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "LQY-35-venue2", "t": "演出场所观演人次与大型演出场次奖励", "lv": "区", "dirs": ["d1"], "uni": false, "mer": false, "st": ["已运营"], "amt": 50, "amtT": "50万元", "cap": "50万元", "app": "演出场所运营企业", "sub": "", "rule": "年度演出累计100场以上且观演达10万—20万、20万—30万、30万人次以上，分别奖20万元、35万元、50万元；年度举办1万人以上规模演出30—50场、50—70场、70场以上，分别奖15万元、30万元、50万元", "elig": "演出场所年度演出累计达到100场及以上且观演人次达到相应台阶；或年度举办1万人以上规模演出达到相应场次", "win": "详见年度申报通知", "exc": "", "val": "《成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施》自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区文化广电体育和旅游局产业科 028-84845114", "pitch": "演出场所年度演出100场以上且观演10万人次以上奖励20万元，30万人次以上奖励50万元。", "fit": "考核观演人次，古镇将客流转化为观演人次后首档可以达到；万人规模演出一档古镇场地难以承载。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第三十五条（二）2.3.", "q": "对政策有效期内，年度演出累计达到100场及以上，且规模达到10万人次（含）—20万人次、20万人次（含）—30万人次、30万人次及以上的演出场所，分别给予20万元、35万元、50万元奖励；对政策有效期内，年度举办1万人以上规模演出30（含）—50场以上、50（含）—70场以上、70场（含）以上的演出场所分别给予15万元、30万元、50万元奖励。", "url": "", "urlK": "", "inv": null, "subj": ["op", "biz"], "cad": ""}, {"id": "CD-YS-3-ticket", "t": "演出票务公司票务收入奖励（市级）", "lv": "市", "dirs": ["d1"], "uni": false, "mer": false, "st": ["已达标"], "amt": 100, "amtT": "100万元", "cap": "100万元", "app": "演出票务公司", "sub": "", "rule": "全年票务收入达5亿元、10亿元，分别给予最高50万元、100万元奖励", "elig": "演出票务公司全年票务收入达到相应台阶", "win": "详见年度申报通知", "exc": "", "val": "《成都市关于推动演艺市场高质量发展的若干措施》（2024年12月印发），原文载明「自印发之日起实施，有效期三年」，据此推算约至2027年12月", "end": "约2027年12月", "con": "", "pitch": "演出票务公司全年票务收入达5亿元、10亿元，分别奖励最高50万元、100万元。", "fit": "属总部型轻资产业态，可注册在洛带；营收门槛仅头部平台可以达到，招商价值有限。", "doc": "成都市关于推动演艺市场高质量发展的若干措施（2024年12月）", "no": "", "loc": "第三条", "q": "对演出票务公司，其全年票务收入达5亿元、10亿元，分别给予最高50万元、100万元奖励。", "url": "https://cdwglj.chengdu.gov.cn/cdwglj/c133195/2024-12/30/content_ed2751c0a7ef440db99677687e01b207.shtml", "urlK": "市文广旅局官网·政策文件", "inv": null, "subj": ["op", "biz", "event"], "cad": ""}, {"id": "CD-SW-8-expo", "t": "数字文创企业参展参会补贴", "lv": "市", "dirs": ["d1", "d2"], "uni": false, "mer": false, "st": ["已运营"], "amt": 10, "amtT": "10万元", "cap": "同一企业当年最高享受10万元", "app": "数字文创企业", "sub": "", "rule": "国际性展会按展位费的80%给予最高5万元展位补贴、往返交通费用的80%给予最高1万元交通补贴、按最高2万元/人给予不超过4万元人员境外费用补贴；全国性展会按展位费的80%给予最高5万元展位补贴", "elig": "企业参加数字文创领域国内外重大节展活动，开展产品展销与项目推介", "win": "详见年度申报通知", "exc": "资金来源为市级文化产业发展专项资金。《成都市市级文化产业发展专项资金管理办法》（2026年7月8日修订）第十一条规定，该资金不得用于主题公园、仿古镇街等限制开发类或规范管理类项目，不得用于纳入清理范围的节庆、论坛、展会活动。以洛带名义申报时，应以企业具体文创项目为申报主体，不宜以古镇街区建设或风貌改造申报。", "val": "《成都市关于培育发展数字文创初创企业的若干政策》，原文载明「自2025年7月1日起施行，有效期3年」，即至2028年6月30日", "end": "2028年6月30日", "con": "", "pitch": "数字文创企业参加全国性、国际性展会，展位费按80%补贴，单次最高5万元，年度最高10万元。", "fit": "与区级参展奖励额度相同、层级不同，须核实能否叠加；适用于数字文创、非遗数字化企业。", "doc": "成都市关于培育发展数字文创初创企业的若干政策", "no": "", "loc": "八、", "q": "鼓励企业参加数字文创领域国内外重大节展活动，开展产品展销与项目推介。对国际性展会参展企业按展位费的80%给予最高5万元展位补贴，按往返交通费用的80%给予最高1万元交通补贴，按最高2万元/人给予不超过4万元人员境外费用补贴；对全国性展会参展企业，按展位费的80%给予最高5万元展位补贴；同一企业当年最高享受10万元补贴。", "url": "https://www.sc.gov.cn/10462/10464/10465/10595/2025/6/4/2cd1698c14e545e58ea3ea470d7c241e.shtml", "urlK": "四川省政府网报道（原文未找到）", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "LQY-28-firststore", "t": "首店经济奖励（品牌首店 + 引进方）", "lv": "区", "dirs": ["d1", "d4"], "uni": false, "mer": false, "st": ["拟落地", "已运营"], "amt": 100, "amtT": "100万元", "cap": "首店100万元；引进方年度累计不超过100万元", "app": "首店运营管理单位；或招引首店入驻的商业综合体运营管理单位", "sub": "", "rule": "中国内地、四川、成都首店分别100万元、50万元、30万元；引进方每引进1家分别20万元、10万元、6万元", "elig": "国际、国内知名生活性服务业品牌在我区新开设首店且持续经营一年及以上；引进方须与首店签订3年以上入驻协议", "win": "详见年度申报通知", "exc": "", "val": "《成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施》自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局", "pitch": "知名品牌在洛带开设成都首店奖励30万元，引进方另获6万元；中国内地首店奖励100万元，引进方获20万元。", "fit": "适用于引进品牌入驻空置铺面；奖励同时覆盖品牌方与引进方，古镇统一运营主体可作为引进方申报。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第二十八条", "q": "支持首店经济发展国际、国内知名生活性服务业品牌，在我区开设的中国内地、四川、成都首店，持续经营一年及以上的，分别给予100万元、50万元、30万元奖励。对引进上述首店并签订3年以上入驻协议的商业综合体，每引进1家中国内地、四川、成都首店，分别给予20万元、10万元、6万元奖励，单个商业综合体年度累计享受不超过100万元。", "url": "", "urlK": "", "inv": null, "subj": ["op", "biz"], "cad": ""}, {"id": "LQY-24-catering", "t": "餐饮企业销售额增速奖励", "lv": "区", "dirs": ["d4"], "uni": false, "mer": true, "st": ["已运营", "已达标"], "amt": 80, "amtT": "80万元", "cap": "80万元", "app": "餐饮企业", "sub": "", "rule": "年销售额2000万元及以上且增速10%—15%、15%—20%、20%以上，分别奖50万元、60万元、80万元；年销售额1000万元及以上且增速15%—20%、20%—30%、30%以上，分别奖10万元、20万元、30万元", "elig": "在我区合法合规经营的餐饮企业，年销售额与增速达到相应台阶", "win": "详见年度申报通知", "exc": "本政策可与上级政策叠加享受", "val": "《成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施》自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局", "pitch": "餐饮企业年销售额1000万元以上且增速达15%奖励10万元；年销售额2000万元以上且增速20%以上奖励80万元，可与上级政策叠加。", "fit": "首档为古镇中等规模餐饮可以达到的水平；原文明确可与上级政策叠加享受。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第二十四条", "q": "支持餐饮业品质化发展支持餐饮企业扩大规模。对年销售额达到2000万元及以上的餐饮企业，且销售额增速达到10%（含）—15%、15%（含）—20%、20%（含）以上的，分别给予50万元、60万元、80万元奖励。对年销售额达到1000万元及以上的餐饮企业，且销售额增速达到15%（含）—20%、20%（含）—30%、30%（含）以上的，分别给予10万元、20万元、30万元奖励。（本政策可与上级政策叠加享受）（一）申报对象在我区合法合规经营的餐饮企业。", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "LQY-22-retail", "t": "吃穿用类零售企业销售奖励", "lv": "区", "dirs": ["d1", "d4"], "uni": false, "mer": true, "st": ["已运营"], "amt": 50, "amtT": "50万元", "cap": "单个企业每年最高不超过50万元", "app": "零售企业", "sub": "", "rule": "按吃穿用类零售额的5‰给予奖励", "elig": "年零售额500万元以上，且年零售额增速5%以上的吃穿用类销售企业", "win": "详见年度申报通知", "exc": "本政策可与上级政策叠加享受", "val": "《成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施》自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局", "pitch": "吃穿用类零售企业年零售额500万元以上且增速5%以上，按零售额5‰奖励，年度最高50万元，可与上级政策叠加。", "fit": "古镇规模较大的特产店、手作店可以达到门槛；可与首店奖励配合，覆盖古镇零售业态。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第二十二条1.2.", "q": "支持吃穿用类企业扩大销售。对年零售额500万元以上，且年零售额增速5%以上的吃穿用类销售企业，按其吃穿用类零售额的5‰给予单个企业每年最高不超过50万元奖励。（本政策可与上级政策叠加享受）（责任单位：区商务局）", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "LQY-8-hq", "t": "总部结算支持（区外分支机构营收纳入总部核算）", "lv": "区", "dirs": [], "uni": true, "mer": false, "st": ["已运营"], "amt": 300, "amtT": "300万元", "cap": "单个分支机构最高50万元，单个总部企业年度累计不超过300万元", "app": "总部型服务业企业", "sub": "", "rule": "按单个分支机构年度营业收入（销售额）的2‰给予奖励", "elig": "总部型服务业企业在区外设置分支机构，且区外分支机构营业收入（销售额）纳入总部核算", "win": "详见年度申报通知", "exc": "", "val": "《成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施》自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局", "pitch": "总部设在洛带、区外分支机构营收纳入总部核算的，按分支机构营收2‰奖励，单个分支最高50万元，年度最高300万元。", "fit": "适用于总部注册在洛带、业务在外地开展的轻资产企业，如研学机构、赛事运营公司、演出经纪公司，不要求占用古镇空间。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第八条", "q": "总部结算支持鼓励总部型服务业企业在区外设置分支机构拓展市场。对区外分支机构营业收入（销售额）纳入总部核算的，按照单个分支机构年度营业收入（销售额）的2‰给予最高50万元奖励，单个总部企业年度奖励累计不超过300万元。（责任单位：区商务局，区级相关部门）", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "JKQ-17-platform", "t": "高能级创新平台认定奖励", "lv": "区", "dirs": [], "uni": true, "mer": false, "st": ["已达标"], "amt": 100, "amtT": "100万元", "cap": "100万元", "app": "平台建设运营单位", "sub": "", "rule": "国家级、省级、市级技术创新平台分别100万元、50万元、20万元；区级创新平台或省级及以上创新平台来区建设分中心10万元", "elig": "新获得国家级、省级、市级认定的工程技术研究中心、重点实验室、院士（专家）创新工作站、产学研联合实验室、新型研发机构等技术创新平台；或认定为区级创新平台", "win": "免申即享（市级以上创新平台认定）、易申快享", "exc": "", "val": "《成都经开区发展和改革局等16部门关于支持产业高质量发展的若干政策措施》（成经开发改发〔2025〕4号）自2025年5月1日起施行，有效期2年，即至2027年4月30日（据成都经开区住建局2026年7月15日官方解读）", "end": "2027年4月30日", "con": "龙泉驿区新经济和科技局校地合作科 028-61432763", "pitch": "获认定为市级、省级、国家级技术创新平台，分别奖励20万元、50万元、100万元。", "fit": "条文未限定行业；客家文化研究、非遗数字化等机构如能纳入产学研联合实验室或新型研发机构认定口径即可申报，须先确认认定口径。", "doc": "成都经开区发展和改革局等16部门关于支持产业高质量发展的若干政策措施", "no": "成经开发改发〔2025〕4号", "loc": "经开区产业政策措施 17.", "q": "促进高能级创新平台建设。对新获得国家级、省级、市级认定的工程技术研究中心、重点实验室、院士（专家）创新工作站、产学研联合实验室、新型研发机构等技术创新平台，分别给予100万元、50万元、20万元奖励。对认定为区级创新平台或省级及以上创新平台来区建设分中心的，给予10万元奖励。责任单位：区新经济和科技局责任科室：校地合作科咨询电话：028-61432763申报类型：免申即享（市级以上创新平台认定）、易申快享", "url": "https://www.longquanyi.gov.cn/lqyqzfmhwz_gb/c160718/2026-07/15/content_417d18abb241499488dfec303dda5672.shtml", "urlK": "区政府官网·区住建局官方解读（原文发布页已下线）", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "CD-LY-15-equip", "t": "旅游领域设备更新补助", "lv": "市", "dirs": ["d1", "d4"], "uni": false, "mer": false, "st": ["在建", "已运营"], "amt": 300, "amtT": "300万元", "cap": "300万元", "app": "旅游项目实施主体", "sub": "", "rule": "按不超过核定总投资比例10%", "elig": "项目设备投资在1000万元以上，纳入成都市文旅设备更新项目储备库的重大旅游项目；通过竞争性评审", "win": "详见年度申报通知", "exc": "", "val": "《成都市进一步促进旅游业发展的若干措施》（2025年1月印发），原文载明「自印发之日起施行，有效期5年」，据此推算约至2030年1月", "end": "约2030年1月", "con": "", "pitch": "设备投资1000万元以上并纳入市文旅设备更新项目储备库的旅游项目，按核定总投资10%补助，最高300万元。", "fit": "须先纳入成都市文旅设备更新项目储备库；适用于古镇索道、观光车、演艺声光电设备等大额更新。", "doc": "成都市进一步促进旅游业发展的若干措施（2025年1月）", "no": "", "loc": "四、（十五）", "q": "支持旅游领域设备更新。通过竞争性评审，对项目设备投资在1000万元以上，纳入成都市文旅设备更新项目储备库的重大旅游项目，按照不超过核定总投资比例10%的标准择优给予一次性项目补助，补助金额不超过300万元。", "url": "https://cdwglj.chengdu.gov.cn/cdwglj/c133196/2025-01/15/content_c4006e1e79e94793b9ce34fed05fbb31.shtml", "urlK": "市文广旅局官网（政策及实施细则）", "inv": [1000.0, false], "subj": ["op", "biz", "event"], "cad": "市文广旅局每年 6 月底前发布下一年度项目申报通知，8 月底前评审，11 月底前下达资金（《成都市市级旅游业发展专项资金管理办法》成财制〔2026〕15号 第十三至十五条）"}, {"id": "CD-YS-11-filmexpo", "t": "举办重大影视节（展）会活动", "lv": "市", "dirs": ["d1", "d2"], "uni": false, "mer": false, "st": ["已运营"], "amt": 500, "amtT": "500万元", "cap": "500万元", "app": "节展会举办方", "sub": "", "rule": "按实际投入的10%给予奖励", "elig": "在蓉举办经行业主管部门及相关审批部门批准、具有影响力的影视节（展）会；经综合评定", "win": "详见年度申报通知", "exc": "资金来源为市级文化产业发展专项资金。《成都市市级文化产业发展专项资金管理办法》（2026年7月8日修订）第十一条规定，该资金不得用于主题公园、仿古镇街等限制开发类或规范管理类项目，不得用于纳入清理范围的节庆、论坛、展会活动。以洛带名义申报时，应以企业具体文创项目为申报主体，不宜以古镇街区建设或风貌改造申报。", "val": "《成都市促进影视产业发展的若干政策》，原文载明「自2025年7月1日起生效，有效期3年」，即至2028年6月30日", "end": "2028年6月30日", "con": "", "pitch": "在蓉举办经批准且具有影响力的影视节（展）会，按实际投入10%奖励，最高500万元；须经综合评定。", "fit": "支持对象为举办节展会而非影视制作，属会展业态；古镇会馆建筑群可作为节展会场地。", "doc": "成都市促进影视产业发展的若干政策", "no": "", "loc": "第十一条", "q": "支持影视机构举办重大影视节（展）会活动。对在蓉举办经由行业主管部门及相关审批部门批准、具有影响力的影视节（展）会，经综合评定，按照实际投入的10%，给予最高500万元奖励。", "url": "https://www.chinafilm.gov.cn/xwzx/hyzx/202509/t20250901_928317.html", "urlK": "国家电影局官网报道（原文未找到）", "inv": null, "subj": ["event"], "cad": ""}, {"id": "CD-YS-5-venue-film", "t": "影视剧组首映路演场地提供方奖励", "lv": "市", "dirs": ["d1", "d2"], "uni": false, "mer": false, "st": ["已运营"], "amt": 30, "amtT": "30万元", "cap": "30万元", "app": "场地提供方", "sub": "", "rule": "经综合评定给予场地提供方最高30万元奖励", "elig": "场地提供方给予剧组场租减免，为来蓉影视剧组提供场地便利、服务保障、宣传渠道等", "win": "详见年度申报通知", "exc": "资金来源为市级文化产业发展专项资金。《成都市市级文化产业发展专项资金管理办法》（2026年7月8日修订）第十一条规定，该资金不得用于主题公园、仿古镇街等限制开发类或规范管理类项目，不得用于纳入清理范围的节庆、论坛、展会活动。以洛带名义申报时，应以企业具体文创项目为申报主体，不宜以古镇街区建设或风貌改造申报。", "val": "《成都市促进影视产业发展的若干政策》，原文载明「自2025年7月1日起生效，有效期3年」，即至2028年6月30日", "end": "2028年6月30日", "con": "", "pitch": "场地提供方为影视剧组首映、路演、宣发活动减免场租，经评定可获最高30万元奖励。", "fit": "奖励对象为场地提供方；洛带会馆、戏台、古街可作为首映路演场地。", "doc": "成都市促进影视产业发展的若干政策", "no": "", "loc": "第五条", "q": "支持影视剧组来蓉进行首映、路演、宣发活动。鼓励场地提供方给予剧组场租减免，积极为来蓉影视剧组提供场地便利、服务保障、宣传渠道等，吸引更多影视剧组将成都作为首映、路演、宣发首选地。经综合评定，对场地提供方给予最高30万元奖励。", "url": "https://www.chinafilm.gov.cn/xwzx/hyzx/202509/t20250901_928317.html", "urlK": "国家电影局官网报道（原文未找到）", "inv": null, "subj": ["op", "biz", "event"], "cad": ""}, {"id": "CD-KH-1-park", "t": "科幻特色园区建设运营奖励", "lv": "市", "dirs": ["d1"], "uni": false, "mer": false, "st": ["已运营", "已达标"], "amt": 200, "amtT": "200万元", "cap": "200万元/年", "app": "园区运营机构", "sub": "", "rule": "运营良好的园区每年给予运营机构最高200万元奖励；首次获批国家级、省级示范园区（基地）分别一次性100万元、50万元", "elig": "围绕科幻内容创作及转化打造的高品质特色园区（基地），入驻科幻企业达一定数量、具有示范引领作用、运营良好；经综合评定", "win": "详见年度申报通知", "exc": "资金来源为市级文化产业发展专项资金。《成都市市级文化产业发展专项资金管理办法》（2026年7月8日修订）第十一条规定，该资金不得用于主题公园、仿古镇街等限制开发类或规范管理类项目，不得用于纳入清理范围的节庆、论坛、展会活动。以洛带名义申报时，应以企业具体文创项目为申报主体，不宜以古镇街区建设或风貌改造申报。", "val": "《成都市推进科幻内容高质量创作与转化的若干政策》，原文载明「自2025年7月1日起施行，有效期3年」，即至2028年6月30日", "end": "2028年6月30日", "con": "", "pitch": "科幻特色园区入驻企业达到一定数量且运营良好，运营机构每年最高奖励200万元；获评国家级示范园区另奖100万元；须经综合评定。", "fit": "须形成科幻企业聚集，洛带未规划科幻主题产业前不适用，列为待确认政策。", "doc": "成都市推进科幻内容高质量创作与转化的若干政策", "no": "", "loc": "一、（一）", "q": "支持科幻特色园区建设。支持各区（市）县围绕科幻内容创作及转化培育打造一批高品质特色园区（基地）。对入驻科幻企业达一定数量，具有示范引领作用、运营良好的园区，经综合评定，每年给予运营机构最高200万元奖励；对首次获批成为国家级、省级示范园区（基地）的，分别给予运营机构100万元、50万元的一次性奖励。", "url": "", "urlK": "", "inv": null, "subj": ["op"], "cad": ""}, {"id": "LQY-34-michelin", "t": "高端餐饮品牌落户奖励（黑珍珠 / 米其林，含星钻分档）", "lv": "区", "dirs": ["d1", "d4"], "uni": false, "mer": false, "st": ["拟落地", "已达标"], "amt": 300, "amtT": "300万元", "cap": "300万元", "app": "餐饮企业", "sub": "", "rule": "综合考虑「星级／钻级」及年销售额分档：一星（一钻）且年销售额500万元以上50万元；二星（二钻）且800万元以上100万元；三星（三钻）且1000万元以上300万元；入选指南但未上星且200万元以上20万元。荣誉评级上台阶的按差额奖励", "elig": "首次入选「黑珍珠餐厅」指南或米其林指南的餐饮企业；已上榜餐厅首次落户我区开店的参照执行。细则申报条件第5条明确：「其他」档指入选指南但未获得星级／钻级评定的餐厅", "win": "详见年度申报通知", "exc": "", "val": "《成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施》自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局", "pitch": "入选黑珍珠或米其林指南的餐厅在洛带开店：未上星且年销售额200万元以上可获20万元，三星（三钻）且1000万元以上可获300万元。", "fit": "原文明确「首次落户我区开店的参照执行」，已上榜餐厅迁入即可适用，不限于本地评定企业；各档均以入选指南为前置条件，古镇普通餐馆不适用，属引进高端餐饮的招商条款。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第三十四条（措施1.2.／实施细则支持标准、申报条件5.）", "q": "支持餐饮品牌高端化发展。对首次入选“黑珍珠餐厅”指南、米其林指南的餐饮企业，综合考虑企业“星级”和经营规模，给予最高300万元奖励（“黑珍珠餐厅”、米其林上星餐厅首次落户我区开店的，参照执行）。荣誉评级上台阶的，按差额奖励。［实施细则分档标准］门店“星级”“钻级”／年销售额／奖励标准（万元）：一星（一钻）500万元以上50；二星（二钻）800万元以上100；三星（三钻）1000万元以上300；其他200万元以上20。［申报条件第5条］“其他”指首次入选“黑珍珠餐厅”指南或米其林指南，但未获得星级/钻级评定的餐厅。", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "LQY-34-laozihao", "t": "餐饮「老字号」认定奖励", "lv": "区", "dirs": ["d1", "d4"], "uni": false, "mer": true, "st": ["已达标"], "amt": 50, "amtT": "50万元", "cap": "50万元", "app": "餐饮企业", "sub": "", "rule": "首次入选国家级、省级「老字号」分别给予50万元、20万元；评价等级上台阶的按差额奖励", "elig": "在我区合法合规经营，且政策有效期内首次入选国家级「老字号」或省级「老字号」的餐饮企业", "win": "详见年度申报通知", "exc": "本政策可与上级政策叠加享受", "val": "《成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施》自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局", "pitch": "餐饮企业首次入选省级、国家级「老字号」，分别奖励20万元、50万元，可与上级政策叠加。", "fit": "古镇老牌客家餐馆为主要申报对象，属存量商户支持项目；可与上级政策叠加享受。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第三十四条", "q": "支持特色餐饮品牌打造支持餐饮“老字号”认定。对首次入选国家级、省级“老字号”的餐饮企业，分别给予50万元、20万元一次性奖励。（本政策可与上级政策叠加享受）（一）申报对象在我区合法合规经营，且在政策有效期内首次入选国家级“老字号”或省级“老字号”的餐饮企业。", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "LQY-34-mingdian", "t": "名店、名菜、名小吃评定奖励", "lv": "区", "dirs": ["d1", "d4"], "uni": false, "mer": true, "st": ["已达标"], "amt": 15, "amtT": "15万元", "cap": "15万元", "app": "餐饮企业", "sub": "", "rule": "国家级名店15万元、名菜8万元、名小吃3万元；省级8万元、4万元、2万元；市级3万元、2万元、1万元", "elig": "被各级商务部门委托的专业机构首次评定为名店、名菜、名小吃", "win": "详见年度申报通知", "exc": "", "val": "《成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施》自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局", "pitch": "获评市级、省级、国家级名小吃分别奖励1万元、2万元、3万元；获评名店最高奖励15万元。", "fit": "门槛较低，古镇特色小吃店可以申报，适合作为动员存量商户参与的起点。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第三十四条（二）1.", "q": "1. 对符合条件的餐饮企业，按照以下标准给予奖励：评定层级“名店”奖励“名菜”奖励“名小吃”奖励国家级15万元8万元3万元省级8万元4万元2万元市级3万元2万元1万元", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "LQY-24-newstore", "t": "总部型餐饮企业开设新门店奖励", "lv": "区", "dirs": ["d4"], "uni": false, "mer": false, "st": ["拟落地", "已运营"], "amt": 20, "amtT": "20万元", "cap": "单个总部型餐饮企业每年累计不超过20万元", "app": "总部型餐饮企业", "sub": "", "rule": "每开设1家新门店且新门店年销售额达100万元及以上的，给予2万元奖励", "elig": "总部型餐饮企业在政策有效期内开设新门店，且新门店年销售额达100万元及以上", "win": "详见年度申报通知", "exc": "", "val": "《成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施》自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局", "pitch": "总部型餐饮企业每开设一家年销售额100万元以上的新门店，奖励2万元，年度最高20万元。", "fit": "新门店销售额门槛较低，可用于引进连锁餐饮品牌在古镇开设门店。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第二十四条（二）", "q": "对总部型餐饮企业，在政策有效期内每开设1家新门店，且新门店年销售额达100万元及以上的，给予总部型餐饮企业2万元奖励，单个总部型餐饮企业每年累计奖励不超过20万元。", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "LQY-5-newbiz", "t": "新设商贸企业月度入库奖励（餐饮 / 零售档）", "lv": "区", "dirs": ["d4"], "uni": false, "mer": true, "st": ["拟落地", "已运营"], "amt": 100, "amtT": "100万元", "cap": "100万元", "app": "新设商贸企业", "sub": "", "rule": "餐饮：入库当年销售额1000万—1500万元奖30万元，1500万—2000万元奖40万元，2000万—3000万元奖50万元，3000万元以上奖60万元；零售：3亿—5亿元奖50万元，5亿—8亿元奖80万元，8亿元以上奖100万元", "elig": "政策有效期内实现月度入库的新设批发、零售、餐饮企业，入库当年销售额达到对应行业门槛", "win": "详见年度申报通知", "exc": "", "val": "《成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施》自2026年2月28日起实施，有效期至2027年12月31日；2025年1月1日以来符合政策条件的参照本政策执行", "end": "2027年12月31日", "con": "龙泉驿区商务局", "pitch": "新设餐饮企业月度入库且当年销售额1000万元以上奖励30万元，3000万元以上奖励60万元。", "fit": "餐饮档门槛可以实现，新开规模化客家菜馆首年即可申报；零售档门槛较高，单体门店难以达到。", "doc": "成都经开区（龙泉驿区）关于进一步促进现代服务业高质量发展的若干政策措施（含实施细则）", "no": "成经开商发〔2026〕3号", "loc": "第五条（一）", "q": "（一）申报对象政策有效期内实现月度入库的新设批发、零售、餐饮企业。支持标准序号所属行业入库当年销售额奖励标准（万元）1批发10亿元—20亿元（含）50 20亿元—30亿元（含）80 30亿元以上100 2零售3亿元—5亿元（含）50 5亿元—8亿元（含）80 8亿元以上100 3餐饮1000万元—1500万元（含）30 1500万元—2000万元（含）40 2000万元—3000万元（含）50 3000万元以上60", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": ""}, {"id": "CD-YS-9-location", "t": "影棚与实景场地打造运营奖励", "lv": "市", "dirs": ["d1"], "uni": false, "mer": false, "st": ["在建", "已运营"], "amt": 500, "amtT": "500万元", "cap": "建设500万元 / 运营200万元", "app": "影棚 / 实景场地建设或运营企业", "sub": "", "rule": "投资建设现代化专业摄影棚按当年实际投资额的5%奖励，最高500万元，单个主体每年累计不超过1000万元；运营影棚、实景场地按年度累计营收的5%奖励，最高200万元", "elig": "投资建设人工智能、水下摄影棚、高科技数字摄影棚、虚拟现实动作捕捉等现代化专业摄影棚的在蓉影视企业；或运营影棚、实景场地的在蓉影视企业；经综合评定", "win": "详见年度申报通知", "exc": "资金来源为市级文化产业发展专项资金。《成都市市级文化产业发展专项资金管理办法》（2026年7月8日修订）第十一条规定，该资金不得用于主题公园、仿古镇街等限制开发类或规范管理类项目，不得用于纳入清理范围的节庆、论坛、展会活动。以洛带名义申报时，应以企业具体文创项目为申报主体，不宜以古镇街区建设或风貌改造申报。", "val": "《成都市促进影视产业发展的若干政策》，原文载明「自2025年7月1日起生效，有效期3年」，即至2028年6月30日", "end": "2028年6月30日", "con": "", "pitch": "投资建设现代化专业摄影棚按当年实际投资额5%奖励、最高500万元；运营影棚或实景场地按年度累计营收5%奖励、最高200万元。均经综合评定。", "fit": "洛带会馆、老街、戏台为影视常用取景地，成立主体运营实景场地可以适用；摄影棚建设一档须较大投资。", "doc": "成都市促进影视产业发展的若干政策", "no": "", "loc": "第九条", "q": "支持影棚、实景场地打造运营。对于投资建设人工智能、水下摄影棚、高科技数字摄影棚、虚拟现实动作捕捉等现代化专业摄影棚的在蓉影视企业，经综合评定，按当年实际投资额的5%,给予最高500万元奖励，单个主体每年奖励金额累计不超过1000万元。对于运营影棚、实景场地的在蓉影视企业，经综合评定，按照年度累计营收5%，给予最高200万元奖励。", "url": "https://www.chinafilm.gov.cn/xwzx/hyzx/202509/t20250901_928317.html", "urlK": "国家电影局官网报道（原文未找到）", "inv": null, "subj": ["op", "biz"], "cad": ""}, {"id": "CD-NY-smart", "t": "智慧农业创新应用基地（园区）建设补助", "lv": "市", "dirs": ["d3"], "uni": false, "mer": false, "st": ["在建"], "amt": 200, "amtT": "200万元", "cap": "200万元", "app": "农业园区（基地）业主单位", "sub": "", "rule": "单一项目市级补助资金不超过该项目投资总额的40%、最高不超过200万元", "elig": "已纳入市级项目储备库；基地（园区）已实现规模化、标准化、产业化，具备现代农业园区基本条件；支持范围含种植业、畜牧业、渔业、种业、设施农业类；采取市级审批、竞争性立项，资金兑付为「先建后补」", "win": "按年度发布申报指南。2025年度已截止（2025年4月18日前由区级报送、11月30日前建成验收）；2026年度指南须另查", "exc": "2019年以来已由各级财政资金支持建设的同一场地相同建设内容，不再重复支持（设备迭代更新除外）", "val": "据《成都市惠企政策清单》（成都市发展改革委，2024年9月）载明本政策有效期至2027年12月；本条金额依据2025年度申报指南原文", "end": "2027年12月", "con": "成都市农业农村局金融与信息化处 028-61886856", "pitch": "农业园区实施智慧化建设，按项目投资总额40%补助，最高200万元，先建后补。", "fit": "支持对象为农业生产型园区，适用于洛带镇古镇以外的农业片区；须先纳入市级项目储备库。", "doc": "2025年成都市智慧农业创新应用基地（园区）建设项目申报指南", "no": "", "loc": "五、资金补助标准", "q": "五、资金补助标准项目采取市级审批、竞争性立项方式管理，资金兑付采取“先建后补”方式实施，单一项目市级补助资金不超过该项目投资总额的40%、最高不超过200万元。市级财政补助部分须全部用于信息化相关基础设施建设及系统（软件）开发及应用。", "url": "https://cdagri.chengdu.gov.cn/nyxx/c109535/2025-03/24/85b5976d1ab04d619a68c140cf24b9d3/files/667a9a7f5f0a471089ec7d6c42dea312.doc", "urlK": "市农业农村局官网·原文（Word 文件）", "inv": null, "subj": ["op", "biz"], "cad": ""}, {"id": "CD-LY-12-brandevent", "t": "重大品牌化旅游产业活动补助", "lv": "市", "dirs": ["d1", "d2"], "uni": false, "mer": false, "st": ["已运营"], "amt": 300, "amtT": "300万元", "cap": "300万元/个", "app": "活动举办主体", "sub": "", "rule": "成功举办后，按不超过实际市场投入资金比例30%给予一次性项目补助，最高300万元/个", "elig": "在成都举办的重大品牌化旅游产业活动，活动成功举办后申报；通过竞争性评审择优支持", "win": "按年度发布申报指南；2026年度第一批已于2026年9月11日公示拟支持项目", "exc": "", "val": "《成都市进一步促进旅游业发展的若干措施》（2025年1月印发），原文载明「自印发之日起施行，有效期5年」，据此推算约至2030年1月", "end": "约2030年1月", "con": "成都市文化广电旅游局 028-61882999", "pitch": "在成都举办的重大品牌化旅游产业活动，成功举办后按实际市场投入的30%补助，最高300万元/个；须通过竞争性评审。", "fit": "古镇节庆活动属本条常见支持对象：2026年度第一批拟支持名单中，临邛古城灯会、城厢古城新春大庙会、五凤溪春节活动及龙泉驿区东安湖新春游园会均在列。洛带客家节庆活动可对照申报，须在活动成功举办后提出。", "doc": "成都市进一步促进旅游业发展的若干措施（2025年1月）", "no": "", "loc": "三、（十二）", "q": "支持举办重大品牌化旅游产业活动。通过竞争性评审，对在成都举办的重大品牌化旅游产业活动，成功举办后按照不超过实际市场投入资金比例30%的标准择优给予一次性项目补助，补助金额不超过300万元/个。", "url": "https://cdwglj.chengdu.gov.cn/cdwglj/c133196/2025-01/15/content_c4006e1e79e94793b9ce34fed05fbb31.shtml", "urlK": "市文广旅局官网（政策及实施细则）", "inv": null, "subj": ["event"], "cad": "市文广旅局每年 6 月底前发布下一年度项目申报通知，8 月底前评审，11 月底前下达资金（《成都市市级旅游业发展专项资金管理办法》成财制〔2026〕15号 第十三至十五条）"}, {"id": "CD-ZS-3-upgrade", "t": "住宿业升级改造补助", "lv": "市", "dirs": ["d4"], "uni": false, "mer": false, "st": ["已运营"], "amt": 10, "amtT": "10万元", "cap": "每家企业最高不超过10万元", "app": "连续经营超过5年的住宿经营主体", "sub": "", "rule": "项目完工（竣工验收合格）后，按不超过实际投入资金总额10%给予一次性补助，每家企业最高10万元", "elig": "本市连续经营超过5年的住宿经营主体，实施老旧建筑主体改造、内部装修升级、水电气热改造、设施设备更新、低碳化改造等升级改造项目；项目完工并竣工验收合格；通过竞争性评审", "win": "快申快享，经「蓉易享」平台申报（以申报指南为准）", "exc": "", "val": "《成都市文化广电旅游局关于推动住宿业高质量发展的措施》（成文广旅规〔2025〕1号），官网载明生效时间2025年12月4日、有效性「有效」；原文规定「新出台政策自印发之日起施行，有效期5年」，实施细则逐项载明「政策有效期：5年」，即至2030年12月3日", "end": "2030年12月3日", "con": "成都市文化广电旅游局市场管理处 028-61887260", "pitch": "连续经营5年以上的住宿经营主体实施升级改造，完工验收后按实际投入10%补助，每家最高10万元；须通过竞争性评审。", "fit": "古镇经营满五年的民宿、客栈实施装修升级、设施更新或低碳化改造可以申报；与「智慧化提升改造」为并列的两项补助，内容不同可分别申报。", "doc": "成都市文化广电旅游局关于推动住宿业高质量发展的措施（2025年12月4日）", "no": "", "loc": "二、（三）", "q": "支持升级改造。鼓励住宿经营主体结合城市更新行动，开展老旧建筑主体改造、内部装修升级、水电气热改造、设施设备更新、低碳化改造等。支持金融机构为住宿企业提供便捷、优惠的升级改造融资渠道。通过竞争性评审，对连续经营超过5年的住宿经营主体实施升级改造的，在项目完工（竣工验收合格）后，按照不超过实际投入资金总额10%的标准给予一次性补助，每家企业最高不超过10万元。", "url": "", "urlK": "", "inv": null, "subj": ["biz"], "cad": "市文广旅局每年 6 月底前发布下一年度项目申报通知，8 月底前评审，11 月底前下达资金（《成都市市级旅游业发展专项资金管理办法》成财制〔2026〕15号 第十三至十五条）"}], "featured": ["LQY-20-unified", "LQY-YY-1-4", "LQY-37", "CD-LY-14", "LQY-23-2", "LQY-38"], "dirs": [{"k": "d1", "full": "文创设计与艺术园区", "short": "文创园区"}, {"k": "d2", "full": "商务会展", "short": "商务会展"}, {"k": "d3", "full": "生态农业与田园综合体", "short": "生态农业"}, {"k": "d4", "full": "乡村亲子度假与研学旅行", "short": "亲子研学"}, {"k": "d5", "full": "户外运动与体育旅游", "short": "户外运动"}], "stages": ["拟落地", "在建", "已运营", "已达标"], "timeline": [{"pos": 19.93, "date": "2026-12-31", "days": 103, "label": "2026年度申报", "approx": false, "n": 1, "src": [["区级文化产业发展专项资金", 1]]}, {"pos": 26.51, "date": "2027-04-30", "days": 223, "label": "2027年4月30日", "approx": false, "n": 9, "src": [["省市区文化旅游政策汇编·区级支持文体旅产业提质发展", 5], ["成都经开区发改局等16部门关于支持产业高质量发展的若干政策措施（2025年4月）", 3], ["省市区文化旅游政策汇编·区级条款", 1]]}, {"pos": 39.92, "date": "2027-12-31", "days": 468, "label": "2027年12月31日", "approx": false, "n": 53, "src": [["区级《现代服务业高质量发展若干政策措施》", 45], ["市级《推动演艺市场高质量发展的若干措施》", 7], ["市级智慧农业创新应用基地建设项目", 1]]}, {"pos": 49.89, "date": "2028-06-30", "days": 650, "label": "2028年6月30日", "approx": false, "n": 7, "src": [["市级影视、科幻、数字文创三项政策", 7]]}, {"pos": 81.49, "date": "2030-01-28", "days": 1227, "label": "约2030年1月", "approx": true, "n": 14, "src": [["市级《进一步促进旅游业发展的若干措施》", 12], ["市级《推动住宿业高质量发展的措施》", 2]]}, {"pos": 98.41, "date": "2030-12-03", "days": 1536, "label": "2030年12月3日", "approx": false, "n": 4, "src": [["市级《推动住宿业高质量发展的措施》", 4]]}], "todayPos": 14.29, "today": "2026-09-19", "dirstat": [{"k": "d1", "full": "文创设计与艺术园区", "short": "文创园区", "n": 44, "max": "500万元", "top": ["音乐演艺类文化产业园区认定奖励", "沉浸式文体旅商融合项目"]}, {"k": "d2", "full": "商务会展", "short": "商务会展", "n": 8, "max": "600万元", "top": ["举办重大会展活动（办展）", "举办重大影视节（展）会活动"]}, {"k": "d3", "full": "生态农业与田园综合体", "short": "生态农业", "n": 5, "max": "300万元", "top": ["乡村旅游基础设施新（改、扩）建补助", "智慧农业创新应用基地（园区）建设补助"]}, {"k": "d4", "full": "乡村亲子度假与研学旅行", "short": "亲子研学", "n": 20, "max": "500万元", "top": ["景区与旅游度假区评定奖励（区级）", "高端品牌酒店新建与引进"]}, {"k": "d5", "full": "户外运动与体育旅游", "short": "户外运动", "n": 11, "max": "400万元", "top": ["承办高能级体育赛事", "旅游休闲街区、文化产业园区、夜间消费聚集区、体育产业示范基地评定"]}], "nUni": 19};
+var IN=D.edition==='internal';
+var $=function(id){return document.getElementById(id);};
+var esc=function(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});};
+var P={}; D.policies.forEach(function(p){P[p.id]=p;});
+var dirName={}; D.dirs.forEach(function(d){dirName[d.k]=d;});
+
+if(IN){
+  $('title').innerHTML='洛带招商政策指引<span class="ed-tag">内部工作版</span>';
+  document.title='洛带政策指引内部版';
+}
+
+/* 导航 */
+var NAV=[['match','项目匹配'],['dirs','招商方向'],['featured','重点招引'],['all','全部政策']];
+if(IN){ NAV.splice(3,0,['timeline','时间节点']); NAV.push(['pending','待核实']); $('timeline').hidden=false; }
+$('nav').innerHTML=NAV.map(function(n){
+  var route=(n[0]==='all'||n[0]==='pending');
+  return '<a href="#/'+(route?n[0]:'')+'" data-k="'+n[0]+'"'+(route?'':' data-scroll="'+n[0]+'"')+'>'+n[1]+'</a>';
+}).join('');
+var pendingScroll=null;
+$('nav').addEventListener('click',function(e){
+  var a=e.target.closest('a[data-scroll]'); if(!a) return;
+  e.preventDefault(); var t=a.getAttribute('data-scroll');
+  if(HASH&&HASH!=='#/'){pendingScroll=t; go('#/');}
+  else { var el=$(t); if(el) el.scrollIntoView(); }
+});
+
+function sortAmt(a,b){return ((b.amt==null?-1:b.amt)-(a.amt==null?-1:a.amt))||a.t.localeCompare(b.t,'zh');}
+function sub(p){
+  var s=esc(p.app);
+  if(p.sub) s+=' · <span class="lim">主体限'+esc(p.sub)+'</span>';
+  return s;
+}
+function row(p){
+  return '<li><a class="pol" href="#/p/'+encodeURIComponent(p.id)+'">'+
+    '<span class="seal lv-'+esc(p.lv)+'" title="'+esc(p.lv)+'级政策">'+esc(p.lv)+'</span>'+
+    '<span><span class="pol-t">'+esc(p.t)+'</span><span class="pol-s">'+sub(p)+'</span></span>'+
+    '<span class="pol-a"><b>'+(p.amtT?esc(p.amtT):'按标准核定')+'</b><small>'+esc(p.cap&&p.cap!==p.amtT?p.cap:(p.end?'有效期 '+p.end:''))+'</small></span>'+
+  '</a></li>';
+}
+
+/* 内部版统计 */
+if(IN){
+  var S=D.stats;
+  $('stats').innerHTML='<div class="stats">'+
+    [[S.tab,'正表政策'],[S.held,'时效待核实（未入正表）'],[S.leads,'待核实线索'],[S.linked,'附官网原文链接']]
+    .map(function(x){return '<div class="stat"><b>'+x[0]+'</b><span>'+x[1]+'</span></div>';}).join('')+'</div>';
+}
+
+/* 重点政策 */
+$('feat').innerHTML=D.featured.map(function(id){
+  var p=P[id]; var dn=p.dirs.length?dirName[p.dirs[0]].full:'通用政策';
+  return '<a class="fc" href="#/p/'+encodeURIComponent(p.id)+'">'+
+    '<span class="fc-top"><span class="seal lv-'+esc(p.lv)+'">'+esc(p.lv)+'</span>'+esc(dn)+'</span>'+
+    '<span class="fc-amt">'+(p.amtT?'<small>最高</small>'+esc(p.amtT):'按标准核定')+'</span>'+
+    '<span class="fc-t">'+esc(p.t)+'</span>'+
+    '<p class="fc-p">'+esc(p.pitch)+'</p>'+
+    '<span class="fc-end">有效至 '+esc(p.end||'见详情')+'</span></a>';
+}).join('');
+
+/* 项目匹配：分步问答 */
+var STAGES=['拟落地','在建','已运营','已达标'];
+// 阶段是累进的：已达标的项目一定在运营，已运营阶段的政策同样适用；新设落户类政策不回溯给已运营项目
+var EFF={'已达标':['已达标','已运营']};
+function fitsNow(p){var e=EFF[W.stage]||[W.stage];return p.st.some(function(x){return e.indexOf(x)>-1;});}
+var STEPS=[
+  {k:'dir',t:'招商方向',q:'项目属于哪个招商方向？',h:'各方向通用的政策会自动并入结果。',
+   o:[['all','尚未确定']].concat(D.dirs.map(function(d){return [d.k,d.full];}))},
+  {k:'stage',t:'项目阶段',q:'项目目前进展到哪一步？',h:'据此区分现在就能申报的政策，与项目推进后才能申报的政策。',
+   o:[['拟落地','拟落地','洽谈签约、尚未注册'],['在建','在建','已开工建设'],['已运营','已运营','已开业经营'],['已达标','已达标','已获评级或营收达到台阶']]},
+  {k:'inv',t:'投资规模',q:'计划总投资大约多少？',h:'用于排除设有投资额门槛、项目规模达不到的条款。',
+   o:[['na','暂不确定'],['0-1000','1000 万元以下'],['1000-10000','1000 万元至 1 亿元'],['10000-30000','1 亿元至 3 亿元'],['30000-','3 亿元以上']]},
+  {k:'subj',t:'申报主体',q:'由谁来申报？',h:'政策的申报主体各不相同，按主体类型筛选。',
+   o:[['all','尚未确定'],['op','古镇或片区运营主体'],['biz','入驻企业或商户'],['event','活动、赛事主办方']]}
+];
+var W={step:0,dir:null,stage:null,inv:null,subj:null,more:{}};
+function optLabel(k,v){if(v==null)return '未选';var st=STEPS.filter(function(x){return x.k===k;})[0];var o=st.o.filter(function(x){return x[0]===v;})[0];return o?o[1]:'';}
+function invRange(){if(!W.inv||W.inv==='na')return null;var p=W.inv.split('-');return [+p[0],p[1]===''?Infinity:+p[1]];}
+function wan(v){return v>=10000?(v/10000)+' 亿元':v+' 万元';}
+function drawWiz(){
+  var st=STEPS[W.step];
+  $('wprog').innerHTML=STEPS.map(function(x,i){return '<span class="'+(i===W.step?'cur':(W[x.k]!=null?'on':''))+'"></span>';}).join('');
+  $('wbody').innerHTML='<p class="wz-k">第 '+(W.step+1)+' 题 / 共 '+STEPS.length+' 题　'+st.t+'</p>'+
+    '<p class="wz-q">'+st.q+'</p><p class="wz-h">'+st.h+'</p><div class="opts" role="group" aria-label="'+st.t+'">'+
+    st.o.map(function(o){return '<button type="button" class="opt" data-v="'+esc(o[0])+'" aria-pressed="'+(W[st.k]===o[0])+'"><span>'+esc(o[1])+(o[2]?'<br><small>'+esc(o[2])+'</small>':'')+'</span></button>';}).join('')+'</div>';
+  $('wprev').disabled=W.step===0;
+  $('wclr').hidden=!STEPS.some(function(x){return W[x.k]!=null;});
+  $('wnext').textContent=W.step===STEPS.length-1?'查看结果':'下一题';
+}
+$('wbody').addEventListener('click',function(e){
+  var b=e.target.closest('.opt'); if(!b) return;
+  W[STEPS[W.step].k]=b.getAttribute('data-v'); W.more={};
+  if(W.step<STEPS.length-1) W.step++;
+  drawWiz(); drawRes();
+});
+$('wprev').addEventListener('click',function(){if(W.step>0){W.step--;drawWiz();}});
+$('wclr').addEventListener('click',function(){STEPS.forEach(function(x){W[x.k]=null;});W.step=0;W.more={};drawWiz();drawRes();$('wbody').querySelector('.opt').focus();});
+$('wnext').addEventListener('click',function(){
+  if(W.step<STEPS.length-1){W.step++;drawWiz();} else {$('wres').scrollIntoView({block:'start'});}
+});
+function invTag(p){
+  if(!p.inv) return '';
+  return '<span class="stg'+(p.inv[1]?'':' warn')+'">'+(p.inv[1]?'部分档位':'')+'需投资 '+wan(p.inv[0])+'</span>';
+}
+function rowV2(p,extra){
+  return '<li><a class="pol" href="#/p/'+encodeURIComponent(p.id)+'">'+
+    '<span class="seal lv-'+esc(p.lv)+'" title="'+esc(p.lv)+'级政策">'+esc(p.lv)+'</span>'+
+    '<span><span class="pol-t">'+esc(p.t)+(extra||'')+'</span><span class="pol-s">'+sub(p)+'</span></span>'+
+    '<span class="pol-a"><b>'+(p.amtT?esc(p.amtT):'按标准核定')+'</b><small>'+esc(p.end?'有效至 '+p.end:'')+'</small></span>'+
+  '</a></li>';
+}
+function block(key,arr,fmt){
+  var n=W.more[key]?arr.length:Math.min(arr.length,6);
+  return '<ul class="pols">'+(arr.length?arr.slice(0,n).map(fmt).join(''):'<li class="empty">暂无</li>')+'</ul>'+
+    (arr.length>n?'<button class="more" type="button" data-more="'+key+'">显示全部 '+arr.length+' 条</button>':'');
+}
+function drawRes(){
+  if(!W.stage){
+    $('wres').innerHTML='<div class="wz-empty"><b>'+D.policies.length+'</b> 条现行政策<p>回答左侧问题后，这里列出您的项目现阶段可申报、以及项目推进后可申报的政策。至少需要选择招商方向与项目阶段。</p></div>';
+    return;
+  }
+  var si=STAGES.indexOf(W.stage), rg=invRange();
+  var cand=D.policies.filter(function(p){
+    return (!W.dir||W.dir==='all'||p.uni||p.dirs.indexOf(W.dir)>-1)&&(!W.subj||W.subj==='all'||p.subj.indexOf(W.subj)>-1);
+  });
+  var now=[],later=[],blocked=[];
+  cand.forEach(function(p){
+    if(rg&&p.inv&&!p.inv[1]&&p.inv[0]>rg[1]){blocked.push(p);return;}
+    if(fitsNow(p)) now.push(p);
+    else { var nx=p.st.map(function(x){return STAGES.indexOf(x);}).filter(function(i){return i>si;}).sort()[0];
+      if(nx!=null){p._nx=STAGES[nx];later.push(p);} }
+  });
+  now.sort(sortAmt); later.sort(function(a,b){return STAGES.indexOf(a._nx)-STAGES.indexOf(b._nx)||sortAmt(a,b);}); blocked.sort(sortAmt);
+  var top=now.length?now[0]:null;
+  $('wres').innerHTML=
+    '<div class="ans">'+STEPS.map(function(x,i){return '<button type="button" data-step="'+i+'">'+x.t+'：<b>'+esc(optLabel(x.k,W[x.k]))+'</b></button>';}).join('')+'<button type="button" class="ans-clr" data-clear="1">清除已选</button></div>'+
+    '<div class="sum"><div><b>'+now.length+'</b><span>现阶段可申报</span></div>'+
+      '<div><b>'+later.length+'</b><span>项目推进后可申报</span></div>'+
+      '<div><b>'+(top&&top.amtT?esc(top.amtT):'—')+'</b><span>现阶段单条上限最高</span></div></div>'+
+    '<div class="grp-h"><h3>现阶段可申报</h3><p>'+(W.stage==='已达标'?'已达标项目同时处于运营阶段，运营类政策一并列入；':'')+'按支持上限排列</p></div>'+
+    block('now',now,function(p){return rowV2(p,invTag(p));})+
+    '<div class="grp-h"><h3>项目推进后可申报</h3><p>'+(W.stage==='已达标'?'已达标为最后阶段，无后续政策':'标签为最早可申报的阶段，宜提前准备材料')+'</p></div>'+
+    block('later',later,function(p){return rowV2(p,'<span class="stg">'+esc(p._nx)+'后</span>'+invTag(p));})+
+    (blocked.length?'<details class="blocked"><summary>另有 '+blocked.length+' 条的投资额门槛高于所选规模，已排除（点击查看）</summary>'+
+      '<ul class="pols">'+blocked.map(function(p){return rowV2(p,invTag(p));}).join('')+'</ul></details>':'');
+}
+$('wres').addEventListener('click',function(e){
+  if(e.target.closest('[data-clear]')){$('wclr').click();$('wprog').scrollIntoView({block:'nearest'});return;}
+  var m=e.target.closest('[data-more]'); if(m){W.more[m.getAttribute('data-more')]=true;drawRes();return;}
+  var a=e.target.closest('[data-step]'); if(a){W.step=+a.getAttribute('data-step');drawWiz();$('wprog').scrollIntoView({block:'nearest'});}
+});
+drawWiz(); drawRes();
+
+/* 时间节点（内部版） */
+if(IN){(function(){
+  var h='<div class="tlx-axis"></div>';
+  for(var y=2026;y<=2031;y++){
+    var pos=(Date.UTC(y,0,1)-Date.UTC(2026,0,1))/(Date.UTC(2031,0,1)-Date.UTC(2026,0,1))*100;
+    h+='<span class="tlx-y" style="left:'+pos+'%">'+y+'</span>';
+  }
+  h+='<div class="tlx-now" style="left:'+D.todayPos+'%"><span>今日</span></div>';
+  D.timeline.forEach(function(n){
+    h+='<span class="tlx-dot'+(n.days<=365?' soon':'')+(n.approx?' approx':'')+'" style="left:'+n.pos+'%" title="'+esc(n.label)+'，涉及 '+n.n+' 条"><b>'+n.n+'</b></span>';
+  });
+  $('tlx').innerHTML=h;
+  $('tlr').innerHTML=D.timeline.map(function(n){
+    var st=n.days<0?['past','已到期']:(n.days<=365?['soon','剩 '+n.days+' 天']:['','剩约 '+Math.round(n.days/30)+' 个月']);
+    return '<li><span class="tlr-d">'+esc(n.label)+'</span><span class="tlr-s '+st[0]+'">'+st[1]+(n.approx?' · 推算':'')+'</span>'+
+      '<span class="tlr-n"><b>'+n.n+'</b>条</span><ul class="tlr-src">'+
+      n.src.map(function(x){return '<li>'+esc(x[0])+'<em>'+x[1]+' 条</em></li>';}).join('')+'</ul></li>';
+  }).join('');
+  $('tln').textContent='另有 1 条用地项目奖励按「宗地出让年限内」执行，未列入。区级《现代服务业高质量发展若干政策措施》为区级政策主要来源，有效期至 2027 年 12 月 31 日，相关项目宜在此之前完成申报。';
+})();}
+
+/* 五个方向 */
+$('dgrid').innerHTML=D.dirstat.map(function(d){
+  return '<a class="dt" href="#/d/'+d.k+'"><span class="dt-n">'+d.n+'<small>条</small></span>'+
+    '<span class="dt-name">'+esc(d.full)+'</span><span class="dt-max">单条最高 '+esc(d.max)+'</span>'+
+    '<ul>'+d.top.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul></a>';
+}).join('');
+$('dnote').textContent='各方向条数含本方向专项政策；另有通用政策 '+D.nUni+' 条不限业态，适用于全部五个方向，见「全部政策」。';
+
+/* 列表页 */
+var LIST=[];
+function drawList(){
+  var q=($('lq').value||'').trim();
+  var r=LIST.filter(function(p){return !q||(p.t+p.app+p.elig+p.rule).indexOf(q)>-1;});
+  $('lres').innerHTML=r.length?r.map(row).join(''):'<li class="empty">无符合条件的政策。</li>';
+  $('ls').textContent='共 '+r.length+' 条，按支持上限由高到低排列';
+}
+$('lq').addEventListener('input',drawList);
+
+/* 资格自查 */
+var CK={}; try{CK=JSON.parse(localStorage.getItem('ld-ck')||'{}');}catch(e){}
+function saveCK(){try{localStorage.setItem('ld-ck',JSON.stringify(CK));}catch(e){}}
+var STL={ok:'满足',no:'不满足',q:'待确认'};
+function checklist(p){
+  var rows=[], m=CK[p.id]||{}, si=STAGES.indexOf(W.stage), rg=invRange();
+  var fn=W.stage&&fitsNow(p);
+  rows.push({t:'适用阶段：'+p.st.join('、'),s:fn?'ok':'q',
+    auto:W.stage?'依据项目匹配中所选阶段「'+W.stage+'」'+(fn?'':'，当前阶段不适用或须项目推进后申报'):'尚未在「项目匹配」中选择项目阶段'});
+  if(p.inv){var v=p.inv[0];
+    rows.push({t:'投资额达到 '+wan(v)+(p.inv[1]?'（仅部分档位要求）':''),
+      s:!rg?'q':(rg[0]>=v?'ok':(rg[1]<v&&!p.inv[1]?'no':'q')),auto:rg?'依据所选投资规模「'+optLabel('inv',W.inv)+'」':'未选择投资规模'});}
+  (p.elig||'').split(/[；;]/).map(function(x){return x.trim().replace(/。$/,'');}).filter(function(x){return x.length>3;})
+    .forEach(function(x,i){rows.push({t:x,s:m[i]||'q',i:i});});
+  var c={ok:0,no:0,q:0}; rows.forEach(function(r){c[r.s]++;});
+  var v=c.no?['no','存在不满足项，暂不具备申报条件']:(c.q?['q','尚有 '+c.q+' 项待确认']:['ok','各项初步满足，建议联系受理部门确认']);
+  return '<div class="fact"><h3>申报条件 · 资格自查</h3><div class="ck" data-pid="'+esc(p.id)+'"><div class="ck-h"><h4>满足 '+c.ok+' · 不满足 '+c.no+' · 待确认 '+c.q+'</h4><span class="ck-v '+v[0]+'">'+v[1]+'</span></div><ul>'+
+    rows.map(function(r){return '<li><span>'+esc(r.t)+(r.auto?'<small>自动判断：'+esc(r.auto)+'</small>':'')+'</span>'+
+      '<button type="button" class="st '+r.s+'"'+(r.auto?' disabled':' data-i="'+r.i+'"')+' aria-label="切换状态，当前'+STL[r.s]+'">'+STL[r.s]+'</button></li>';}).join('')+
+    '</ul><p class="ck-f">点击条目右侧的状态，可在「待确认 / 满足 / 不满足」之间切换。结果仅保存在本机浏览器，不构成资格认定。</p></div></div>';
+}
+$('dart').addEventListener('click',function(e){
+  var b=e.target.closest('.st[data-i]'); if(!b) return;
+  var pid=b.closest('.ck').getAttribute('data-pid'), i=b.getAttribute('data-i');
+  CK[pid]=CK[pid]||{}; CK[pid][i]={q:'ok',ok:'no',no:'q'}[CK[pid][i]||'q']; saveCK();
+  var y=window.scrollY; drawDetail(P[pid]); window.scrollTo(0,y);
+});
+
+/* 详情页 */
+function fact(h,v){return v?'<div class="fact"><h3>'+h+'</h3><p>'+esc(v)+'</p></div>':'';}
+function drawDetail(p){
+  var dn=p.dirs.map(function(k){return '<span class="tag">'+esc(dirName[k].full)+'</span>';}).join('');
+  if(p.uni) dn+='<span class="tag">通用政策</span>';
+  if(p.mer) dn+='<span class="tag">单体商户可申报</span>';
+  if(p.sub) dn+='<span class="tag warn">主体限'+esc(p.sub)+'</span>';
+  var orig=p.url
+    ? '<a class="btn" href="'+esc(p.url)+'" target="_blank" rel="noopener noreferrer">查看官网原文 ↗</a>'
+    : '<p class="src">'+(IN?'本条无可直接跳转的官网发布页，原文依据为主管部门提供的政策汇编原件。对外报数前，建议就条款口径、有效期与申报流程与受理部门进一步沟通核实。'
+                           :'如需政策全文，可向受理部门索取。')+'</p>';
+  var intern='';
+  if(IN){
+    var rel=Object.keys(p.rel||{}).map(function(k){return k+'：'+p.rel[k];}).join('；');
+    intern='<div class="internal"><b>内部信息</b>　编号 '+esc(p.id)+'　·　抓手 '+esc(p.handle)+'　·　时效 '+esc(p.vs)+
+      (rel?'<br>相关度　'+esc(rel):'')+(p.note?'<br>引文说明　'+esc(p.note):'')+'</div>';
+  }
+  $('dart').innerHTML=
+    '<header class="dh"><span class="seal lv-'+esc(p.lv)+'">'+esc(p.lv)+'</span><div><h2>'+esc(p.t)+'</h2><div class="tags">'+dn+'</div></div></header>'+
+    '<div class="dgrid2"><div class="facts">'+
+      (p.pitch?'<div class="key"><p>'+esc(p.pitch)+'</p><small>政策要点为解读性说明，不构成申报承诺，以主管部门审核结果为准。</small></div>':'')+
+      fact('支持标准',p.rule)+checklist(p)+fact('申报主体',p.app)+fact('叠加规则',p.exc)+
+      fact(IN?'适用性分析':'适用说明',p.fit)+
+      '<div class="fact"><h3>政策原文</h3><blockquote>'+esc(p.q)+'</blockquote>'+
+        '<p class="src">出处：'+esc(p.doc)+(p.no?'（'+esc(p.no)+'）':'')+(p.loc?' · '+esc(p.loc):'')+'</p>'+orig+'</div>'+
+      intern+
+    '</div><aside class="aside"><div class="aside-amt"><span>支持上限</span><b>'+(p.amtT?esc(p.amtT):'按标准核定')+'</b>'+
+      (p.cap&&p.cap!==p.amtT?'<small>'+esc(p.cap)+'</small>':'')+'</div><dl>'+
+      '<dt>有效至</dt><dd>'+esc(p.end||p.val||'—')+'</dd>'+
+      (p.con?'<dt>受理部门</dt><dd>'+esc(p.con)+'</dd>':'')+
+      (p.win?'<dt>申报方式</dt><dd>'+esc(p.win)+'</dd>':'')+(p.cad?'<dt>申报节奏</dt><dd>'+esc(p.cad)+'</dd>':'')+
+    '</dl></aside></div>';
+  document.title=p.t+' · '+(IN?'洛带政策指引内部版':'洛带招商政策指引');
+}
+
+/* 内部版：待核实 */
+function drawPending(){
+  var h='<a class="back" href="#/">← 返回首页</a>'+
+    '<div class="lh"><div><h2>待核实</h2><p>以下内容不列入正式指引，核实后并入</p></div></div>'+
+    '<div class="sec-h"><h2 style="font-size:1.15rem">时效待核实（'+D.held.length+' 条）</h2><p>条款与金额有原文依据，有效期未载明</p></div>'+
+    D.held.slice().sort(sortAmt).map(function(p){
+      return '<div class="lead"><h4><span class="seal lv-'+esc(p.lv)+'" style="width:22px;height:22px;font-size:.72rem;margin-right:8px;vertical-align:-4px">'+esc(p.lv)+'</span>'+esc(p.t)+'</h4>'+
+        '<p><b>支持力度</b>'+esc(p.rule||'原文未载明金额')+'</p><p><b>暂缓原因</b>'+esc(p.why)+'</p>'+
+        '<p><b>后续工作</b>向'+esc(p.con||'主管部门')+'核实有效期；确认现行有效后并入正表。</p></div>';
+    }).join('')+
+    '<div class="sec-h" style="margin-top:34px"><h2 style="font-size:1.15rem">线索（'+D.leads.length+' 条）</h2><p>已有官方出处，金额或有效期尚待核实</p></div>'+
+    D.leads.map(function(l){
+      return '<div class="lead"><h4>'+esc(l.t)+'</h4><p><b>发文单位</b>'+esc(l.iss)+'</p><p><b>已知信息</b>'+esc(l.known)+'</p>'+
+        '<p><b>未入库原因</b>'+esc(l.why)+'</p><p><b>后续工作</b>'+esc(l.next)+'</p>'+
+        (/^https?:\/\//.test(l.url)&&l.url.indexOf(' ')<0?'<p><a href="'+esc(l.url)+'" target="_blank" rel="noopener noreferrer">官方出处 ↗</a></p>':'')+'</div>';
+    }).join('');
+  $('v-pending').innerHTML=h;
+}
+
+/* 页脚 */
+$('foot').innerHTML='<p>本指引依据各级政府公开发布及主管部门提供的政策文件整理，仅收录有效期可核实的条款。「政策要点」「适用说明」为解读性说明，不构成申报承诺；具体申报条件、标准与时间以主管部门发布的申报通知及审核结果为准。</p>'+
+  '<p>成都市龙泉驿区洛带镇 · 更新于 '+esc(D.today)+(IN?' · 内部工作版本，不对外发布':'')+'</p>';
+
+/* 路由 */
+var VIEWS=['v-home','v-list','v-detail','v-pending'];
+function show(v){VIEWS.forEach(function(x){$(x).hidden=(x!==v);});}
+function mark(k){[].forEach.call(document.querySelectorAll('#nav a'),function(a){a.setAttribute('aria-current',String(a.getAttribute('data-k')===k));});}
+var lastList='#/';
+var HASH=location.hash||'#/';
+function go(href){HASH=href; try{history.replaceState(null,'',href);}catch(e){} route();}
+document.addEventListener('click',function(e){
+  var a=e.target.closest('a[href^="#/"]'); if(!a||e.defaultPrevented||a.hasAttribute('data-scroll')) return;
+  e.preventDefault(); go(a.getAttribute('href'));
+});
+function route(){
+  var h=(HASH||'').replace(/^#\/?/,''), parts=h.split('/');
+  if(parts[0]==='d'&&dirName[parts[1]]){
+    var d=dirName[parts[1]];
+    LIST=D.policies.filter(function(p){return p.dirs.indexOf(d.k)>-1;}).sort(sortAmt);
+    $('lt').textContent=d.full; $('lq').value=''; drawList(); show('v-list'); mark('dirs'); lastList=HASH; window.scrollTo(0,0);
+  } else if(parts[0]==='all'){
+    LIST=D.policies.slice().sort(sortAmt);
+    $('lt').textContent='全部政策'; $('lq').value=''; drawList(); show('v-list'); mark('all'); lastList=HASH; window.scrollTo(0,0);
+  } else if(parts[0]==='p'&&P[decodeURIComponent(parts[1]||'')]){
+    drawDetail(P[decodeURIComponent(parts[1])]); $('dback').href=lastList; show('v-detail'); mark(''); window.scrollTo(0,0);
+  } else if(parts[0]==='pending'&&IN){
+    drawPending(); show('v-pending'); mark('pending'); window.scrollTo(0,0);
+  } else {
+    show('v-home'); mark(''); document.title=IN?'洛带政策指引内部版':'洛带招商政策指引';
+    if(pendingScroll){var t=pendingScroll; pendingScroll=null; setTimeout(function(){var el=$(t); if(el) el.scrollIntoView();},0);}
+    else if(h) window.scrollTo(0,0);
+    lastList='#/';
+  }
+}
+window.addEventListener('hashchange',function(){HASH=location.hash||'#/';route();});
+route();
+})();
+</script>
