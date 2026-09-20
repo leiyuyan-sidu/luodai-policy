@@ -611,6 +611,14 @@ $('dart').addEventListener('click',function(e){
   var y=window.scrollY; drawDetail(P[pid]); window.scrollTo(0,y);
 });
 
+function linkLabel(p){
+  var k=p.urlK||'';
+  if(k.indexOf('报道')>-1) return '查看官方报道';
+  if(k.indexOf('解读')>-1) return '查看官方解读';
+  if(k.indexOf('发布页')>-1) return '查看官网发布页';
+  return '查看官网原文';
+}
+
 /* 详情页 */
 function fact(h,v){return v?'<div class="fact"><h3>'+h+'</h3><p>'+esc(v)+'</p></div>':'';}
 function drawDetail(p){
@@ -619,7 +627,8 @@ function drawDetail(p){
   if(p.mer) dn+='<span class="tag">单体商户可申报</span>';
   if(p.sub) dn+='<span class="tag warn">主体限'+esc(p.sub)+'</span>';
   var orig=p.url
-    ? '<a class="btn" href="'+esc(p.url)+'" target="_blank" rel="noopener noreferrer">查看官网原文 ↗</a>'
+    ? '<a class="btn" href="'+esc(p.url)+'" target="_blank" rel="noopener noreferrer">'+linkLabel(p)+' ↗</a>'+
+      (p.urlK?'<p class="src">链接性质：'+esc(p.urlK)+'</p>':'')
     : '<p class="src">'+(IN?'本条无可直接跳转的官网发布页，原文依据为主管部门提供的政策汇编原件。对外报数前，建议就条款口径、有效期与申报流程与受理部门进一步沟通核实。'
                            :'如需政策全文，可向受理部门索取。')+'</p>';
   var intern='';
